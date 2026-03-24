@@ -1,0 +1,815 @@
+LXXIX. La dispersión de las partículas α y β por la materia y la estructura
+del átomo. Por el profesor E. RUTHERFORD, F.R.S., Universidad de
+Manchester *.
+
+§ 1 Es bien sabido que las partículas α y β sufren desviaciones de sus
+trayectorias rectilíneas al encontrar átomos de materia. Esta dispersión es
+mucho más marcada para la partícula β que para la α, a causa del momento y
+la energía mucho menores de la primera partícula. Parece no haber duda de
+que tales partículas de movimiento rápido atraviesan los átomos situados en
+su camino, y que las desviaciones observadas se deben al intenso campo
+eléctrico atravesado dentro del sistema atómico. En general se ha supuesto
+que la dispersión de un haz de rayos α o β al pasar a través de una lámina
+delgada de materia es el resultado de una multitud de pequeñas dispersiones
+por los átomos de materia atravesados. Las observaciones, sin embargo, de
+Geiger y Marsden † sobre la dispersión de rayos α indican que algunas de
+las partículas α deben sufrir una desviación de más de un ángulo recto en
+un solo encuentro. Encontraron, por ejemplo, que una pequeña fracción de
+las partículas α incidentes, alrededor de 1 entre 20.000, se desvió un
+ángulo medio de 90° al pasar a través de una capa de hoja de oro de
+aproximadamente :00004 cm de espesor, lo cual era equivalente, en poder de
+frenado para la partícula α, a 1:6 milímetros de aire. Geiger ‡ mostró más
+tarde que el ángulo de desviación más probable para un haz de partículas α
+que atravesaba una hoja de oro de este espesor era de aproximadamente 0°87.
+Un cálculo sencillo basado en la teoría de la probabilidad muestra que la
+probabilidad de que una partícula α sea desviada 90° es infinitesimalmente
+pequeña. Además, como se verá más adelante, la distribución de las
+partículas α para varios ángulos de gran desviación no sigue la ley de
+probabilidad que cabría esperar si tales grandes desviaciones estuvieran
+compuestas por un gran número de pequeñas desviaciones. Parece razonable
+suponer que la desviación a través de un gran ángulo se debe a un solo
+encuentro atómico, pues la probabilidad de un segundo encuentro de un tipo
+capaz de producir una gran desviación debe, en la mayoría de los casos, ser
+extraordinariamente pequeña. Un cálculo simple muestra que el átomo debe
+ser el asiento de un campo eléctrico intenso para producir una desviación
+tan grande en un solo encuentro. Recientemente Sir J. J. Thomson § ha
+propuesto una teoría para explicar la dispersión de partículas
+electrificadas al pasar a través de pequeños espesores de materia. Se
+supone que el átomo consiste en un número N de corpúsculos cargados
+negativamente, acompañados por una cantidad igual de electricidad positiva
+uniformemente distribuida a lo largo de una esfera. La desviación de una
+partícula electrificada negativamente al pasar a través del átomo se
+atribuye a dos causas—(1) la repulsión de los corpúsculos distribuidos por
+el átomo, y (2) la atracción de la electricidad positiva en el átomo. Se
+supone que la desviación de la partícula al pasar a través del átomo es
+pequeña, mientras que la desviación media después de un gran número m de
+encuentros se tomó como √m·θ, donde θ es la desviación media debida a un
+solo átomo. Se mostró que el número N de los electrones dentro del átomo
+podía deducirse de observaciones de la dispersión de partículas
+electrificadas. La exactitud de esta teoría de dispersión compuesta fue
+examinada experimentalmente por Crowther* en un trabajo posterior. Sus
+resultados aparentemente confirmaron las principales conclusiones de la
+teoría, y dedujo, bajo el supuesto de que la electricidad positiva era
+continua, que el número de electrones en un átomo era aproximadamente tres
+veces su peso atómico. La teoría de Sir J. J. Thomson se basa en el
+supuesto de que la dispersión debida a un único encuentro atómico es
+pequeña, y la estructura particular supuesta para el átomo no admite una
+desviación muy grande de una partícula a al atravesar un solo átomo, a
+menos que se suponga que el diámetro de la esfera de electricidad positiva
+es minúsculo en comparación con el diámetro de la esfera de influencia del
+átomo.
+
+Puesto que las partículas a y ££ atraviesan el átomo, debería ser posible, a
+partir de un estudio minucioso de la naturaleza de la desviación, formarse
+alguna idea de la constitución del átomo que produce los efectos observados.
+De hecho, la dispersión de partículas cargadas de alta velocidad por los
+átomos de la materia es uno de los métodos de ataque más prometedores de este
+problema. El desarrollo del método de centelleo para contar partículas «
+individuales ofrece ventajas inusuales para la investigación, y las
+investigaciones de H. Geiger mediante este método ya han añadido mucho a
+nuestro conocimiento de la dispersión de rayos a por la materia.
+
+
+[* Comunicada por el autor. Un breve informe de este trabajo fue comunicado a
+la Sociedad Literaria y Filosófica de Manchester en febrero de 1911.
+† Proc. Roy. Soc. lxxxii, p. 495 (1909).
+‡ Proc. Roy. Soc. lxxxiii. p. 492 (1910).
+§ Camb. Lit. & Phil. Soc. xv. pt. 5 (1910).]
+
+
+
+
+[* Crowther, Proc. Roy. Soc, lxxxiv. p. 226 (1910).
+La desviación de una partícula a a través de un ángulo considerable debida a
+un encuentro con un solo átomo se denominará en este trabajo “dispersión”
+individual. La desviación de una partícula resultante de una multitud de
+pequeñas desviaciones se denominará “dispersión compuesta”.]
+
+
+§ 2. Examinaremos primero teóricamente los encuentros individuales* con un
+átomo de estructura simple, que sea capaz de producir grandes desviaciones
+de una partícula «, y luego comparar las deducciones de la teoría con los
+datos experimentales disponibles. Considérese un átomo que contiene una
+carga +Ne en su centro rodeada por una esfera de electrificación que
+contiene una carga + Ne, supuesta uniformemente distribuida por toda la
+esfera de radio R. e es la unidad fundamental de carga, que en este trabajo
+se toma como 4.65x10^-10 unidad E.s. Supondremos que, para distancias
+menores que 10^-11 cm, la carga central y también la carga de la partícula
+a pueden suponerse concentradas en un punto. Se mostrará que las
+principales deducciones de la teoría son independientes de si se supone que
+la carga central es positiva o negativa. Por conveniencia, se supondrá que
+el signo es positivo. La cuestión de la estabilidad del átomo propuesto no
+necesita considerarse en esta etapa, pues esto obviamente dependerá de la
+estructura minuciosa del átomo, y del movimiento de las partes cargadas
+constituyentes.
+
+Para formarse alguna idea de las fuerzas requeridas para desviar una partícula
+a a través de un gran ángulo, considérese un átomo que contiene una carga
+positiva Ne en su centro, y rodeado por una distribución de electricidad
+negativa No uniformemente distribuida dentro de una esfera de radio R. La
+fuerza eléctrica X y el potencial V a una distancia r del centro de un átomo
+para un punto dentro del átomo, vienen dados por
+
+EQ
+
+EQ
+
+Supóngase una partícula « de masa m y velocidad uv y carga E disparada
+directamente hacia el centro del átomo. Será llevada al reposo a una
+distancia b del centro dada por
+
+EQ
+
+Se verá que b es una cantidad importante en cálculos posteriores. Suponiendo
+que la carga central es 100 e, se puede calcular que el valor de b para una
+partícula «a de velocidad 2:09 x 10^9 cms. por segundo es aproximadamente 3.4
+x 10^-13 cm. En este cálculo se supone que 6 es muy pequeña en comparación
+con R. Puesto que se supone que R es del orden del radio del átomo, a saber,
+10^-8 cm, es obvio que la partícula a antes de ser devuelta penetra tan cerca
+de la carga central, de modo que el campo debido a la distribución uniforme
+de electricidad negativa puede despreciarse. En general, un cálculo sencillo
+muestra que, para todas las desviaciones mayores de un grado, podemos
+suponer, sin error apreciable, que la desviación se debe únicamente al campo
+de la carga central. En esta etapa de la teoría no se tienen en cuenta
+posibles desviaciones individuales debidas a la electricidad negativa, si
+estuviera distribuida en forma de corpúsculos. Se mostrará más adelante que,
+en general, su efecto es pequeño en comparación con el debido al campo
+central.
+
+Consideremos el paso de una partícula con carga positiva cerca del centro de
+un átomo. Suponiendo que la velocidad de la partícula no se modifica
+apreciablemente por su paso a través del átomo, la trayectoria de la
+partícula bajo la influencia de una fuerza repulsiva que varía inversamente
+con el cuadrado de la distancia será una hipérbola, con el centro del átomo $
+como foco externo. Supóngase que la partícula entra en el átomo en la
+dirección PO (fig. 1), y que la dirección del movimiento
+
+Fig. 1.
+
+
+al salir del átomo es OP'. OP y OP' forman ángulos iguales con la línea SA,
+donde A es el ápside de la hipérbola. p = SN = distancia perpendicular desde
+el centro a la dirección del movimiento inicial de la partícula, Sea el
+ángulo POA = 0. Sea V = velocidad de la partícula al entrar en el átomo, v su
+velocidad en A; entonces, a partir de la consideración del momento angular,
+
+EQ
+
+Por conservación de la energía
+
+EQ EQ
+
+Como la excentricidad es sec O,
+
+EQ EQ EQ EQ
+
+El ángulo de desviación q de la partícula es r — 20 y
+
+EQ
+
+Esto da el ángulo de desviación de la partícula en función de d y de la
+distancia perpendicular de la dirección de proyección respecto del centro del
+átomo.
+
+A modo de ilustración, el ángulo de desviación $ para diferentes valores de
+2/0 se muestra en la siguiente tabla:—
+
+TABLA
+
+§ 3. Probabilidad de una sola deflexión a través de cualquier ángulo.
+
+Supóngase que un haz de partículas electrificadas incide normalmente sobre una
+pantalla delgada de materia de espesor t. Con la excepción de las pocas
+partículas que se dispersan a través de un gran ángulo, se supone que las
+partículas pasan casi normalmente a través de la lámina con sólo un pequeño
+cambio de velocidad. Sea n = número de átomos en el volumen unitario del
+material. Entonces el número de colisiones de la partícula con el átomo de
+radio R es πR^2nt en el espesor t.
+
+[* Una consideración simple muestra que la deflexión no se altera si las
+fuerzas son atractivas en lugar de repulsivas.]
+
+La probabilidad m de entrar en un átomo a una distancia p de su centro viene
+dada por
+
+m=πp^2nt,
+
+La probabilidad dm de golpear dentro de los radios p y p+dp viene dada por
+
+dm=2πpnt . dp = ½ab cot φ/2 cosec^3 φ/2 dφ, . (2)
+
+puesto que cot φ/2=2p/b.
+
+El valor de dm da la fracción del número total de partículas que se desvían
+entre los ángulos φ y φ+dφ.
+
+La fracción p del número total de partículas que son desviadas a través de un
+ángulo mayor que φ viene dada por
+
+p=¼πntb^2 cot^2 φ/2 . (3)
+
+La fracción p que se desvía entre los ángulos φ1 y φ2 viene dada por
+
+p=¼πntb^2 (cot^2 φ1/2 —cot^2 φ2/2) . (4)
+
+Es conveniente expresar la ecuación (2) en otra forma para compararla con el
+experimento. En el caso de los rayos α, se cuenta el número de centelleos que
+aparecen sobre un área constante de una pantalla de sulfuro de zinc para
+diferentes ángulos con la dirección de incidencia de las partículas. Sea r =
+distancia desde el punto de incidencia de los rayos α sobre el material
+dispersor; entonces, si Q es el número total de partículas que inciden sobre
+el material dispersor, el número y de partículas α que caen por unidad de
+área y que se desvían a través de un ángulo φ viene dado por
+
+y = Qdm / (2πr^2 sin φ dφ) = (Qntb^2 /(16πr^2)) cosec^4 φ/2 .
+
+Como b=EQ, vemos por esta ecuación que el número de partículas α
+(centelleos) por unidad de área de la pantalla de sulfuro de zinc a una
+distancia dada r desde el punto de incidencia de los rayos es proporcional a
+
+(1) cosec^4 φ/2 o 1/φ^4 si φ es pequeño;
+
+(2) el espesor del material dispersor t, siempre que éste sea pequeño;
+
+(3) la magnitud de la carga central Ne;
+
+(4) y es inversamente proporcional a (mu^2)^2, o a la cuarta potencia de la
+velocidad si m es constante.
+
+En estos cálculos, se supone que las partículas α dispersadas a través de un
+gran ángulo sufren sólo una gran deflexión. Para que esto se cumpla, es
+esencial que el espesor del material dispersor sea tan pequeño que la
+probabilidad de un segundo encuentro que implique otra gran deflexión sea muy
+pequeña. Si, por ejemplo, la probabilidad de una sola deflexión φ al
+atravesar un espesor t es 1/1000, la probabilidad de dos deflexiones
+sucesivas, cada una de valor φ, es 1/10^6, y es despreciablemente pequeña.
+
+La distribución angular de las partículas α dispersadas por una lámina
+metálica delgada proporciona uno de los métodos más sencillos de comprobar la
+corrección general de esta teoría de dispersión simple. Esto se ha hecho
+recientemente para rayos α por el Dr. Geiger *, quien encontró que la
+distribución para partículas desviadas entre 30° y 150° por una lámina
+delgada de oro estaba en acuerdo sustancial con la teoría. Un informe más
+detallado de éstos y otros experimentos para comprobar la validez de la
+teoría se publicará más adelante.
+
+§ 4. Alteración de la velocidad en un encuentro atómico.
+
+Hasta ahora se ha supuesto que una partícula a o 4 no sufre un cambio
+apreciable de velocidad como resultado de un único encuentro atómico que
+produzca una gran deflexión de la partícula. El efecto de tal encuentro en la
+alteración de la velocidad de la partícula puede calcularse bajo ciertas
+suposiciones. Se supone que solo intervienen dos sistemas, a saber, la
+partícula que se mueve rápidamente y el átomo que atraviesa, supuesto
+inicialmente en reposo. Se supone que se aplica el principio de conservación
+del momento y de la energía, y que no hay una pérdida apreciable de energía o
+momento por radiación.
+
+[* Manch. Lit. £ Phil. Soc, 1910.]
+
+
+Sea m la masa de la partícula, 1, = velocidad de aproximación, 2, = velocidad
+de alejamiento, M = masa del átomo,
+
+V = velocidad comunicada al átomo como resultado del encuentro.
+
+Sea OA (fig. 2) la representación, en magnitud y dirección, del momento mv, de
+la partícula incidente, y OB el momento de la partícula que se aleja Fig. 2.
+la cual ha sido desviada a través de un B ángulo AOB=g. Entonces BA
+representa, en magnitud y dirección, el momento MV del átomo que retrocede.
+
+EQ (1)
+
+Por la conservación de la energía
+
+EQ. . . (2)
+
+Supóngase M/m=K y EQ, donde A
+
+De (1) y (2),
+
+EQ EQ
+
+Considérese el caso de una partícula «a de peso atómico 4, desviada a través
+de un angUlo de 90 por un encuentro con un
+
+átomo de oro de peso atómico 197. Puesto que K=49 aproximadamente,
+
+EQ
+
+
+o bien, la velocidad de la partícula se reduce solo alrededor de un 2 por
+ciento por el encuentro. En el caso del aluminio K =27/4 y para q = 90 rho =
+86. Se ve que la reducción de la velocidad de la partícula alfa se hace
+marcada en esta teoría para encuentros con los átomos más ligeros. Puesto que
+el alcance de una partícula «a en el aire u otra materia es aproximadamente
+proporcional al cubo de la velocidad, se sigue que una partícula «a de
+alcance 7 cms. tiene su alcance reducido a 43 cms. después de incurrir en un
+solo desviación de 90 al atravesar un átomo de aluminio. Esto es de una
+magnitud que puede detectarse fácilmente de manera experimental. Dado que el
+valor de K es muy grande para un encuentro de una partícula beta con un
+átomo, la reducción de velocidad según esta fórmula es muy pequeña.
+
+Algunos casos muy interesantes de la teoría surgen al con- siderar los cambios
+de velocidad y la distribución de partículas dispersadas cuando la
+partícula «a encuentra un átomo ligero, por ejemplo un átomo de hidrógeno o
+helio. Una discusión de estos y casos similares se reserva hasta que la
+cuestión haya sido examinada experimentalmente.
+
+§ 5. Comparación de la dispersión simple y compuesta.
+
+Antes de comparar los resultados de la teoría con el experimento, es
+conveniente considerar la importancia relativa de la dispersión simple y
+compuesta al determinar la distribución de las partículas dispersadas. Dado
+que se supone que el átomo con- siste en una carga central rodeada por una
+distribución uniforme del signo opuesto a través de una esfera de radio R, la
+probabilidad de encuentros con el átomo que impliquen pequeñas deflexiones es
+muy grande en comparación con la probabilidad de una única gran deflexión,
+
+Esta cuestión de la dispersión compuesta “ha sido examinada por Sir 4. J.
+Thomson en el trabajo discutido previamente ($ 1). En la notación de este
+trabajo, la deflexión media $, debida al campo de la esfera de electricidad
+positiva de radio K y cantidad Ne, fue encontrada por él como
+
+EQ
+
+La deflexión media q, debida a los N corpúsculos negativos supuestos
+distribuidos uniformemente en toda la esfera fue encontrada como
+
+EQ
+
+La deflexión media debida tanto a la electricidad positiva como a la negativa
+se tomó como
+
+EQ
+
+De manera similar, 16 no es difícil calcular la deflexión media debida al
+átomo con una carga central discutido en este trabajo.
+
+Dado que el campo eléctrico radial X a cualquier distancia 7 del
+
+EQ
+
+no es difícil mostrar que la desviación (supuestamente pequeña) de una
+partícula electrificada debida a este campo viene dada por
+
+EQ
+
+donde p es la perpendicular desde el centro a la trayectoria de la partícula y
+b tiene el mismo valor que antes. Se ve que el valor de 9 aumenta al
+disminuir p y llega a ser grande para valores pequeños de phi,
+
+Puesto que ya hemos visto que las desviaciones llegan a ser muy grandes para
+una partícula que pasa cerca del centro del átomo, es obviamente incorrecto
+hallar el valor medio suponiendo que 0 es pequeño.
+
+Tomando R del orden de 10—*cm., el valor de p para una gran desviación es,
+para partículas a y f, del orden de 107% cm. Dado que la probabilidad de un
+encuentro que implique una gran defiexión es pequeña en comparación con la
+probabilidad de pequeñas deflexiones, una consideración simple muestra que la
+deflexión pequeña promedio prácticamente no se altera si se omiten las
+grandes deflexiones. Esto equivale a integrar sobre aquella parte de la
+sección transversal del átomo donde las deflexiones son pequeñas y despreciar
+la pequeña zona central. De este modo puede mostrarse simplemente que la
+deflexión pequeña promedio viene dada por
+
+EQ
+
+Este valor de q, para el átomo con una carga central concentrada es tres veces
+la magnitud de la deflexión promedio para el mismo valor de Ne en el tipo de
+átomo examinado por Sir 4. J3. Thomson. Combinando las deflexiones debidas al
+campo eléctrico y a los corpúsculos, la deflexión promedio es
+
+EQ
+
+Se verá más adelante que el valor de N es casi proporcional al peso atómico, y
+es aproximadamente 100 para el oro. El efecto debido a la dispersión de los
+corpúsculos individuales expresado por el segundo término de la ecuación es,
+en consecuencia, pequeño para átomos pesados en comparación con el debido al
+campo eléctrico distribuido.
+
+Despreciando el segundo término, la deflexión promedio por átomo es EQ Ahora
+estamos en condiciones de considerar los efectos relativos sobre la
+distribución de partículas debidos a la dispersión simple y a la compuesta.
+Siguiendo el argumento de J. JY. Thomson, la deflexión promedio 0, después de
+pasar a través de un espesor £ de materia es proporcional a la raíz cuadrada
+del número de encuentros y está dada por
+
+EQ
+
+donde n como antes es igual al número de átomos por unidad de volumen. La
+probabilidad pp; para dispersión compuesta de que la deflexión de la
+partícula sea mayor que $ es igual a 4702,
+
+EQ
+
+Consecuentemente EQ
+
+Supongamos ahora que sólo actúa la dispersión simple. Hemos visto (§ 3) que la
+probabilidad pz de una deflexión mayor que b está dada por
+
+EQ
+
+Comparando estas dos ecuaciones
+
+EQ
+
+phi es suficientemente pequeño de modo que
+
+EQ EQ
+
+Si suponemos p2="5, entonces p,="24,
+
+EQ
+
+Es evidente a partir de esta comparación que la probabilidad para cualquier
+deflexión dada es siempre mayor para la dispersión simple que para la
+dispersión compuesta. La diferencia es especialmente marcada cuando sólo una
+pequeña fracción de las partículas se dispersa a través de cualquier ángulo
+dado. Se deduce de este resultado que la distribución de partículas debida a
+encuentros con los átomos está, para pequeños espesores, gobernada
+principalmente por la dispersión simple. Sin duda la dispersión compuesta
+produce algún efecto en igualar la distribución de las partículas
+dispersadas; pero su efecto se vuelve relativamente menor cuanto menor es la
+fracción de las particlos dispersadas a través de un ángulo dado.
+
+§ 6. Comparación de la teoría con los experimentos.
+
+En la presente teoría, el valor de la carga central Ne es una constante
+importante, y es deseable determinar su valor para distintos átomos. Esto
+puede hacerse de la manera más simple determinando la pequeña fracción de
+partículas α o β de velocidad conocida que inciden sobre una pantalla
+metálica delgada, y que se dispersan entre φ y φ + dφ, donde φ es el ángulo
+de desviación. La influencia de la dispersión compuesta debería ser pequeña
+cuando esta fracción es pequeña.
+
+Se están realizando experimentos en estas direcciones, pero en esta etapa es
+deseable discutir, a la luz de la presente teoría, los datos ya publicados
+sobre la dispersión de partículas α y β.
+
+Se discutirán los siguientes puntos:—
+
+(a) La “reflexión difusa” de las partículas α, es decir, la dispersión de
+partículas α a través de grandes ángulos (Geiger y Marsden).
+
+(b) La variación de la reflexión difusa con el peso atómico del radiador
+(Geiger y Marsden).
+
+(c) La dispersión media de un haz de rayos α transmitido a través de una placa
+metálica delgada (Geiger).
+
+(d) Los experimentos de Crowther sobre la dispersión de rayos β de distintas
+velocidades por diversos metales,
+
+(a) En el artículo de Geiger y Marsden (loc. cit.) sobre la reflexión difusa
+de partículas α que inciden sobre diversas sustancias se mostró que alrededor
+de 1/8000 de las partículas α del radio C que inciden sobre una placa gruesa
+de platino se dispersan de vuelta en la dirección de la incidencia. Esta
+fracción se deduce sobre la suposición de que las partículas α se dispersan
+uniformemente en todas las direcciones, efectuándose las observaciones para
+una desviación de alrededor de 90°. La forma del experimento no es muy
+adecuada para un cálculo exacto, pero a partir de los datos disponibles puede
+mostrarse que la dispersión observada es aproximadamente la que cabría
+esperar según la teoría si el átomo de platino tiene una carga central de
+alrededor de 100 e.
+
+(b) En sus experimentos sobre este tema, Geiger y Marsden dieron el número
+relativo de partículas α reflejadas de manera difusa por capas gruesas de
+distintos metales, en condiciones similares. Los números obtenidos por ellos
+se dan en la tabla de abajo, donde z representa el número relativo de
+partículas dispersadas, medido por el número de centelleos por minuto en una
+pantalla de sulfuro de zinc. 18:01 24 de marzo de 2011
+
+
+TABLA
+
+Según la teoría de la dispersión simple, la fracción del número total de
+partículas α dispersadas a través de cualquier ángulo dado al atravesar un
+espesor t es proporcional a n.A², suponiendo que la carga central es
+proporcional al peso atómico A. En el presente caso, el espesor de materia
+desde el cual las partículas α dispersadas pueden emerger y afectar la
+pantalla de sulfuro de zinc depende del metal. Puesto que Bragg ha mostrado
+que el poder de frenado de un átomo para una partícula α es proporcional a la
+raíz cuadrada de su peso atómico, el valor de nt para distintos elementos es
+proporcional a 1/√A. En este caso t representa la mayor profundidad desde la
+cual emergen las partículas α dispersadas. El número z de partículas α
+dispersadas hacia atrás desde una capa gruesa es, en consecuencia,
+proporcional a A^3/2, o bien z/A^3/2 debería ser una constante.
+
+Para comparar esta deducción con el experimento, los valores relativos de este
+último cociente se dan en la última columna. Considerando la dificultad de
+los experimentos, el acuerdo entre teoría y experimento es razonablemente
+bueno *.
+
+[_ * En este cálculo se desprecia el efecto del cambio de velocidad en un
+encuentro atómico. Phil. Mag. 5. 6. Vol. 21. Núm. 125. Mayo de 1911. 2 Y]
+
+La dispersión simple grande de las partículas α afectará, de manera evidente,
+en cierta medida, la forma de la curva de ionización de Bragg para un haz de
+rayos α. Este efecto de gran dispersión debería ser marcado cuando los rayos
+α han atravesado pantallas de metales de alto peso atómico, pero debería ser
+pequeño para átomos de bajo peso atómico.(c) Geiger realizó una determinación
+cuidadosa de la dispersión de partículas α que atraviesan láminas metálicas
+delgadas, mediante el método de centelleo, y dedujo el ángulo más probable
+bajo el cual las partículas α se desvían al pasar a través de espesores
+conocidos de distintos tipos de materia. Se utilizó como fuente un haz
+estrecho de rayos α homogéneos. Después de pasar a través de la lámina
+dispersora, se midió directamente el número total de partículas α desviadas a
+través de diferentes ángulos. El ángulo para el cual el número de partículas
+dispersadas era máximo se tomó como el ángulo más probable. Se determinó la
+variación del ángulo más probable con el espesor de la materia, pero el
+cálculo a partir de estos datos se complica en cierta medida por la variación
+de la velocidad de las partículas α en su paso a través del material
+dispersor. Una consideración de la curva de distribución de las partículas α
+dada en el artículo (loc. cit. p. 496) muestra que el ángulo a través del
+cual se dispersa la mitad de las partículas es alrededor de un 20 por ciento
+mayor que el ángulo más probable.
+
+Ya hemos visto que la dispersión compuesta puede llegar a ser importante
+cuando aproximadamente la mitad de las partículas se dispersan a través de un
+ángulo dado, y en tales casos es difícil separar los efectos relativos
+debidos a los dos tipos de dispersión. Puede hacerse una estimación
+aproximada del modo siguiente:— De (§ 5) la relación entre las probabilidades
+p₁ y p₂ para dispersión compuesta y dispersión simple respectivamente viene
+dada por
+
+EQ
+
+La probabilidad q de los efectos combinados puede, como primera aproximación,
+tomarse como
+
+EQ
+
+Si EQ, se sigue que
+
+EQ y EQ
+
+Hemos visto que la probabilidad p₁ de una sola desviación mayor que φ viene
+dada por
+
+EQ
+
+EQ
+
+Puesto que en los experimentos considerados € es comparativamente pequeño
+
+EQ
+
+
+Geiger encontró que el ángulo más probable de dispersión de los rayos α al
+pasar a través de un espesor de oro equivalente en poder de frenado a
+aproximadamente :76 cm. de aire era 19 40”. El ángulo φ a través del cual se
+desvía la mitad de las partículas α, por tanto, corresponde a 2°
+aproximadamente.
+
+EQ EQ EQ
+
+Tomando la probabilidad de dispersión simple ="46 y sustituyendo los valores
+anteriores en la fórmula, el valor de N para el oro resulta ser 97.
+
+Para un espesor de oro equivalente en poder de frenado a 2:12 cms. de aire,
+Geiger encontró que el ángulo más probable era 3 40. En este caso t=0.00047,
+h=4 4, y u medio= 1.7x10^9 y N resulta ser 114.
+
+Geiger mostró que el ángulo más probable de desviación para un átomo era casi
+proporcional a su peso atómico. En consecuencia se sigue que el valor de N
+para distintos átomos debería ser casi proporcional a sus pesos atómicos, al
+menos para pesos atómicos entre el oro y el aluminio.
+
+Puesto que el peso atómico del platino es casi igual al del oro, se sigue de
+estas consideraciones que la magnitud de la reflexión difusa de partículas α
+a través de más de 90° en el oro y la magnitud de la dispersión media a
+pequeños ángulos de un haz de rayos al atravesar una lámina de oro se
+explican ambas bajo la hipótesis de dispersión simple suponiendo que el átomo
+de oro tiene una carga central de alrededor de 100 e.
+
+(d) Experimentos de Crowther sobre la dispersión de rayos β.— Consideraremos
+ahora en qué medida los resultados experimentales de Crowther sobre la
+dispersión de partículas β de diferentes velocidades por diversos materiales
+pueden explicarse por la teoría general de la dispersión simple. Según esta
+teoría, la fracción de partículas β p desviadas a través de un ángulo mayor
+que φ está dada por
+
+EQ
+
+En la mayoría de los experimentos de Crowther, phi es suficientemente pequeño
+como para que tan p/2 pueda tomarse igual a phi/2 sin mucho error.
+
+En consecuencia
+
+EQ
+
+En la teoría de la dispersión compuesta, ya hemos visto que la probabilidad p,
+de que la desviación de las partículas sea mayor que phi viene dada por
+
+EQ
+
+
+Puesto que en los experimentos de Crowther se determinó el espesor t de
+materia para el cual p, =1/2,
+
+EQ
+
+Para una probabilidad de 1/2, las teorías de dispersión simple y compuesta 2Y2
+son así idénticas en su forma general, pero difieren por una constante
+numérica. Así queda claro que las relaciones principales en la teoría de la
+dispersión compuesta de Sir J, J. Thomson, que fueron verificadas
+experimentalmente por Crowther, se mantienen igualmente bien en la teoría de
+la dispersión simple.
+
+Por ejemplo, si tm es el espesor para el cual la mitad de las partículas se
+dispersa a través de un ángulo d, Crowther mostró que p| Y to y también E Y
+ti eran constantes para un material dado cuando phi era fijo. Estas
+relaciones se mantienen también en la teoría de la dispersión simple. A pesar
+de esta aparente similitud de forma, las dos teorías son fundamentalmente
+diferentes. En un caso, los efectos observados se deben a efectos
+acumulativos de pequeñas desviaciones, mientras que en el otro se supone que
+las grandes desviaciones resultan de un solo encuentro. La distribución de
+partículas dispersadas es totalmente diferente en las dos teorías cuando la
+probabilidad de desviación mayor que q es pequeña.
+
+Ya hemos visto que la distribución de las partículas dispersadas a diversos
+ángulos ha sido hallada por Geiger en acuerdo sustancial con la teoría de la
+dispersión simple, pero no puede explicarse únicamente con la teoría de la
+dispersión compuesta. Puesto que hay toda razón para creer que las leyes de
+dispersión de las partículas alfa y beta son muy similares, la ley de
+distribución de las partículas 8 dispersadas debería ser la misma que para
+las partículas « para espesores pequeños de materia. Dado que el valor de
+mu*/E para las partículas beta es en la mayoría de los casos mucho menor que
+el valor correspondiente para las partículas alfa, la probabilidad de grandes
+desviaciones simples para las partículas beta al atravesar un espesor dado de
+materia es mucho mayor que para las partículas alfa. Puesto que en la teoría
+de la dispersión simple la fracción del número de partículas que se desvían a
+través de un ángulo dado es proporcional a kt, donde t es el espesor supuesto
+pequeño y % una constante, el número de partículas que no se desvían a través
+de este ángulo es proporcional a EQ. A partir de consideraciones basadas en
+la teoría de la dispersión compuesta, Sir Y. J. Thomson dedujo que la
+probabilidad de desviación menor que EQ es proporcional a EQ donde EQ es una
+constante para cualquier valor dado de q. La corrección de esta última
+fórmula fue probada por Crowther midiendo eléctricamente la fracción 1/I, de
+las partículas dispersadas A que pasaban por una abertura circular sub-
+tendiendo un ángulo de 36? con el material dispersor. Si
+
+EQ
+
+
+el valor de I debería disminuir muy lentamente al principio con aumento de t.
+Crowther, usando aluminio como «material de dispersión», afirma que la
+variación de EQ, estaba en buen acuerdo con esta teoría para valores pequeños
+de t. Por otra parte, si está presente la dispersión simple, como sin duda lo
+está para los rayos a, la curva que muestra la relación entre EQ, y EQ
+debería ser casi lineal en las etapas iniciales. Los experimentos de Madsen *
+sobre la dispersión de los rayos EQ, aunque no se realizaron con un espesor
+de aluminio tan pequeño como el usado por Crowther, ciertamente apoyan tal
+conclusión. Considerando la importancia del punto en cuestión, son deseables
+más experimentos sobre esta cuestión.
+
+A partir de la tabla dada por Crowther del valor +l Y Em para diferentes
+elementos para rayos 8 de velocidad 2:68 x 101% cms. por segundo, se pueden
+calcular los valores de la carga central Ne según la teoría de dispersión
+simple. Se supone, como en el caso de los rayos e, que para el valor dado de
+bp] Y tm la fracción de las partículas 8 desviadas por dispersión simple a
+través de un ángulo mayor que q es :46 en lugar de :5.
+
+Los valores de N calculados a partir de los datos de Crowther se dan a
+continuación.
+
+TABLA
+
+Se recordará que los valores de N para el oro deducidos de la dispersión de
+los rayos a fueron en dos cálculos 97 y 114. Estos números son algo menores
+que los valores dados arriba para el platino (a saber, 138), cuyo peso
+atómico no es muy diferente del oro. Teniendo en cuenta las incertidumbres
+implicadas en el cálculo a partir de los datos experimentales, el acuerdo es
+lo suficientemente estrecho como para indicar que las mismas leyes generales
+de dispersión se mantienen para las partículas a y £, a pesar de las grandes
+diferencias en la velocidad relativa y la masa de estas partículas.
+
+Como en el caso de los « rayos, el valor de N debería determinarse de la
+manera más sencilla para cualquier elemento dado midiendo.
+
+[* Phil. Mag, xviii. pág. 909 (1909).]
+
+la pequeña fracción de las partículas incidentes beta dispersadas a través de
+un gran ángulo. De este modo, se evitarán posibles errores debidos a una
+dispersión pequeña. Los datos de dispersión para los rayos £, así como para
+los rayos e, indican que la carga central en un átomo es aproximadamente
+proporcional a su peso atómico. Esto concuerda con las deducciones
+experimentales de Schmidt”. En su teoría de la absorción de rayos 8, supuso
+que, al atravesar una lámina delgada de materia, una pequeña fracción a de
+las partículas se detiene, y una pequeña fracción beta se refleja o se
+dispersa hacia atrás en la dirección de incidencia. A partir de la
+comparación de las curvas de absorción de diferentes elementos, dedujo que el
+valor de la constante £ para diferentes elementos es proporcional a EQ donde
+n es el número de átomos por unidad de volumen y A el peso atómico del
+elemento. Esta es exactamente la relación que cabe esperar según la teoría de
+dispersión simple si la carga central en un átomo es proporcional a su peso
+atómico.
+
+§ 7. Consideraciones generales.
+
+Al comparar la teoría expuesta en este trabajo con los resultados
+experimentales, se ha supuesto que el átomo consiste en una carga central
+supuesta concentrada en un punto, y que las grandes desviaciones únicas de
+las partículas
+« y £ se deben principalmente a su paso a través del intenso campo central. Se
+ha despreciado el efecto de la carga compensadora igual y opuesta, supuesta
+distribuida uniformemente en el interior de una esfera. A continuación se
+considerará brevemente parte de la evidencia en apoyo de estas
+suposiciones. Para mayor concreción, considérese el paso de una partícula «
+de alta velocidad a través de un átomo que tiene una carga central positiva
+Ne, y está rodeado por una carga compensadora de N electrones. Recordando
+que la masa, el momento y la energía cinética de la partícula « son muy
+grandes en comparación con los valores correspondientes para un electrón en
+rápido movimiento, no parece posible, por consideraciones dinámicas, que
+una partícula a pueda ser desviada a través de un ángulo grande por una
+aproximación muy cercana a un electrón, incluso si este último está en
+rápido movimiento y está constreñido por fuerzas eléctricas intensas.
+Parece razonable suponer que la probabilidad de desviaciones únicas a
+través de un ángulo grande debidas a esta causa, si no es cero, debe ser
+extraordinariamente pequeña en comparación con la debida a la carga
+central. Es de interés examinar hasta qué punto la evidencia experimental
+arroja luz sobre la cuestión de la extensión de la distribución de la carga
+central. Supóngase, por ejemplo, que la carga central esté compuesta por N
+cargas unitarias dis- tribuidas sobre un volumen tal que las grandes
+desviaciones únicas se deban principalmente a las cargas constituyentes y
+no al campo externo producido por la distribución. Se ha mostrado(§ 3) que
+la fracción de las partículas « dispersadas a través de un ángulo grande es
+proporcional a (NeE)², donde Ne es la carga central concentrada en un punto
+y E la carga de la partícula desviada. Si, sin embargo, esta carga está
+dis- tribuida en unidades simples, la fracción de las partículas a
+dispersadas a través de un ángulo dado es proporcional a Ne² en lugar de
+Ne. En este cálculo se ha despreciado la influencia de la masa de la
+partícula constituyente, y solo se ha tenido en cuenta su campo eléctrico.
+Dado que se ha mostrado que el valor de la carga central puntual para el
+oro debe ser de alrededor de 100, el valor de la carga distribuida
+requerido para producir la misma proporción de desviaciones únicas a través
+de un ángulo grande debería ser al menos 10.000. En estas condiciones la
+masa de la partícula constituyente sería pequeña en comparación con la de
+la partícula «, y surge la dificultad de la producción de grandes
+desviaciones únicas en absoluto. Además, con una carga distribuida tan
+grande, el efecto de la dispersión compuesta es relativamente más
+importante que el de la dispersión única. Por ejemplo, el ángulo pequeño
+probable de desviación de un haz de partículas « que atraviesan una lámina
+delgada de oro sería mucho mayor que el observado experimentalmente por
+Geiger (§ 6-c). La dispersión a grandes y pequeños ángulos no podría
+entonces explicarse mediante la suposición de una carga central del mismo
+valor. Considerando la evidencia en su conjunto, parece más sencillo
+suponer que el átomo contiene una carga central distribuida a través de un
+volumen muy pequeño, y que las grandes desviaciones únicas se deben a la
+carga central en su conjunto, y no a sus constituyentes. Al mismo tiempo,
+la evidencia experimental no es lo suficientemente precisa como para
+descartar la posibilidad de que una pequeña fracción de la carga positiva
+pueda ser transportada por satélites que se extienden a cierta distancia
+del centro. Se podría obtener evidencia sobre este punto examinando si se
+requiere la misma carga central para explicar las grandes desviaciones
+únicas de las partículas a y £; pues la partícula « debe acercarse mucho
+más  al centro del átomo que la partícula £ de velocidad media para sufrir
+la misma gran desviación. Los datos generales disponibles indican que el
+valor de esta carga central para distintos átomos es aproximadamente
+proporcional a sus pesos atómicos, al menos para los átomos más pesados que
+el aluminio. Será de gran interés examinar experimentalmente si una
+relación tan simple se cumple también para los átomos más ligeros. En los
+casos en que la masa del átomo desviador (por ejemplo, hidrógeno, helio,
+litio) no es muy diferente de la de la partícula a, la teoría general de la
+dispersión simple requerirá modificación, pues es necesario tener en cuenta
+los movimientos del propio átomo(véase § 4).
+
+[* Annal. d. Phys., iv, 23, p. 671 (1907).]
+
+Es interesante señalar que Nagaoka* ha considerado matemáticamente las
+propiedades de un átomo “saturniano” que supuso que consistía en una masa
+atractiva central rodeada por anillos de electrones en rotación. Mostró que
+un sistema así era estable si la fuerza atractiva era grande. Desde el punto
+de vista considerado en este artículo, la probabilidad de una gran desviación
+prácticamente no se vería alterada, se considere el átomo como un disco o
+como una esfera. Cabe señalar que el valor aproximado encontrado para la
+carga central del átomo de oro (100 e) es aproximadamente el que cabría
+esperar si el átomo de oro consistiera en 49 átomos de helio, cada uno
+portando una carga 2 e. Esto puede ser solo una coincidencia, pero resulta
+ciertamente sugerente en vista de la expulsión de átomos de helio que portan
+dos cargas unitarias desde la materia radiactiva,
+
+Las deducciones de la teoría considerada hasta ahora son independientes del
+signo de la carga central, y hasta el momento no ha sido posible obtener
+pruebas definitivas para determinar si es positiva o negativa. Podría ser
+posible resolver la cuestión del signo considerando la diferencia de las
+leyes de absorción de la partícula beta que cabría esperar bajo las dos
+hipótesis, pues el efecto de la radiación al reducir la velocidad de la
+partícula beta debería ser mucho más marcado con un centro positivo que con
+uno negativo. Si la carga central es positiva, se ve fácilmente que una masa
+con carga positiva, si se liberara desde el centro de un átomo pesado,
+adquiriría una gran velocidad al moverse a través del campo eléctrico. Quizá
+sea posible, de este modo, explicar la alta velocidad de expulsión de las
+partículas a sin suponer que inicialmente están en rápido movimiento dentro
+del átomo.
+
+Una consideración adicional sobre la aplicación de esta teoría a estas y otras
+cuestiones se reservará para un artículo posterior, cuando las principales
+deducciones de la teoría hayan sido probadas experimentalmente. Experimentos
+en esta dirección ya están en curso por Geiger y Marsden.
+
+Universidad de Manchester, abril de 1911.
+
+[* Nagaoka, Phil. Mag. vii. p. 445 (1904).]
+

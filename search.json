@@ -1,0 +1,115 @@
+[
+  {
+    "objectID": "trabajos practicos/tp 01.html",
+    "href": "trabajos practicos/tp 01.html",
+    "title": "TP 01",
+    "section": "",
+    "text": "Consignas\nEn la medida que se vayan viendo los contenidos necesarios, se deberán aplicar a la reproducción del famoso trabajo de Rutherford sobre la dispersión de las partículas alfa.\n\nPublicación original\nVersión web en inglés\nTraducción al español (sin ecuaciones)\n\nTrabajaremos tentativamente los siguientes elementos en cada clase\n\nTipografía. Estilos, tipo y tamaño (Clase 01)\nEstilos de párrafo: Titulos, subtítulos, niveles (Clase 01)\nFiguras e imágenes: Leyendas y remisiones (Clase 02)\nEcuaciones: Numeración y estructura. TexMaths (Clase 02 y Clase 03)\nEstilo de página: Tamaño, márgenes, encabezados y pies de página (Clase 04)\nPortadas y numeración (Clase 04)\nTablas(Clase 05)\nSumarios e índices: Lista de figuras, tablas, ecuaciones, índice, bibliografía. (Clase 05)\n\n\n\nModalidad y fecha de entrega\nVía aula virtual acá según fecha indicada en la tarea.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 01"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "C1-661",
+    "section": "",
+    "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
+  },
+  {
+    "objectID": "clases/clase-01.html",
+    "href": "clases/clase-01.html",
+    "title": "Libre Office",
+    "section": "",
+    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#formulario-de-bienvenida",
+    "href": "clases/clase-01.html#formulario-de-bienvenida",
+    "title": "Libre Office",
+    "section": "",
+    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#linux-y-el-software-libre",
+    "href": "clases/clase-01.html#linux-y-el-software-libre",
+    "title": "Libre Office",
+    "section": "Linux y el software libre",
+    "text": "Linux y el software libre\nNos nos vamos a adentrar demasiado en este tema, pero vale la pena hacer una breve descripción ya que estaremos usando en las computadoras del instituto tanto software libre como privativo y es necesario conocer las diferencias entre ambos modelos de gestión de software.\n\nLibre no significa gratis\nLa diferencia más notoria es respecto de acceso y permisos sobre el código, valga decir, la posibilidad de ver, modificar y/o redistribuirlo.\nEl software de código abierto es aquel que es público. Casi todo el software nació de esa manera. En los inicios el producto por excelencia era el hardware, y el software, era comúnmente compartido entre emrpesas, universidades, entidades de gobierno etc. que podían modificar, adaptar, encontrar errores y mejorar así el funcionamiento de sus instalaciones.\nLa historia oficial involucra a IBM, creador del sistema UNIX que de un momento a otro dejó de compartir su software con terceros, y de esa manera dió lugar a la aparición de sistemas que basándose en lo que ya era público fueron ofreciendo variantes. En estas categorías podemos incluir (simplificando un poco) tanto a Windows como a GNU-LINUX.\nWindows se limitó a constuir sobre lo que ya se tenía, pero adoptó el nuevo modelo de código cerrado. Tanto usuarios como programadores no pueden acceder a concoer cómo está hecho aquello que están usando, y por supuesto, tampoco modificarlo ni auditarlo. GNU-LINUX nace con la visión de que hacer el software de libre acceso produciría avances tecnológicos más rápidos, mejor control de los errores y una comunidad científica mejor comunicada entre si.\nComo dice el título de la sección, que el código sea libre de copiar, modificar o distribuir no significa que no haya modelos de negocio que puedan usarlo para ofrecer un sevicio que sí se cobra: desde el soporte técnico hasta modificaciones ad-hoc para clientes particulares.\nLa confusión respecto de libre vs gratis surge de que muchas organizaciones que trabajan con software libre ofrecen también versiones gratuitas de esos mismos productos, que conviven con versiones pagas que incluyen soporte extendido para el ámbito empresarial, personalizaciones, etc.\nEn resumen, el software libre tiene como principios la transparencia, y la auditabilidad como rectores éticos ligados al conocimiento científico. Si un proceso no puede ser puesto a prueba por otros expertos en el tema, su jerarquía, virtudes o prestaciones pueden ser cuestionadas. El ejemplo más claro en donde este paradigma entra en tensión es en la elaboración de medicamentos y alimentos. Si no es posible acceder a los detalles químicos y de fabricación de los alimentos y medicamentos ¿Cómo podemos saber que son seguros? De la misma manera ocurre con el software: El software cerrado no es auditable y la seguridad de los datos y equipos de los usuarios queda sólo en la confianza que éstos tengan en las virtudes técnicas y éticas de la entidad que los ofrece.",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#libre-office",
+    "href": "clases/clase-01.html#libre-office",
+    "title": "Libre Office",
+    "section": "Libre office",
+    "text": "Libre office\n\n¿Qué es libre office?\nLibre office es una suite de ofimática (herramientas de software para producción en entornos de trabajo) libre y de código abierto mantenida por sus propios usuarios. Es gratuita y en casi todos los casos igual o mejor que sus contrapartes no gratuitas.\n\n\n¿Para qué libre office?\nTodo trabajo, incluso aquellos que son la manufactura de algún producto requieren piezas de comunicación visual y escrita: manuales, tutoriales, folletos, informes, etc. La comunicación del quehacer de la ciencia no es la excepción: bitácoras e informes de laboratorio, artículos para revistas e instituciones científicas, libros de texto, de divulgación o material de estudio de caracter académico. Estos textos tienen cada uno su propio estilo de escritura y estructura según su función y algunos soportes preferidos por conveniencia, uso, costumbre en algunos casos y millones bien invertidos en otros.\nExisten formatos que son preferidos en ciertos ámbitos, como Latex para publicaciones científicas y parte del mundo editorial o softwares como in-design o illustrator para los mismos fines para otras publicaciones.\n\nNostoros usaremos libre office como soporte por su unviersalidad (todos podemos conseguirlo) y sabemos que siempre contaremos con el sofware: no dejaremos de tener acceso a lo que hicimos porque la nueva versión no es compatible (y la vieja ya no está disponible) y al tener una gran red de usuarios que pueden extender la funcionalidad del paquete: es posible encontrar extensiones que se vayan adaptando a nuestras necesidades.\nPor último pero no menos importante, siendo que Latex es el formato de-facto para publicaciones académicas o científicas ¿por qué no lo usamos? Sencillamente porque latex no es un procesador de texto. Es un lenguaje de programación completo y aprenderlo nos llevaría mucho mas tiempo del que tenemos en este curso, además de que para los fines de escribir informes de laboratorio el costo inversión de tiempo vs resultados obtenidos está bastante corrido a favor de lo primero: se requiere poner mucho en latex para obtener algo decente. Sin embargo como el tratamiento de las expresiones matemáticas que latex ofrece es superior a lo que cualquier procesador de texto traiga por defecto, lo incluiiremos en nuestro flujo de trabajo a través de la extensión tex maths\n\n\nInstalando libre office\nEn su web oficial podemos acceder a la sección descarga y desde allí bajar la versión que necesitemos. La útima disponible en general funciona con casi todos los dispositivos pero si tenemos probelmas en la instalación podemos buscar en la página alguna versión anterior.\n\nInstalando tex-maths\nEn este enlace se puede descargar la última versión. Una vez descargado se ejecuta e instala siguiendo los pasos que el instalador ofrece.\n\n\n\nAyuda en línea y manuales\nLa ayuda de libre office está en casi todos los idiomas, aunque a veces la traducción automática falla un poco (se “olvida” de traducir algún que otro párrafo) es bastante completa. Además podemos descargar manuales (los más actualizados están en inglés) en pdf para quienes prefieran buscar en un documento y no en la web o para cuando no se tenga acceso a internet.",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#libre-office-writer",
+    "href": "clases/clase-01.html#libre-office-writer",
+    "title": "Libre Office",
+    "section": "Libre Office-Writer",
+    "text": "Libre Office-Writer\n\nLista de videos \nEn esta lista de reproducción podrán ver una serie de videos que cubren bastatante de la funcionalidad de libre office Writer.\n\n\nEstilos en Writer\nHemos visto que desde el menú ver -&gt; barra de estilos accedemos a los estilos que vienen predefinidos para las diferentes secciones de writer: párrafo, página, listas, etc.\nA continuación les comparto algunos videos que resumen un poco lo que vimos en esta clase:\n\n\nEn versiones anteriores de libre office si bien los menús se ven diferentes, la dinámica es idéntica\n\n\n\n\nNiveles de jearquía numerados\nPor ejemplo, los niveles de titulo se pueden auto numerar yendo a herramientas -&gt; numeración de títulos\nEsta configuración no está disponible como un estilo predeterminado sino que se aplica a los estilos existentes o a aquellos creados que sean niveles de jerárquicos.\nEn la ayuda de libre office podemos ver una explicación un poco más detallada.",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#actividad-inicial",
+    "href": "clases/clase-01.html#actividad-inicial",
+    "title": "Libre Office",
+    "section": "Actividad inicial",
+    "text": "Actividad inicial\n\nArqueología de publicaciones\nInstrucciones inciales Los detalles de presentación los verán en las próximas clases en el apartado de trabajos prácticos y su entrega será vía el campus virtual.\nDe momento, alcanza conque sepan que deberán armar una versión del trabajo de Rutherord tomando como origen la traducción, junto a la versión web y como guía para el estilo visual la publicación original. Los elementos a tener en cuenta para este documento incial serán\n\nTipografía: tamaño y tipo de letra (encontrar alguna o algunas tipografías que puedan servir)\nEncabezados y pies de página\nTexto: interlineado, orientación, sangría\nTablas\nTamaño de página\nEcuaciones\n\nIremos trabajando los detalles de cada elemento en las primeras clases mientras exploramos las funciones elementales de Writer",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Computación 1-661",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "calendario.html",
+    "href": "calendario.html",
+    "title": "Calendario de clases",
+    "section": "",
+    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "calendario.html#calendario-de-clases",
+    "href": "calendario.html#calendario-de-clases",
+    "title": "Calendario de clases",
+    "section": "",
+    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  }
+]
