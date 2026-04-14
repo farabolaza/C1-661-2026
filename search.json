@@ -18,6 +18,101 @@
     "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
   },
   {
+    "objectID": "clases/clase-02.html",
+    "href": "clases/clase-02.html",
+    "title": "Writer 02",
+    "section": "",
+    "text": "En un documento de writer podemos agregar imágenes, gráficos, cuadros, tablas etc. con diferentes categorías de rotulos: es decir, podemos tener por un lado las imágenes, y por otro las tablas o cuadros e identificarlos con una numeración correlativa y de actualización secuencial automática para cada grupo.\nPara distinguir entre objetos se utilizan las leyendas y para mencionar dichos objetos se usan las remisiones. Veamos como\n\n\nPodemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.\n\n\n\nPara obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.\n\n\n\nSi se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda\n\n\n\n\n\nUna vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión\n\n\n\n\n\nLos estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#insertar-figuras-y-leyendas",
+    "href": "clases/clase-02.html#insertar-figuras-y-leyendas",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Podemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#posicionamiento",
+    "href": "clases/clase-02.html#posicionamiento",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Para obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#leyenda",
+    "href": "clases/clase-02.html#leyenda",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Si se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#remisiones",
+    "href": "clases/clase-02.html#remisiones",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Una vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#estilos",
+    "href": "clases/clase-02.html#estilos",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Los estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "calendario.html",
+    "href": "calendario.html",
+    "title": "Calendario de clases",
+    "section": "",
+    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "calendario.html#calendario-de-clases",
+    "href": "calendario.html#calendario-de-clases",
+    "title": "Calendario de clases",
+    "section": "",
+    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Computación 1-661",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "clases/clase-01.html",
     "href": "clases/clase-01.html",
     "title": "Libre Office",
@@ -81,35 +176,6 @@
     "crumbs": [
       "Clases",
       "Libre Office"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Computación 1-661",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "calendario.html",
-    "href": "calendario.html",
-    "title": "Calendario de clases",
-    "section": "",
-    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
-    "crumbs": [
-      "Info Cursada",
-      "Calendario de clases"
-    ]
-  },
-  {
-    "objectID": "calendario.html#calendario-de-clases",
-    "href": "calendario.html#calendario-de-clases",
-    "title": "Calendario de clases",
-    "section": "",
-    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
-    "crumbs": [
-      "Info Cursada",
-      "Calendario de clases"
     ]
   }
 ]
