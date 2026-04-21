@@ -18,99 +18,81 @@
     "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
   },
   {
-    "objectID": "clases/clase-02.html",
-    "href": "clases/clase-02.html",
-    "title": "Writer 02",
+    "objectID": "clases/clase-03.html",
+    "href": "clases/clase-03.html",
+    "title": "Writer 03",
     "section": "",
-    "text": "En un documento de writer podemos agregar imágenes, gráficos, cuadros, tablas etc. con diferentes categorías de rotulos: es decir, podemos tener por un lado las imágenes, y por otro las tablas o cuadros e identificarlos con una numeración correlativa y de actualización secuencial automática para cada grupo.\nPara distinguir entre objetos se utilizan las leyendas y para mencionar dichos objetos se usan las remisiones. Veamos como\n\n\nPodemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.\n\n\n\nPara obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.\n\n\n\nSi se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda\n\n\n\n\n\nUna vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión\n\n\n\n\n\nLos estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "text": "Libre office trae incorporado un editor de ecuaciones bastante aceptable, al nivel de Word u otros procesadores de texto. En comparativa, las versiones on-line tanto de Microsoft como de Google son bastante deficientes en cuanto al manejo de ecuaciones en relación a sus contrapartes que se instalan localmente.",
     "crumbs": [
       "Clases",
-      "Writer 02"
+      "Writer 03"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#insertar-figuras-y-leyendas",
-    "href": "clases/clase-02.html#insertar-figuras-y-leyendas",
-    "title": "Writer 02",
+    "objectID": "clases/clase-03.html#edición-de-ecuaciones-en-libre-office",
+    "href": "clases/clase-03.html#edición-de-ecuaciones-en-libre-office",
+    "title": "Writer 03",
     "section": "",
-    "text": "Podemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.",
+    "text": "Libre office trae incorporado un editor de ecuaciones bastante aceptable, al nivel de Word u otros procesadores de texto. En comparativa, las versiones on-line tanto de Microsoft como de Google son bastante deficientes en cuanto al manejo de ecuaciones en relación a sus contrapartes que se instalan localmente.",
     "crumbs": [
       "Clases",
-      "Writer 02"
+      "Writer 03"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#posicionamiento",
-    "href": "clases/clase-02.html#posicionamiento",
-    "title": "Writer 02",
-    "section": "",
-    "text": "Para obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.",
+    "objectID": "clases/clase-03.html#latex",
+    "href": "clases/clase-03.html#latex",
+    "title": "Writer 03",
+    "section": "Latex",
+    "text": "Latex\nLatex es un lenguaje de programación completo que ha sido y es actualmente usado como herramienta de diseño editorial. Muchos libros que compramos, en especial aquellos libros de texto de ciencias suelen escribirse usando Latex como lenguaje.\nLa relación entre resultados vs esfuerzo que Latex requiere no lo hace viable para nuestra materia aunque usaremos algo de sus funciones cuando editemos ecuaciones en nuestros documentos.\nUn breve manualcito de algunas cosas de latex que usaremos lo pueden consultar aca",
     "crumbs": [
       "Clases",
-      "Writer 02"
+      "Writer 03"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#leyenda",
-    "href": "clases/clase-02.html#leyenda",
-    "title": "Writer 02",
-    "section": "",
-    "text": "Si se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda",
+    "objectID": "clases/clase-03.html#como-introducir-latex-en-libre-office",
+    "href": "clases/clase-03.html#como-introducir-latex-en-libre-office",
+    "title": "Writer 03",
+    "section": "Como introducir Latex en Libre-Office",
+    "text": "Como introducir Latex en Libre-Office\nUsaremos la extensión TexMaths para poder aprovechar la potencia de Latex desde la comodidad de un editor de texto tradicional, dejando de lado su costado mas complejo que es justamente todo lo relacionado al formato de un documento.\nPara que esta extensión funcione se requiere tener latex instalado en la computadora. En Windows, MikTex es una opción popular (que también se puede instalar en Linux), mientras que en Linu se suele usar TexLive. Las instrucciones detalladas se pueden consultar acá. Es conveniente instalar Latex antes de TexMaths.\nPara descargar TexMaths ingresamos acá o desde la web citada más arriba. El archivo descargado se puede ejecutar al hacer doble click, guiándonos paso a paso en su instalación.\nEn las computadoras del instituto, deberíamos contar ya tanto con Latex como con TexMaths si iniciamos con Linux.",
     "crumbs": [
       "Clases",
-      "Writer 02"
+      "Writer 03"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#remisiones",
-    "href": "clases/clase-02.html#remisiones",
-    "title": "Writer 02",
-    "section": "",
-    "text": "Una vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión",
+    "objectID": "clases/clase-03.html#uso-básico-de-texmaths",
+    "href": "clases/clase-03.html#uso-básico-de-texmaths",
+    "title": "Writer 03",
+    "section": "Uso básico de TexMaths",
+    "text": "Uso básico de TexMaths\nLa barra de herramientas es esta\n\n\n\n\n\n\nBarra de herramientas\n\n\n\n\nFigura 1: Barra de herramientas de TexMaths\n\n\n\nSi Latex está instalado, con hacer click en la barra de herramientas en cualquiera de los dos primeros íconos de izquierda a derecha debería llevarnos a este menú\n\n\n\nMenú TexMaths\n\n\nAllí podemos escribir la ecuación que queramos que se insertará en la posición en que se encuentre el cursor",
     "crumbs": [
       "Clases",
-      "Writer 02"
+      "Writer 03"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#estilos",
-    "href": "clases/clase-02.html#estilos",
-    "title": "Writer 02",
-    "section": "",
-    "text": "Los estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "objectID": "clases/clase-03.html#configuraión-de-texmaths",
+    "href": "clases/clase-03.html#configuraión-de-texmaths",
+    "title": "Writer 03",
+    "section": "Configuraión de TexMaths",
+    "text": "Configuraión de TexMaths\nSi accedemos al ícono que contiene una llave y un destornillador podremos acceder a la configuración. En este menú entremos Rutas, Opciones, Interface, Atajos.\n\nRutas: Podremos verificar que TexMaths haya encontrado todo lo necesario para ejecutarse\nOpciones: En la parte de ecuaciones numeradas podremos elegir el rótulo y su configuración para ecuaciones numeradas\nInterface: Elegimos la tipogrfía y el tamaño por defecto\nAtajos: Podremos configurar un atajo de teclado para insertar una ecuación (bastante recomendable si hacemos uso instensivo de las mismas)",
     "crumbs": [
       "Clases",
-      "Writer 02"
+      "Writer 03"
     ]
   },
   {
-    "objectID": "calendario.html",
-    "href": "calendario.html",
-    "title": "Calendario de clases",
-    "section": "",
-    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
+    "objectID": "clases/clase-03.html#tipos-de-ecuación",
+    "href": "clases/clase-03.html#tipos-de-ecuación",
+    "title": "Writer 03",
+    "section": "Tipos de ecuación",
+    "text": "Tipos de ecuación\nEn el modo LaTeX, TexMaths puede generar tres tipos de ecuaciones LaTeX:\nEcuaciones de visualización (Display) Ecuaciones de visualización en línea (Inline) Ecuaciones de LaTeX\nPara seleccionar un tipo de ecuación, simplemente use el botón de opción ubicado dentro del marco Tipo de ecuación.\nPara generar ecuaciones de visualización o ecuaciones de visualización en línea, todo lo que hay que hacer es seleccionar el tipo de ecuación apropiado y luego escribir el código de la ecuación en el campo de texto del cuadro de diálogo Ecuaciones de TexMaths.\nEj: Para generar el símbolo alfa griego, simplemente escriba \\alpha. Se puede acceder al código Latex de cada símbolo si se deja el mouse sobre cada uno. No es necesario memorizarlos, pero con el uso se van recordando los más usados y agilizan la creación de ecuaciones.\nLas ecuaciones de visualización en línea (inline) se obtienen de la misma manera, pero la diferencia es el estilo de la ecuación generada, que se integra mejor dentro de un párrafo en Writer. Por ejemplo, el índice de suma y el exponente se muestran junto al signo de suma y no por debajo ni por encima.\nAmbos tipos de ecuaciones son ideales para ecuaciones simples de una línea y la alineación vertical dentro del texto es correcta, pero no pueden manejar ecuaciones multilínea o entornos LaTeX más generales. Para ese tipo de ecuaciones, seleccione el tipo de ecuación LaTeX y escriba su ecuación dentro de las instrucciones \\begin{}y\\end{}. Puede utilizar cualquier instrucción del entorno LaTeX.\nEj: Escriba las siguientes líneas para mostrar una ecuación de tres líneas, alineadas en el signo igual.\n\\begin{alinear*}\nx &= 1 \\\\\ny &= 2x+1\\\\\n&= 3\\\\\n\\end{alinear*}\nEn resumen, para ecuaciones de 1 Línea, tanto Display como Inline suelen funcionar bien. En Cambio, si tenemos ecuaciones de varios pasos, seleccionamos la opción Latex.\nSi seleccionamos preferencias accedemos a la coniguración por defecto para poder dejar tanto el tamaño de la tipografía como el tipo de ecuación que aparece seleecionado cuando abrimos el editor.\nLa opción de preámbulo nos permiterá ingresar a Latex paquetes específicos para algunas funciones, como por ejemplo, simbología químia específica, gráficos u otras cosas que latex permite hacer, pero que no veremos en detalle en este curso.\nPueden ver una descripción de esto mismo en la página del desarrollador de la extensión\n\nEscritura de latex directamente en el texto\nEs posible escribir Latex directamente en el texto, seleccionarlo y al apretar el ícono de TexMaths, se convertirá al formato de ecuación.\n\n\nEditar una ecuación previamente insertada\nDentro de un documento de LibreOffice, seleccione una imagen de ecuación (ya generada con TexMaths) y haga clic en el icono de Ecuaciones de TexMaths en la barra de herramientas de TexMaths. Lo que nos lleva al menú de edición de ecuaciones con el que la creamos en primer lugar.\nPodemos además ver las ecuaciones anteriores y navegar entre ellas con los símbolos &lt;&gt; &lt;&lt; &gt;&gt; que aparecen en la parte inferior del menú de edición de ecuaciones.\nA continuación tenemos un breve video que muestra la aplicación de TexMaths en un contexto de ecuaciones químicas, agregando paquetes al preámbulo con sus pecualiridades, que de momento a nosotros no nos importan.",
     "crumbs": [
-      "Info Cursada",
-      "Calendario de clases"
+      "Clases",
+      "Writer 03"
     ]
-  },
-  {
-    "objectID": "calendario.html#calendario-de-clases",
-    "href": "calendario.html#calendario-de-clases",
-    "title": "Calendario de clases",
-    "section": "",
-    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
-    "crumbs": [
-      "Info Cursada",
-      "Calendario de clases"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Computación 1-661",
-    "section": "",
-    "text": "About this site"
   },
   {
     "objectID": "clases/clase-01.html",
@@ -176,6 +158,101 @@
     "crumbs": [
       "Clases",
       "Libre Office"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Computación 1-661",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "calendario.html",
+    "href": "calendario.html",
+    "title": "Calendario de clases",
+    "section": "",
+    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "calendario.html#calendario-de-clases",
+    "href": "calendario.html#calendario-de-clases",
+    "title": "Calendario de clases",
+    "section": "",
+    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n25/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n2\nMiércoles\n01/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n✏️\n\n\n\n\n3\nMiércoles\n08/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n15/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n22/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html",
+    "href": "clases/clase-02.html",
+    "title": "Writer 02",
+    "section": "",
+    "text": "En un documento de writer podemos agregar imágenes, gráficos, cuadros, tablas etc. con diferentes categorías de rotulos: es decir, podemos tener por un lado las imágenes, y por otro las tablas o cuadros e identificarlos con una numeración correlativa y de actualización secuencial automática para cada grupo.\nPara distinguir entre objetos se utilizan las leyendas y para mencionar dichos objetos se usan las remisiones. Veamos como\n\n\nPodemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.\n\n\n\nPara obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.\n\n\n\nSi se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda\n\n\n\n\n\nUna vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión\n\n\n\n\n\nLos estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#insertar-figuras-y-leyendas",
+    "href": "clases/clase-02.html#insertar-figuras-y-leyendas",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Podemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#posicionamiento",
+    "href": "clases/clase-02.html#posicionamiento",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Para obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#leyenda",
+    "href": "clases/clase-02.html#leyenda",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Si se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#remisiones",
+    "href": "clases/clase-02.html#remisiones",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Una vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#estilos",
+    "href": "clases/clase-02.html#estilos",
+    "title": "Writer 02",
+    "section": "",
+    "text": "Los estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "crumbs": [
+      "Clases",
+      "Writer 02"
     ]
   }
 ]
