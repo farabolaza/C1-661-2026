@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Writer 05 – C1-661 2026</title>
+<title>Calc 02 – C1-661 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,10 +67,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Writer 05 – C1-661 2026">
-<meta property="og:description" content="Tablas, gráficos y sumarios">
+<meta property="og:title" content="Calc 02 – C1-661 2026">
+<meta property="og:description" content="Gráficas y funciones estadísticas en Calc">
 <meta property="og:site_name" content="C1-661 2026">
 </head>
 
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-05.html">Writer 05</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-08.html">Calc 02</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -184,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-05.html" class="sidebar-item-text sidebar-link active">
+  <a href="../clases/clase-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writer 05</span></a>
   </div>
 </li>
@@ -202,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-08.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Calc 02</span></a>
   </div>
 </li>
@@ -253,19 +282,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#tablas" id="toc-tablas" class="nav-link active" data-scroll-target="#tablas">Tablas</a>
+  <li><a href="#series-de-datos" id="toc-series-de-datos" class="nav-link active" data-scroll-target="#series-de-datos">Series de datos</a></li>
+  <li><a href="#formato-del-gráfico" id="toc-formato-del-gráfico" class="nav-link" data-scroll-target="#formato-del-gráfico">Formato del gráfico</a>
   <ul class="collapse">
-  <li><a href="#recomendaciones-generales" id="toc-recomendaciones-generales" class="nav-link" data-scroll-target="#recomendaciones-generales">Recomendaciones generales</a></li>
-  <li><a href="#en-writer" id="toc-en-writer" class="nav-link" data-scroll-target="#en-writer">En Writer</a></li>
-  <li><a href="#insertar-una-tabla" id="toc-insertar-una-tabla" class="nav-link" data-scroll-target="#insertar-una-tabla">Insertar una tabla</a></li>
-  <li><a href="#modificar-la-estructura" id="toc-modificar-la-estructura" class="nav-link" data-scroll-target="#modificar-la-estructura">Modificar la estructura</a></li>
-  <li><a href="#estilos-de-tabla" id="toc-estilos-de-tabla" class="nav-link" data-scroll-target="#estilos-de-tabla">Estilos de tabla</a></li>
-  <li><a href="#crear-un-estilo-desde-tabla-existente" id="toc-crear-un-estilo-desde-tabla-existente" class="nav-link" data-scroll-target="#crear-un-estilo-desde-tabla-existente">Crear un estilo desde tabla existente</a></li>
-  <li><a href="#tablas-desde-origen-externo" id="toc-tablas-desde-origen-externo" class="nav-link" data-scroll-target="#tablas-desde-origen-externo">Tablas desde origen externo</a></li>
+  <li><a href="#líneas-de-cuadrícula" id="toc-líneas-de-cuadrícula" class="nav-link" data-scroll-target="#líneas-de-cuadrícula">Líneas de cuadrícula</a></li>
+  <li><a href="#ejes-leyendas-y-rótulos" id="toc-ejes-leyendas-y-rótulos" class="nav-link" data-scroll-target="#ejes-leyendas-y-rótulos">Ejes, leyendas y rótulos</a></li>
+  <li><a href="#barras-de-error" id="toc-barras-de-error" class="nav-link" data-scroll-target="#barras-de-error">Barras de error</a></li>
   </ul></li>
-  <li><a href="#sumarios-e-índices" id="toc-sumarios-e-índices" class="nav-link" data-scroll-target="#sumarios-e-índices">Sumarios e índices</a>
+  <li><a href="#histogramas" id="toc-histogramas" class="nav-link" data-scroll-target="#histogramas">Histogramas</a>
   <ul class="collapse">
-  <li><a href="#índice-alfabético" id="toc-índice-alfabético" class="nav-link" data-scroll-target="#índice-alfabético">índice alfabético</a></li>
+  <li><a href="#funcion-frecuencia-y-funciones-matriciales" id="toc-funcion-frecuencia-y-funciones-matriciales" class="nav-link" data-scroll-target="#funcion-frecuencia-y-funciones-matriciales">Funcion FRECUENCIA() y funciones matriciales</a></li>
+  <li><a href="#crear-un-histograma" id="toc-crear-un-histograma" class="nav-link" data-scroll-target="#crear-un-histograma">Crear un histograma</a></li>
+  </ul></li>
+  <li><a href="#funciones-estadísticas-promedio-moda-y-mediana" id="toc-funciones-estadísticas-promedio-moda-y-mediana" class="nav-link" data-scroll-target="#funciones-estadísticas-promedio-moda-y-mediana">Funciones estadísticas: Promedio, moda y mediana</a></li>
+  <li><a href="#varianza-y-desviación-estándar" id="toc-varianza-y-desviación-estándar" class="nav-link" data-scroll-target="#varianza-y-desviación-estándar">Varianza y Desviación Estándar</a>
+  <ul class="collapse">
+  <li><a href="#deducción" id="toc-deducción" class="nav-link" data-scroll-target="#deducción">Deducción</a></li>
+  <li><a href="#interpretación" id="toc-interpretación" class="nav-link" data-scroll-target="#interpretación">Interpretación</a></li>
+  <li><a href="#desviación-para-una-muestra-o-una-población" id="toc-desviación-para-una-muestra-o-una-población" class="nav-link" data-scroll-target="#desviación-para-una-muestra-o-una-población">Desviación para una muestra o una población</a></li>
+  <li><a href="#resumen-estadístico" id="toc-resumen-estadístico" class="nav-link" data-scroll-target="#resumen-estadístico">Resumen estadístico</a></li>
+  </ul></li>
+  <li><a href="#ejercitación" id="toc-ejercitación" class="nav-link" data-scroll-target="#ejercitación">Ejercitación</a>
+  <ul class="collapse">
+  <li><a href="#graficar-una-función" id="toc-graficar-una-función" class="nav-link" data-scroll-target="#graficar-una-función">Graficar una función</a></li>
+  <li><a href="#histogramas-1" id="toc-histogramas-1" class="nav-link" data-scroll-target="#histogramas-1">Histogramas</a></li>
   </ul></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
@@ -274,10 +314,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-05.html">Writer 05</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-08.html">Calc 02</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Writer 05</h1>
-<p class="subtitle lead">Tablas, gráficos y sumarios</p>
+<h1 class="title">Calc 02</h1>
+<p class="subtitle lead">Gráficas y funciones estadísticas en Calc</p>
 </div>
 
 
@@ -294,197 +334,260 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="tablas" class="level2">
-<h2 class="anchored" data-anchor-id="tablas">Tablas</h2>
-<p>Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.</p>
-<section id="recomendaciones-generales" class="level3">
-<h3 class="anchored" data-anchor-id="recomendaciones-generales">Recomendaciones generales</h3>
-<p>Es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas</p>
+<p>Los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.</p>
+<p>Para representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.</p>
+<p>Para representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.</p>
+<p>Para insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente:</p>
+<p><code>insertar</code> &gt; <code>gráfico</code>&gt; <code>tipo de gráfico</code> &gt; <code>xy dispersión</code></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\assets/tabla-gestalt.jpg" class="img-fluid figure-img"></p>
-<figcaption>Ideas generales sobre tablas</figcaption>
+<p><img src="..\assets/calc-grafica-dispersion.png" class="img-fluid figure-img"></p>
+<figcaption>Insertar gráfica</figcaption>
 </figure>
 </div>
-<p>Algunas guías generales para las tablas que contienen información científica:</p>
-<ul>
-<li><strong>Títulos</strong>: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.
-<ul>
-<li>Siempre inlcuir las unidades, incertidumbres, número de muestras u otra información relevante para los datos que se muestran.</li>
-</ul></li>
-<li><strong>Tabla</strong>: Debe tener referencia numerada (o nombre) para su posterior mención/referencia en el texto.</li>
-</ul>
+<section id="series-de-datos" class="level2">
+<h2 class="anchored" data-anchor-id="series-de-datos">Series de datos</h2>
+<p>Para hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.</p>
+<p>Esto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\assets/tabla-ejemplo-1.jpg" class="img-fluid figure-img"></p>
-<figcaption>Simpliicar los estilos</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tabla-ejemplo-5.jpg" class="img-fluid figure-img"></p>
-<figcaption>Formato general</figcaption>
-</figure>
-</div>
-<ul>
-<li><strong>Tipografía</strong>: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.</li>
-<li>Los valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.</li>
-<li><strong>Alineación del texto</strong>: Para primera columna o fila de descripción se prefiere la alineación izquierda.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tabla-ejemplo-2.jpg" class="img-fluid figure-img"></p>
-<figcaption>Tablas largas y separación visual entre filas</figcaption>
-</figure>
-</div>
-<ul>
-<li><strong>Alineación de los títulos</strong>: de las columnas debe concordar con el de los datos que esas columna contiene.</li>
-<li>Para datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.</li>
-<li>Posiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tabla-ejemplo-3.jpg" class="img-fluid figure-img"></p>
-<figcaption>Alineación de datos y columnas</figcaption>
-</figure>
-</div>
-<ul>
-<li><strong>Espacio entre columnas</strong>: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.</li>
-<li><strong>Alineación vertical</strong> del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tabla-ejemplo-4.jpg" class="img-fluid figure-img"></p>
-<figcaption>Alineación vertical</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tabla-resumen.jpg" class="img-fluid figure-img"></p>
-<figcaption>Tabla de datos y tabla resumen</figcaption>
+<p><img src="..\assets/calc-elementos-grafico.png" class="img-fluid figure-img"></p>
+<figcaption>Elementos del gráfico</figcaption>
 </figure>
 </div>
 </section>
-<section id="en-writer" class="level3">
-<h3 class="anchored" data-anchor-id="en-writer">En Writer</h3>
-<p>Las tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.</p>
+<section id="formato-del-gráfico" class="level2">
+<h2 class="anchored" data-anchor-id="formato-del-gráfico">Formato del gráfico</h2>
+<p>La correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.</p>
+<p>Se deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.</p>
+<p>Para los títulos y subtitlos de figuras, es preferible usar tipografías sin serif ya que su legibilidad es mejor en tamaños pequeños.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-scatter-2.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de gráfico de dispersión</figcaption>
+</figure>
+</div>
+<p>Más allá de los estilos preferibles a nivel estético existen algunos principios generales que escapan a los alcances de este apunte pero el ejemplo de arriba vale como muestra de como una misma información se puede disponer de forma distinta y ayudar o entorpecer el entendimiento de aquello que se está queriendo comunicar.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-figura-bien-mal.png" class="img-fluid figure-img"></p>
+<figcaption>Dos visualizaciones diferentes</figcaption>
+</figure>
+</div>
+<section id="líneas-de-cuadrícula" class="level3">
+<h3 class="anchored" data-anchor-id="líneas-de-cuadrícula">Líneas de cuadrícula</h3>
+<p>Si se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-cuadricula.png" class="img-fluid figure-img"></p>
+<figcaption>Ejes y cuadrículas</figcaption>
+</figure>
+</div>
+<p>También con el gráfico seleccionado a través del menú <code>insertar</code> &gt; <code>cuadrículas</code></p>
 </section>
-<section id="insertar-una-tabla" class="level3">
-<h3 class="anchored" data-anchor-id="insertar-una-tabla">Insertar una tabla</h3>
-<p>Para agregar una tabla:</p>
+<section id="ejes-leyendas-y-rótulos" class="level3">
+<h3 class="anchored" data-anchor-id="ejes-leyendas-y-rótulos">Ejes, leyendas y rótulos</h3>
+<p>La información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú <code>insertar</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-serie-datos.png" class="img-fluid figure-img"></p>
+<figcaption>Series de datos</figcaption>
+</figure>
+</div>
+</section>
+<section id="barras-de-error" class="level3">
+<h3 class="anchored" data-anchor-id="barras-de-error">Barras de error</h3>
+<p>Con el gráfico seleccionado hacemos <code>insertar</code> &gt; <code>barras de error</code> ahi podremos elegir las diferentes variantes que contamos para las barras de error</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-barras-error.png" class="img-fluid figure-img"></p>
+<figcaption>Barras de error</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="histogramas" class="level2">
+<h2 class="anchored" data-anchor-id="histogramas">Histogramas</h2>
+<p>Usualmente cuando se tienen datos a tratarse de forma estadística, resulta útil usar hitogramas para representarlos. Por ejemplo, si se efectúan <code>n</code> mediciones para obtener un valor para la constante gravitatoria en la tierra (<span class="math inline">\(9,8 \dfrac{m}{s^2}\)</span>) y si se han tomando los recaudos necesarios para llevar adelante el experimento es de esperar que la gran mayoría de los valores obtenidos se agrupen cerca del valor más probable, que dependiendo de la incerteza del método o los experimentadores, podrá ser más o menos cercano al “verdadero”, que es aquél contra el cual comparamos nuestros resultados.</p>
+<p>En este caso, si graficamos “cuantas veces obutvimos” valores para cierto intervalo o clase, obtendremos algo similar a esto:</p>
+<div id="62ae189e" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="clase-08_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Donde se observa una distribución de datos normal como se ve en la siguiente figura:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-Normal-Distribution.png" class="img-fluid figure-img"></p>
+<figcaption>Distribución normal y porcentaje del área bajo la curva</figcaption>
+</figure>
+</div>
+<p>Si por el contrario, tiramos un dado <code>n</code> veces (y lo hacemos muuuuchas veces) veremos que la distribución de “cuantas veces salió el uno”, “cuantas veces salió el dos”, etc. tiene esta pinta:</p>
+<div id="87f3b0d4" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="clase-08_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>En ambos casos estamos viendo un gráfico de clase vs frecuencia, las clases pueden ser intervalos de alguna magnitud medida: lluvias de entre 3 y 5 mm, alturas entre 1.6 y 1.8 m, etc y la frecuencia la cantidad de elementos que pertenecen a esa clase o intervalo.</p>
+<p>Una regla útil para saber en cuantos intervalos debemos “seccionar” nuestros datos es usar <span class="math inline">\(N=\sqrt{n}\)</span> en donde <span class="math inline">\(N\)</span> es la cantidad de intervalos y <span class="math inline">\(n\)</span> la cantidad de datos. El ancho del intervalo, luego de reondear <span class="math inline">\(N\)</span> a un entero sera <span class="math inline">\(\frac{\text{rango}}{N}\)</span> en donde el rango es <span class="math inline">\(\text{valor máximo} - \text{valor minimo}\)</span>.</p>
+<section id="funcion-frecuencia-y-funciones-matriciales" class="level3">
+<h3 class="anchored" data-anchor-id="funcion-frecuencia-y-funciones-matriciales">Funcion FRECUENCIA() y funciones matriciales</h3>
+<p>Las funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector sobre la planilla dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas <code>ctrl</code> + <code>shift</code> + <code>enter</code> al momento de ejecutar la función.</p>
+<p>La función <code>FRECUENCIA(DATOS,CLASES)</code> es una función matricial y como indica su sintaxis tiene dos argumentos, los datos que usará y los intervalos en los que ubicará a los datos. Freuencia devuelve una matriz donde indica cuántos elementos hay en cada intervalo indicado.</p>
+</section>
+<section id="crear-un-histograma" class="level3">
+<h3 class="anchored" data-anchor-id="crear-un-histograma">Crear un histograma</h3>
 <ol type="1">
-<li>menú <strong>Tabla &gt; Insertar &gt; Tabla</strong>.</li>
-<li>Especifica el número de filas y columnas.</li>
-<li>Ajusta las propiedades básicas (ej. nombre, bordes). clic en <strong>Aceptar</strong>.</li>
+<li><p>Una vez que tenemos nuestro datos en la planilla debemos decidicir cuántos intervalos o clases construiremos a partir de ellos, una vez hecho eso, creamos una celda qe contenga como valor el extremo superior del intervalo (podemos desplegarlos en columnas o en filas).</p></li>
+<li><p>En Otra celda, llamamos a la función <code>FRECUENCIA</code> y seleccionamos los datos y nuestras clases. No olvidar de apretar <code>ctrl</code> + <code>shift</code> + <code>enter</code> al finalizar.</p></li>
+<li><p>Con los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.</p></li>
 </ol>
-<p><strong>Método rápido</strong>:<br>
-el atajo <code>Ctrl + F12</code> o clic en el icono de tabla en la barra estándar.</p>
 </section>
-<section id="modificar-la-estructura" class="level3">
-<h3 class="anchored" data-anchor-id="modificar-la-estructura">Modificar la estructura</h3>
-<section id="añadir-o-eliminar-filascolumnas" class="level4">
-<h4 class="anchored" data-anchor-id="añadir-o-eliminar-filascolumnas">Añadir o eliminar filas/columnas</h4>
+</section>
+<section id="funciones-estadísticas-promedio-moda-y-mediana" class="level2">
+<h2 class="anchored" data-anchor-id="funciones-estadísticas-promedio-moda-y-mediana">Funciones estadísticas: Promedio, moda y mediana</h2>
+<p>Dentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.</p>
+<p>El cálculo matemático para cada uno de ellos es;</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Promedio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Moda</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Mediana</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>El promedio representa la media aritmética de los valores de un conjunto <span class="math display">\[
+\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}
+\]</span></p>
+<p>En calc la función <code>PROMEDIO(datos)</code> devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).</p>
+<p>Promedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.</p>
+<p>El ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>La moda representa el valor que más se repite en un conjunto de datos</p>
+<p><span class="math display">\[
+\text{Moda} = \{x_i \mid \max \text{frecuencia}(x_i)\}
+\]</span></p>
+<p>En calc, las funciones <code>MODA.UNO()</code> y <code>MODA.VARIOS()</code> nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando <code>ctrl+shift+enter</code> al finalizar la escritura en la celda.</p>
+<p>Para más información acerca de las funciones matriciales podés ver la <a href="https://help.libreoffice.org/latest/es/text/scalc/01/04060107.html">ayuda oficial</a> sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.</p>
+<p>La moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>La mediana representa el valor central de un conjunto de datos ordenado. <span class="math display">\[
+\tilde{x} =
+\begin{cases}
+x_{\frac{n+1}{2}}, &amp; \text{si } n \text{ es impar} \\
+\frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, &amp; \text{si } n \text{ es par}
+\end{cases}
+\]</span></p>
+<p>En LO la mediana se calcula con la función <code>MEDIANA(datos)</code>. La mediana suele ser un dato representativo de un cojunto incluso cuando existen datos que ocupan los extremos por un margen considerable. Consideremos el conjunto: <span class="math display">\[
+\left( -1000,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1000 \right)
+\]</span></p>
+<p>Aquí la mediana da una información más representativa de los datos.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="varianza-y-desviación-estándar" class="level2">
+<h2 class="anchored" data-anchor-id="varianza-y-desviación-estándar">Varianza y Desviación Estándar</h2>
+<p>La <strong>varianza</strong> y la <strong>desviación estándar</strong> son medidas de dispersión que nos indican cuán dispersos están los datos respecto a la media.</p>
+<p>La <strong>varianza</strong> (<span class="math inline">\(\sigma^2\)</span>) se define como el promedio de los cuadrados de las diferencias entre cada dato y la media:</p>
+<p><span class="math display">\[\sigma^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}\]</span></p>
+<p>La <strong>desviación estándar</strong> (<span class="math inline">\(\sigma\)</span>) es simplemente la raíz cuadrada de la varianza:</p>
+<p><span class="math display">\[\sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}}\]</span></p>
+<section id="deducción" class="level3">
+<h3 class="anchored" data-anchor-id="deducción">Deducción</h3>
+<p>La varianza surge al considerar cómo se dispersan los datos alrededor de la media. Primero, calculamos la distancia de cada dato respecto a la media <span class="math inline">\(\bar{x}\)</span>:</p>
+<p><span class="math display">\[
+d_i = x_i - \bar{x}
+\]</span></p>
+<p>Si sumamos estas distancias, obtenemos cero (ya que la media balancea los datos). Para evitar esto, usamos los cuadrados de las diferencias:</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} (x_i - \bar{x})^2
+\]</span></p>
+<p>Dividiendo por <span class="math inline">\(n\)</span>, obtenemos la varianza, que mide la dispersión promedio de los datos. La <strong>desviación estándar</strong> es su raíz cuadrada, proporcionando una medida en las mismas unidades que los datos originales.</p>
+</section>
+<section id="interpretación" class="level3">
+<h3 class="anchored" data-anchor-id="interpretación">Interpretación</h3>
 <ul>
-<li><strong>Añadir</strong>: Clic derecho en una celda &gt; <strong>Insertar &gt; Filas/Columnas</strong>.</li>
-<li><strong>Eliminar</strong>: Seleccionar las celdas &gt; clic derecho &gt; <strong>Eliminar celdas</strong>.</li>
+<li><strong>Valores pequeños</strong> de <span class="math inline">\(\sigma\)</span> indican poca variabilidad en los datos.</li>
+<li><strong>Valores grandes</strong> de <span class="math inline">\(\sigma\)</span> muestran que los datos están más dispersos respecto a la media.</li>
 </ul>
+<p><span class="math display">\[
+\sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}}
+\]</span></p>
 </section>
-<section id="combinar-celdas" class="level4">
-<h4 class="anchored" data-anchor-id="combinar-celdas">Combinar celdas</h4>
+<section id="desviación-para-una-muestra-o-una-población" class="level3">
+<h3 class="anchored" data-anchor-id="desviación-para-una-muestra-o-una-población">Desviación para una muestra o una población</h3>
+<p>Cuando consideramos el promedio <span class="math inline">\(\bar{x}\)</span> para una muestra, no estamos accediendo a los posibles infinitos valores que pudiera tener la población en estudio, por ejemplo, no podemos medir la carga de todos los electrones del universo para luego promediarlas, por lo que nuestras medidas están restringidas no a la población, sino a una muestra de ella.</p>
+<p>Para calcular la desviación estándar para una muestra (y no para una población) debemos primero usar los datos de la muestra para obtener <span class="math inline">\(\bar{x}\)</span>, al hacer esto, por la definición de media, existen sólo <span class="math inline">\(n-1\)</span> valores realimente “libres” en cuanto a la diferencia que pueden tener con la media, el último valor que intentemos calcular necesariamente deberá ser tal que la suma nos de cero.</p>
+<p>Por eso se dice que el sistema tiene “un grado menos de libertad” y siempre que calculemos la varianza o la desviación estándar para una muestra, la fórmula se ajusta de la siguiente forma:</p>
+<p><span class="math display">\[
+\sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}}
+\]</span></p>
+<p>Si el número de muestras <span class="math inline">\(n\)</span> es suficientemente grande, <span class="math inline">\(\bar{x} \to \mu\)</span> (la media de la muestra tiene a la media de la población) y por lo tanto, el ajuste no representa una gran cambio en resultado.</p>
+</section>
+<section id="resumen-estadístico" class="level3">
+<h3 class="anchored" data-anchor-id="resumen-estadístico">Resumen estadístico</h3>
+<p>Si hacemos <code>datos</code>&gt; <code>estadísticas</code> &gt; <code>estadíticas descriptivas</code> podremos obtener los parámetros estadísticos mencionados arriba (junto a otros que no trabajaremos) para un intervalo de celdas de la planilla.</p>
+</section>
+</section>
+<section id="ejercitación" class="level2">
+<h2 class="anchored" data-anchor-id="ejercitación">Ejercitación</h2>
+<p>Los contenidos vistos en esta clase se aplican tanto al <strong>TP 4</strong> (que ya están en condiciones de encarar) como al <strong>TP 5</strong>, para el que necesitarán elementos de próximas clases.</p>
+<section id="graficar-una-función" class="level3">
+<h3 class="anchored" data-anchor-id="graficar-una-función">Graficar una función</h3>
+<p>Grafique las funciones que se mencionan en el <a href="../trabajos practicos/tp 03.html#funciones-elementales">punto 2 del TP3</a>. Agrupe las funciones de la siguiente forma</p>
 <ol type="1">
-<li>Selecciona las celdas a combinar.</li>
-<li>Clic derecho &gt; <strong>Combinar celdas</strong>.</li>
+<li>Funciones trigonométrias</li>
+<li>Funciones trigonométricas inversas</li>
+<li>Catenaria</li>
+<li>Funciones exponenciales</li>
+<li>Funciones logarítmicas</li>
 </ol>
-</section>
-<section id="propiedades-de-tablas" class="level4">
-<h4 class="anchored" data-anchor-id="propiedades-de-tablas">Propiedades de tablas</h4>
-<p>Si hacemos <code>click derecho</code> &gt; <code>propiedades de tabla</code> accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tabla-opciones.png" class="img-fluid figure-img"></p>
-<figcaption>Opciones generales</figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="estilos-de-tabla" class="level3">
-<h3 class="anchored" data-anchor-id="estilos-de-tabla">Estilos de tabla</h3>
-<p>En writer contamos con diferentes tipos de estilos para tablas</p>
+<p>Cada grupo de funciones deberá estar en una sola gráfica y contener:</p>
 <ul>
-<li><strong>Predeterminados</strong>: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.</li>
-<li><strong>Personalizados</strong>: Estilos creados por el usuario.</li>
+<li>Nombres en los ejes (x,y)</li>
+<li>Título y subtítulo</li>
+<li>Leyenda</li>
 </ul>
-<p>A diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla <strong>académico</strong> es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: <code>tabla</code> &gt; <code>estilos de formato automático</code> (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles <a href="https://ask.libreoffice.org/t/solution-how-to-delete-table-style/96977">acá</a>.</p>
-</section>
-<section id="crear-un-estilo-desde-tabla-existente" class="level3">
-<h3 class="anchored" data-anchor-id="crear-un-estilo-desde-tabla-existente">Crear un estilo desde tabla existente</h3>
-<p>Aunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.</p>
-<p>Hacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tabla-writer.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de tabla en writer</figcaption>
-</figure>
-</div>
-<p>La seleccionamos y vamos a <code>tabla</code> &gt; <code>estilos de formato automático</code> y luego hacemos <code>añadir</code> damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.</p>
-<p><img src="..\assets/tabla-agregar-estilos.png" class="img-fluid"></p>
-</section>
-<section id="tablas-desde-origen-externo" class="level3">
-<h3 class="anchored" data-anchor-id="tablas-desde-origen-externo">Tablas desde origen externo</h3>
-<p>Al usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.</p>
-<p>Copiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.</p>
-<p>Si usamos las opciones de pegado especial tenemos</p>
-<p>Hoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.</p>
-<p>Metarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.</p>
-<p>Imagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.</p>
-<p>Lenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)</p>
-<p>Intercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.</p>
-<p>Texto sin formato: Copia el texto tabulado pero sin formar parte de una tabla</p>
-<p>Formato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer</p>
-</section>
-</section>
-<section id="sumarios-e-índices" class="level2">
-<h2 class="anchored" data-anchor-id="sumarios-e-índices">Sumarios e índices</h2>
-<p>Los índices y sumarios permiten crear automáticamente listados a partir de contenido de cierta tipología dentro del documento:</p>
+<p>Pruebe utilizar:</p>
 <ul>
-<li>Títulos, subtítulos, etc: índice</li>
-<li>Tablas</li>
-<li>Figuras</li>
-<li>Ecuaciones (u otros objetos personalizados)</li>
+<li>Gáficos de dispersión</li>
+<li>Gráficos de barras (use primera columna como etiquetas)</li>
 </ul>
-<p>Para crear uno vamos a <code>insertar</code> &gt; <code>sumario e indice</code> y veremos el siguiente menú</p>
+<p>Como ejemplo de usar un gráfico de barras, debería ver algo como esto:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\assets/writer-sumario.png" class="img-fluid figure-img"></p>
-<figcaption>Menú sumario e índices</figcaption>
+<p><img src="..\assets/calc-grafica-barras-seno-coseno.png" class="img-fluid figure-img"></p>
+<figcaption>gráficas trigonométricas</figcaption>
 </figure>
 </div>
-<p>Este menú nos ofrece la opción para crear diferentes tipos de índices seleccionando desde <code>tipo</code> pudiendo cambiar el nombre en <code>titulo</code></p>
-<p>Si elegimos como tipo <code>índice de figuras</code> podremos elegir qué tipo de elemento el índice colecciona para mostrar</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/writer-indice-figuras.png" class="img-fluid figure-img"></p>
-<figcaption>Índices de figuras</figcaption>
-</figure>
-</div>
-<section id="índice-alfabético" class="level3">
-<h3 class="anchored" data-anchor-id="índice-alfabético">índice alfabético</h3>
-<p>Para crear un índice alfabético debemos primero crear las entradas que indizaremos haciendo <code>insertar</code> &gt; <code>sumario e índice</code> &gt; <code>entrada de índice</code></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/writer-indice-entradas.png" class="img-fluid figure-img"></p>
-<figcaption>Menú entrada de índice</figcaption>
-</figure>
-</div>
-<p>Si estamos incluyendo ítems debemos primero marcarlos como entrada princpal para que aparezcan al momento de generar el índice alfabético desde el menú indicado más arriba.</p>
+</section>
+<section id="histogramas-1" class="level3">
+<h3 class="anchored" data-anchor-id="histogramas-1">Histogramas</h3>
+<p>Usando <a href="..\assets/histogramas.ods">este archivo</a> como base, crear un histograma para la la hoja <code>masas</code>.</p>
 </section>
 </section>
 <section id="referencias" class="level2">
 <h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
 <ul>
-<li><a href="https://www.csescienceeditor.org/article/best-practices-in-table-design/">Tablas según science editor</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S0022480425001556">Researcher’s Guide for the Preparation of Tables</a></li>
-<li><a href="https://www.sciencesocieties.org/files/publications/style/chapter-05.pdf">ASA-CSSA-SSSA Style Manual</a></li>
+<li><a href="https://documentation.libreoffice.org/assets/Uploads/Documentation/es/CG62/PDF/CG6205-UsarGraficosEnCalc.pdf"><span class="emoji" data-emoji="link">🔗</span> Ayuda oficial de Libre Office</a></li>
+<li><a href="https://www.youtube.com/watch?v=z-9B0ce9vqU"><span class="emoji" data-emoji="movie_camera">🎥</span> Gráficas de dispersión</a></li>
+<li><a href="https://help.libreoffice.org/latest/es/text/schart/01/04050000.html"><span class="emoji" data-emoji="link">🔗</span> Barras de error en Libre Office</a></li>
+<li><a href="http://www.andreacirillo.com/2018/02/10/summarising-tufte-theory-of-graphics-and-integrity-principles/"><span class="emoji" data-emoji="link">🔗</span> Diseño de gráficos basados en el estilo de Edward Tufte</a></li>
+<li><a href="https://www.edwardtufte.com/"><span class="emoji" data-emoji="link">🔗</span> Sitio de Edward Tufte</a></li>
+<li><a href="https://www.nature.com/documents/natrev-artworkguide.pdf"><span class="emoji" data-emoji="link">🔗</span> Guía de Nature para figuras</a></li>
+<li><a href="https://kevinlanning.github.io/DataSciLibArts/principles-of-data-visualization.html"><span class="emoji" data-emoji="link">🔗</span> Guía de principios para visualización</a></li>
+<li><a href="..\assets/Guia para la construcción de gráficos con Excel.pdf"><span class="emoji" data-emoji="link">🔗</span> Apunte de la materia laboratorio 1 Sobre Gráficas en Excel</a></li>
+<li><a href="https://indico.cern.ch/event/977476/contributions/4204938/attachments/2191304/3703672/ES-Graficando-un-histograma-en-libreoffice.pdf"><span class="emoji" data-emoji="link">🔗</span> Histogramas en LO</a></li>
+<li><a href="https://opendata.cern.ch/record/545"><span class="emoji" data-emoji="link">🔗</span> Datasets CERN</a></li>
+<li><a href="https://matplotlib.org/stable/gallery/statistics/histogram_histtypes.html#sphx-glr-gallery-statistics-histogram-histtypes-py"><span class="emoji" data-emoji="link">🔗</span> Distribución normal en matplotlib</a></li>
+<li><a href="https://matplotlib.org/stable/gallery/statistics/histogram_normalization.html#sphx-glr-gallery-statistics-histogram-normalization-py"><span class="emoji" data-emoji="link">🔗</span> Histogramas en matplotlib</a></li>
 </ul>
 
 

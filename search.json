@@ -1,98 +1,80 @@
 [
   {
-    "objectID": "trabajos practicos/tp 03.html",
-    "href": "trabajos practicos/tp 03.html",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/tp 04.html",
+    "href": "trabajos practicos/tp 04.html",
+    "title": "TP 04",
     "section": "",
-    "text": "Si se tiene una resistencia \\(R\\) de \\(12 M \\Omega\\) usando los datos de tensión en función del tiempo que se muestran en este archivo\n\nComplete la columna para la corriente \\(I\\) (en amperes) en función del tiempo sabiendo que por la ley de Ohm: \\[\n\\frac{V}{R}=I\n\\]\n\nExprese los valores en potencias de diez de la planilla de cálculo y represente las letras griegas y las fórmulas con los símbolos más adecuados\n\nComplete la columna para la potencia (en watts) sabiendo que \\(P=I^2 \\cdot R\\)\n\n\n\n\nPara un cuerpo en caída libre sin velocidad inicial, donde sólo se tiene en cuenta la fuerza de gravedad, el tiempo de vuelo se relaciona con la distancia recorrida por la fórmula \\[\nt=\\sqrt{\\frac{2h}{g}}\n\\]\n\nElabore una planilla donde tenga los datos de altura y tiempo. Considere \\(g=9,81 \\quad \\frac{m}{s^2}\\)\nReutilice sus datos para obtener la altura y el tiempo para \\(g=1,6 \\quad \\frac{m}{s^2}\\)\n\n\n\n\nEl calor emitido por segundo \\(H\\) por un cuerpo negro de área \\(A\\) a una temperatura \\(T\\) se puede calcular usando:\n\\[\nH=\\sigma A T^4\n\\]\nEn donde \\(\\sigma\\) es la constante de Stefan-Boltzmann (\\(5,67\\cdot 10^{-8} \\frac{W}{m^2 K^4}\\)). Si el área es \\(A=0,062 \\quad m^2\\)\n1.Cree una tabla, nombre a la constante de Stefan-Boltzmann SIGMA, y al área \\(A\\). Calcule \\(H\\) para \\(T=1000 K\\) a \\(T=6000 K\\)\n\n\n\nLa resistencia equivalente de colocar dos resistencias en paralelo se puede calcular usando:\n\\[\n\\frac{R_1 R_2}{R_1+R_2}\n\\]\nSi \\(R_1= 4,7 \\ k \\Omega\\) y \\(R_2= 6,8 \\ k \\Omega\\)\nCree una tabla para calcular la resistencia equivalente al colocar ambas en paralelo.",
+    "text": "La siguiente tabla muestra la frecuencia de resonancia medida para un circuito de corriente alterna\n\nresonancia de circuito ac\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrequencia (Hz)\n2150\n2120\n2134\n2270\n2144\n2156\n2139\n2122\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos\n\n\n\n\nLa siguiente tabla muestra los valores de capacitancia medidos para un capacitor:\n\nTabla de capacitancia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitancia(pF)\n103.7\n100.3\n98.4\n99.3\n101.0\n106.1\n103.9\n101.5\n100.9\n105.3\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 04"
     ]
   },
   {
-    "objectID": "trabajos practicos/tp 03.html#ley-de-ohm",
-    "href": "trabajos practicos/tp 03.html#ley-de-ohm",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/tp 04.html#frecuencia-de-resonancia",
+    "href": "trabajos practicos/tp 04.html#frecuencia-de-resonancia",
+    "title": "TP 04",
     "section": "",
-    "text": "Si se tiene una resistencia \\(R\\) de \\(12 M \\Omega\\) usando los datos de tensión en función del tiempo que se muestran en este archivo\n\nComplete la columna para la corriente \\(I\\) (en amperes) en función del tiempo sabiendo que por la ley de Ohm: \\[\n\\frac{V}{R}=I\n\\]\n\nExprese los valores en potencias de diez de la planilla de cálculo y represente las letras griegas y las fórmulas con los símbolos más adecuados\n\nComplete la columna para la potencia (en watts) sabiendo que \\(P=I^2 \\cdot R\\)",
+    "text": "La siguiente tabla muestra la frecuencia de resonancia medida para un circuito de corriente alterna\n\nresonancia de circuito ac\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrequencia (Hz)\n2150\n2120\n2134\n2270\n2144\n2156\n2139\n2122\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 04"
     ]
   },
   {
-    "objectID": "trabajos practicos/tp 03.html#tiempo-de-caída-y-distancia-recorrida",
-    "href": "trabajos practicos/tp 03.html#tiempo-de-caída-y-distancia-recorrida",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/tp 04.html#capacitancia",
+    "href": "trabajos practicos/tp 04.html#capacitancia",
+    "title": "TP 04",
     "section": "",
-    "text": "Para un cuerpo en caída libre sin velocidad inicial, donde sólo se tiene en cuenta la fuerza de gravedad, el tiempo de vuelo se relaciona con la distancia recorrida por la fórmula \\[\nt=\\sqrt{\\frac{2h}{g}}\n\\]\n\nElabore una planilla donde tenga los datos de altura y tiempo. Considere \\(g=9,81 \\quad \\frac{m}{s^2}\\)\nReutilice sus datos para obtener la altura y el tiempo para \\(g=1,6 \\quad \\frac{m}{s^2}\\)",
+    "text": "La siguiente tabla muestra los valores de capacitancia medidos para un capacitor:\n\nTabla de capacitancia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitancia(pF)\n103.7\n100.3\n98.4\n99.3\n101.0\n106.1\n103.9\n101.5\n100.9\n105.3\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 04"
     ]
   },
   {
-    "objectID": "trabajos practicos/tp 03.html#emisión-de-un-cuerpo-negro",
-    "href": "trabajos practicos/tp 03.html#emisión-de-un-cuerpo-negro",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/tp 04.html#ganancia-de-masa",
+    "href": "trabajos practicos/tp 04.html#ganancia-de-masa",
+    "title": "TP 04",
+    "section": "2.1 Ganancia de masa",
+    "text": "2.1 Ganancia de masa\nUn óxido de tierras raras gana oxígeno cuando se calienta a alta temperatura en una atmósfera rica en oxígeno. La Tabla muestra el aumento de masa de doce muestras del óxido, las cuales fueron mantenidas a 600 °C durante 10 horas.\n\nTabla ganancia de masa para 12 muestras\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGanancia de masa (mg)\n6.4\n6.3\n5.6\n6.8\n5.5\n5.0\n6.2\n6.1\n5.5\n5.0\n6.2\n6.3\n\n\n\n\n\nCalcular:\n\nla media\nla desviación estándar\nla varianza de los valores",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 04.html#capilaridad",
+    "href": "trabajos practicos/tp 04.html#capilaridad",
+    "title": "TP 04",
+    "section": "2.2 Capilaridad",
+    "text": "2.2 Capilaridad\nLa siguiente tabla muesra la altura a la que asciende una columna de agua en un tubo debido al efecito de capilaridad:\n\nAltura del ascenso por capilaridad en un tubo\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAltura (cm)\n4.15\n4.10\n4.12\n4.12\n4.32\n4.20\n4.18\n4.13\n4.15\n\n\n\n\n\nCalcular:\n\nMedia\nMediana\nRango\nVarianza\nDesviación estándar",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 04.html#plomo-en-agua",
+    "href": "trabajos practicos/tp 04.html#plomo-en-agua",
+    "title": "TP 04",
+    "section": "3.1 Plomo en agua",
+    "text": "3.1 Plomo en agua\nLa siguiente tabla muestra el contenido de plomo en partes por mil millon en el agua de un río.\n\n\n\n43\n57\n40\n42\n46\n56\n64\n54\n43\n52\n\n\n\n\n58\n35\n52\n41\n40\n57\n56\n54\n46\n53\n\n\n53\n51\n53\n53\n57\n45\n49\n50\n57\n46\n\n\n49\n67\n70\n56\n57\n42\n54\n56\n51\n53\n\n\n60\n49\n48\n40\n47\n54\n66\n51\n46\n44\n\n\n48\n51\n51\n42\n54\n56\n45\n49\n68\n36\n\n\n48\n59\n44\n47\n48\n66\n63\n51\n58\n54\n\n\n49\n55\n51\n54\n61\n48\n49\n46\n69\n60\n\n\n49\n62\n46\n54\n51\n48\n65\n52\n52\n61\n\n\n45\n59\n47\n56\n56\n52\n40\n41\n49\n67\n\n\n\n\nConstruya un histograma con clases comenzando en 30 ppmm hasta 70 ppmm a intervalos de 5 ppmm.\nCalcule la media\nCalcule la mediana\nCalcule la moda\n\nSi prefiere, se puede acceder al .csv de los datos acá",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 02.html",
+    "href": "trabajos practicos/tp 02.html",
+    "title": "TP 02",
     "section": "",
-    "text": "El calor emitido por segundo \\(H\\) por un cuerpo negro de área \\(A\\) a una temperatura \\(T\\) se puede calcular usando:\n\\[\nH=\\sigma A T^4\n\\]\nEn donde \\(\\sigma\\) es la constante de Stefan-Boltzmann (\\(5,67\\cdot 10^{-8} \\frac{W}{m^2 K^4}\\)). Si el área es \\(A=0,062 \\quad m^2\\)\n1.Cree una tabla, nombre a la constante de Stefan-Boltzmann SIGMA, y al área \\(A\\). Calcule \\(H\\) para \\(T=1000 K\\) a \\(T=6000 K\\)",
+    "text": "Consignas\nDeberán crear un documento de Writer que contemple los elementos vistos hasta ahora\n\nPortada\nCoherencia tipográfica, niveles de título (numeradaos o no)\nFiguras, ecuaciones y tablas con sus leyendas\nEstilos de página acordes al contenido (tamaño y orientación de la página)\n\nEl documento deberá contener\n\nPortada acorde a lo requerido por la asignatura laboratorio 1 (esta página no deberá estar numerada)\nTitulos de nivel 1 para la Introducción, Materiales necesarios, Desarrollo, Conclusiones, Apéndices, Biliografía (u otras secciones que consideren necesarias o estén usando para los informes)\nPárrafos de ejemplo para cada título (pueden usar lorem+F3 para generarlos o copiar el de algún informe)\nPie de página con el número de página (centrado o con la alineación que considere mejor) y/o espacio para nombres de los integrantes del grupo\nCabecera de página con el título del documento y/o espacio para nombres de los integrantes del grupo\n3 Expresiones matemáicas numeradas\n2 Expresiones matemáticas no numeradas\n2 Expresiones matemáticas en línea con el texto\n3 Tablas\n3 Gráficos o imágenes\nSumario\níndice de tablas\nindice de ecuaciones\níndice de figuras (imágenes)\nBibliografía/Referencias\n\n\n\nModalidad y fecha de entrega\nVía aula virtual acá según fecha indicada en la tarea.",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 02"
     ]
-  },
-  {
-    "objectID": "trabajos practicos/tp 03.html#resistencias-en-paralelo",
-    "href": "trabajos practicos/tp 03.html#resistencias-en-paralelo",
-    "title": "TP 03",
-    "section": "",
-    "text": "La resistencia equivalente de colocar dos resistencias en paralelo se puede calcular usando:\n\\[\n\\frac{R_1 R_2}{R_1+R_2}\n\\]\nSi \\(R_1= 4,7 \\ k \\Omega\\) y \\(R_2= 6,8 \\ k \\Omega\\)\nCree una tabla para calcular la resistencia equivalente al colocar ambas en paralelo.",
-    "crumbs": [
-      "trabajos practicos",
-      "TP 03"
-    ]
-  },
-  {
-    "objectID": "trabajos practicos/tp 03.html#funciones-trigonométricas",
-    "href": "trabajos practicos/tp 03.html#funciones-trigonométricas",
-    "title": "TP 03",
-    "section": "2.1 Funciones trigonométricas",
-    "text": "2.1 Funciones trigonométricas\nLas funciones trigonométricas se encuentran dentro del apartado de funciones matemáticas de la barra lateral. En ese listado también aparecerán las funciones GRADOS() y RADIANES() que nos permient convertir entre una forma y otra de expresar los ángulos. De todas formas siempre podremos utilizar la relación \\(\\pi \\ \\text{rad} = 180 \\ \\text{grados}\\) si no queremos usar las funciones integradas.\n\n2.1.1 Tablas de valores\nCrear una tabla que contenga en la primera columna, el ángulo en radianes y en cada columna siguiente el valor de la función en ese punto. Completar para las siguientes funciones:\n\n\\(\\sin(\\theta)\\)\n\\(\\cos(\\theta)\\)\n\\(\\tan(\\theta)\\)\n\n\n\n2.1.2 Funciones inversas\n\nAgregar como primera columna del apartado anterior el ángulo en grados.\nAgregar tres columnas que calculen los valores de las funnciones inversas del punto anterior. Añadir una columna donde el resultado de las funciones inversas se exprese en grados y comprarar con la primera columna. ¿Coinciden?\n\nUse esta imagen como referencia\n\n\n\nFunciones trigonométricas\n\n\n\n\n2.1.3 La curva catenaria\nSi se cuelga una soga entre dos extremos, la geometría de la curva que forma es conocida como catenaria y se puede representar mediante la suguiente fórmula:\n\\[\ny = \\cosh(\\frac{x}{c})\n\\]\nDonde el par \\(x,y\\) son las coordenadas de un punto de la curva y \\(c\\) es una constante.\nConsidere que \\(c=250 \\ m\\) y calcule \\(y(x)\\) para \\(-100 \\ m&lt;x&lt;100 \\ m\\) a intervalos de 10 metros. Exprese sus resultados en notación científica o ingeneril con 4 cifras significativas.",
-    "crumbs": [
-      "trabajos practicos",
-      "TP 03"
-    ]
-  },
-  {
-    "objectID": "trabajos practicos/tp 03.html#funciones-exponenciales-y-logarítmicas",
-    "href": "trabajos practicos/tp 03.html#funciones-exponenciales-y-logarítmicas",
-    "title": "TP 03",
-    "section": "2.2 Funciones exponenciales y logarítmicas",
-    "text": "2.2 Funciones exponenciales y logarítmicas\nLa exponenciación en calc se efectúa mediante el operador ^ por lo que \\(3^2\\) se escribe como 3^2.\nLa función exponencial natural, con base \\(e\\) se puede construir usando la función EXP(n) donde n es la potencia en \\(e^n\\). Las funciones logaritmo se introducen como LOG(NÚMERO, BASE) mientras que el logaritmo natural es la función LN(NÚMERO). También es posible usar la función LOG10(NÚMERO) para calcular el logaritmo en base diez.\nConstruya una tabla de valores para \\(-10&lt;x&lt;10\\) con intervalos \\(\\Delta x = 0,05\\) entre celdas. Calcule para cada columna\n\nLa función \\(y=10^x\\)\nLa función \\(y=10^{-x}\\)\nLa función \\(y=\\log{x}\\)\nLa función \\(y=\\log{-x}\\)\nLa función \\(y=e^x\\)\nLa función \\(y=\\ln(x)\\)",
-    "crumbs": [
-      "trabajos practicos",
-      "TP 03"
-    ]
-  },
-  {
-    "objectID": "trabajos practicos/tp 01.html",
-    "href": "trabajos practicos/tp 01.html",
-    "title": "TP 01",
-    "section": "",
-    "text": "Consignas\nEn la medida que se vayan viendo los contenidos necesarios, se deberán aplicar a la reproducción del famoso trabajo de Rutherford sobre la dispersión de las partículas alfa.\n\nPublicación original\nVersión web en inglés\nTraducción al español (sin ecuaciones)\n\nTrabajaremos tentativamente los siguientes elementos en cada clase\n\nTipografía. Estilos, tipo y tamaño (Clase 01)\nEstilos de párrafo: Titulos, subtítulos, niveles (Clase 01)\nFiguras e imágenes: Leyendas y remisiones (Clase 02)\nEcuaciones: Numeración y estructura. TexMaths (Clase 02 y Clase 03)\nEstilo de página: Tamaño, márgenes, encabezados y pies de página (Clase 04)\nPortadas y numeración (Clase 04)\nTablas(Clase 05)\nSumarios e índices: Lista de figuras, tablas, ecuaciones, índice, bibliografía. (Clase 05)\n\n\n\nModalidad y fecha de entrega\nVía aula virtual acá según fecha indicada en la tarea.",
-    "crumbs": [
-      "trabajos practicos",
-      "TP 01"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "C1-661",
-    "section": "",
-    "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
   },
   {
     "objectID": "clases/clase-07.html",
@@ -608,14 +590,186 @@
     ]
   },
   {
-    "objectID": "trabajos practicos/tp 02.html",
-    "href": "trabajos practicos/tp 02.html",
-    "title": "TP 02",
+    "objectID": "clases/clase-08.html",
+    "href": "clases/clase-08.html",
+    "title": "Calc 02",
     "section": "",
-    "text": "Consignas\nDeberán crear un documento de Writer que contemple los elementos vistos hasta ahora\n\nPortada\nCoherencia tipográfica, niveles de título (numeradaos o no)\nFiguras, ecuaciones y tablas con sus leyendas\nEstilos de página acordes al contenido (tamaño y orientación de la página)\n\nEl documento deberá contener\n\nPortada acorde a lo requerido por la asignatura laboratorio 1 (esta página no deberá estar numerada)\nTitulos de nivel 1 para la Introducción, Materiales necesarios, Desarrollo, Conclusiones, Apéndices, Biliografía (u otras secciones que consideren necesarias o estén usando para los informes)\nPárrafos de ejemplo para cada título (pueden usar lorem+F3 para generarlos o copiar el de algún informe)\nPie de página con el número de página (centrado o con la alineación que considere mejor) y/o espacio para nombres de los integrantes del grupo\nCabecera de página con el título del documento y/o espacio para nombres de los integrantes del grupo\n3 Expresiones matemáicas numeradas\n2 Expresiones matemáticas no numeradas\n2 Expresiones matemáticas en línea con el texto\n3 Tablas\n3 Gráficos o imágenes\nSumario\níndice de tablas\nindice de ecuaciones\níndice de figuras (imágenes)\nBibliografía/Referencias\n\n\n\nModalidad y fecha de entrega\nVía aula virtual acá según fecha indicada en la tarea.",
+    "text": "Los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.\nPara representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.\nPara representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.\nPara insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente:\ninsertar &gt; gráfico&gt; tipo de gráfico &gt; xy dispersión",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#series-de-datos",
+    "href": "clases/clase-08.html#series-de-datos",
+    "title": "Calc 02",
+    "section": "Series de datos",
+    "text": "Series de datos\nPara hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.\nEsto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.\n\n\n\nElementos del gráfico",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#formato-del-gráfico",
+    "href": "clases/clase-08.html#formato-del-gráfico",
+    "title": "Calc 02",
+    "section": "Formato del gráfico",
+    "text": "Formato del gráfico\nLa correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.\nSe deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.\nPara los títulos y subtitlos de figuras, es preferible usar tipografías sin serif ya que su legibilidad es mejor en tamaños pequeños.\n\n\n\nEjemplo de gráfico de dispersión\n\n\nMás allá de los estilos preferibles a nivel estético existen algunos principios generales que escapan a los alcances de este apunte pero el ejemplo de arriba vale como muestra de como una misma información se puede disponer de forma distinta y ayudar o entorpecer el entendimiento de aquello que se está queriendo comunicar.\n\n\n\nDos visualizaciones diferentes\n\n\n\nLíneas de cuadrícula\nSi se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de\n\n\n\nEjes y cuadrículas\n\n\nTambién con el gráfico seleccionado a través del menú insertar &gt; cuadrículas\n\n\nEjes, leyendas y rótulos\nLa información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú insertar\n\n\n\nSeries de datos\n\n\n\n\nBarras de error\nCon el gráfico seleccionado hacemos insertar &gt; barras de error ahi podremos elegir las diferentes variantes que contamos para las barras de error\n\n\n\nBarras de error",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#histogramas",
+    "href": "clases/clase-08.html#histogramas",
+    "title": "Calc 02",
+    "section": "Histogramas",
+    "text": "Histogramas\nUsualmente cuando se tienen datos a tratarse de forma estadística, resulta útil usar hitogramas para representarlos. Por ejemplo, si se efectúan n mediciones para obtener un valor para la constante gravitatoria en la tierra (\\(9,8 \\dfrac{m}{s^2}\\)) y si se han tomando los recaudos necesarios para llevar adelante el experimento es de esperar que la gran mayoría de los valores obtenidos se agrupen cerca del valor más probable, que dependiendo de la incerteza del método o los experimentadores, podrá ser más o menos cercano al “verdadero”, que es aquél contra el cual comparamos nuestros resultados.\nEn este caso, si graficamos “cuantas veces obutvimos” valores para cierto intervalo o clase, obtendremos algo similar a esto:\n\n\n\n\n\n\n\n\n\nDonde se observa una distribución de datos normal como se ve en la siguiente figura:\n\n\n\nDistribución normal y porcentaje del área bajo la curva\n\n\nSi por el contrario, tiramos un dado n veces (y lo hacemos muuuuchas veces) veremos que la distribución de “cuantas veces salió el uno”, “cuantas veces salió el dos”, etc. tiene esta pinta:\n\n\n\n\n\n\n\n\n\nEn ambos casos estamos viendo un gráfico de clase vs frecuencia, las clases pueden ser intervalos de alguna magnitud medida: lluvias de entre 3 y 5 mm, alturas entre 1.6 y 1.8 m, etc y la frecuencia la cantidad de elementos que pertenecen a esa clase o intervalo.\nUna regla útil para saber en cuantos intervalos debemos “seccionar” nuestros datos es usar \\(N=\\sqrt{n}\\) en donde \\(N\\) es la cantidad de intervalos y \\(n\\) la cantidad de datos. El ancho del intervalo, luego de reondear \\(N\\) a un entero sera \\(\\frac{\\text{rango}}{N}\\) en donde el rango es \\(\\text{valor máximo} - \\text{valor minimo}\\).\n\nFuncion FRECUENCIA() y funciones matriciales\nLas funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector sobre la planilla dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas ctrl + shift + enter al momento de ejecutar la función.\nLa función FRECUENCIA(DATOS,CLASES) es una función matricial y como indica su sintaxis tiene dos argumentos, los datos que usará y los intervalos en los que ubicará a los datos. Freuencia devuelve una matriz donde indica cuántos elementos hay en cada intervalo indicado.\n\n\nCrear un histograma\n\nUna vez que tenemos nuestro datos en la planilla debemos decidicir cuántos intervalos o clases construiremos a partir de ellos, una vez hecho eso, creamos una celda qe contenga como valor el extremo superior del intervalo (podemos desplegarlos en columnas o en filas).\nEn Otra celda, llamamos a la función FRECUENCIA y seleccionamos los datos y nuestras clases. No olvidar de apretar ctrl + shift + enter al finalizar.\nCon los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#funciones-estadísticas-promedio-moda-y-mediana",
+    "href": "clases/clase-08.html#funciones-estadísticas-promedio-moda-y-mediana",
+    "title": "Calc 02",
+    "section": "Funciones estadísticas: Promedio, moda y mediana",
+    "text": "Funciones estadísticas: Promedio, moda y mediana\nDentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.\nEl cálculo matemático para cada uno de ellos es;\n\nPromedioModaMediana\n\n\nEl promedio representa la media aritmética de los valores de un conjunto \\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\nEn calc la función PROMEDIO(datos) devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).\nPromedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.\nEl ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.\n\n\nLa moda representa el valor que más se repite en un conjunto de datos\n\\[\n\\text{Moda} = \\{x_i \\mid \\max \\text{frecuencia}(x_i)\\}\n\\]\nEn calc, las funciones MODA.UNO() y MODA.VARIOS() nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando ctrl+shift+enter al finalizar la escritura en la celda.\nPara más información acerca de las funciones matriciales podés ver la ayuda oficial sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.\nLa moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.\n\n\nLa mediana representa el valor central de un conjunto de datos ordenado. \\[\n\\tilde{x} =\n\\begin{cases}\nx_{\\frac{n+1}{2}}, & \\text{si } n \\text{ es impar} \\\\\n\\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2}, & \\text{si } n \\text{ es par}\n\\end{cases}\n\\]\nEn LO la mediana se calcula con la función MEDIANA(datos). La mediana suele ser un dato representativo de un cojunto incluso cuando existen datos que ocupan los extremos por un margen considerable. Consideremos el conjunto: \\[\n\\left( -1000,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1000 \\right)\n\\]\nAquí la mediana da una información más representativa de los datos.",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#varianza-y-desviación-estándar",
+    "href": "clases/clase-08.html#varianza-y-desviación-estándar",
+    "title": "Calc 02",
+    "section": "Varianza y Desviación Estándar",
+    "text": "Varianza y Desviación Estándar\nLa varianza y la desviación estándar son medidas de dispersión que nos indican cuán dispersos están los datos respecto a la media.\nLa varianza (\\(\\sigma^2\\)) se define como el promedio de los cuadrados de las diferencias entre cada dato y la media:\n\\[\\sigma^2 = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}\\]\nLa desviación estándar (\\(\\sigma\\)) es simplemente la raíz cuadrada de la varianza:\n\\[\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\\]\n\nDeducción\nLa varianza surge al considerar cómo se dispersan los datos alrededor de la media. Primero, calculamos la distancia de cada dato respecto a la media \\(\\bar{x}\\):\n\\[\nd_i = x_i - \\bar{x}\n\\]\nSi sumamos estas distancias, obtenemos cero (ya que la media balancea los datos). Para evitar esto, usamos los cuadrados de las diferencias:\n\\[\n\\sum_{i=1}^{n} (x_i - \\bar{x})^2\n\\]\nDividiendo por \\(n\\), obtenemos la varianza, que mide la dispersión promedio de los datos. La desviación estándar es su raíz cuadrada, proporcionando una medida en las mismas unidades que los datos originales.\n\n\nInterpretación\n\nValores pequeños de \\(\\sigma\\) indican poca variabilidad en los datos.\nValores grandes de \\(\\sigma\\) muestran que los datos están más dispersos respecto a la media.\n\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\n\\]\n\n\nDesviación para una muestra o una población\nCuando consideramos el promedio \\(\\bar{x}\\) para una muestra, no estamos accediendo a los posibles infinitos valores que pudiera tener la población en estudio, por ejemplo, no podemos medir la carga de todos los electrones del universo para luego promediarlas, por lo que nuestras medidas están restringidas no a la población, sino a una muestra de ella.\nPara calcular la desviación estándar para una muestra (y no para una población) debemos primero usar los datos de la muestra para obtener \\(\\bar{x}\\), al hacer esto, por la definición de media, existen sólo \\(n-1\\) valores realimente “libres” en cuanto a la diferencia que pueden tener con la media, el último valor que intentemos calcular necesariamente deberá ser tal que la suma nos de cero.\nPor eso se dice que el sistema tiene “un grado menos de libertad” y siempre que calculemos la varianza o la desviación estándar para una muestra, la fórmula se ajusta de la siguiente forma:\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n-1}}\n\\]\nSi el número de muestras \\(n\\) es suficientemente grande, \\(\\bar{x} \\to \\mu\\) (la media de la muestra tiene a la media de la población) y por lo tanto, el ajuste no representa una gran cambio en resultado.\n\n\nResumen estadístico\nSi hacemos datos&gt; estadísticas &gt; estadíticas descriptivas podremos obtener los parámetros estadísticos mencionados arriba (junto a otros que no trabajaremos) para un intervalo de celdas de la planilla.",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#ejercitación",
+    "href": "clases/clase-08.html#ejercitación",
+    "title": "Calc 02",
+    "section": "Ejercitación",
+    "text": "Ejercitación\nLos contenidos vistos en esta clase se aplican tanto al TP 4 (que ya están en condiciones de encarar) como al TP 5, para el que necesitarán elementos de próximas clases.\n\nGraficar una función\nGrafique las funciones que se mencionan en el punto 2 del TP3. Agrupe las funciones de la siguiente forma\n\nFunciones trigonométrias\nFunciones trigonométricas inversas\nCatenaria\nFunciones exponenciales\nFunciones logarítmicas\n\nCada grupo de funciones deberá estar en una sola gráfica y contener:\n\nNombres en los ejes (x,y)\nTítulo y subtítulo\nLeyenda\n\nPruebe utilizar:\n\nGáficos de dispersión\nGráficos de barras (use primera columna como etiquetas)\n\nComo ejemplo de usar un gráfico de barras, debería ver algo como esto:\n\n\n\ngráficas trigonométricas\n\n\n\n\nHistogramas\nUsando este archivo como base, crear un histograma para la la hoja masas.",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#referencias",
+    "href": "clases/clase-08.html#referencias",
+    "title": "Calc 02",
+    "section": "Referencias",
+    "text": "Referencias\n\n🔗 Ayuda oficial de Libre Office\n🎥 Gráficas de dispersión\n🔗 Barras de error en Libre Office\n🔗 Diseño de gráficos basados en el estilo de Edward Tufte\n🔗 Sitio de Edward Tufte\n🔗 Guía de Nature para figuras\n🔗 Guía de principios para visualización\n🔗 Apunte de la materia laboratorio 1 Sobre Gráficas en Excel\n🔗 Histogramas en LO\n🔗 Datasets CERN\n🔗 Distribución normal en matplotlib\n🔗 Histogramas en matplotlib",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "C1-661",
+    "section": "",
+    "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
+  },
+  {
+    "objectID": "trabajos practicos/tp 01.html",
+    "href": "trabajos practicos/tp 01.html",
+    "title": "TP 01",
+    "section": "",
+    "text": "Consignas\nEn la medida que se vayan viendo los contenidos necesarios, se deberán aplicar a la reproducción del famoso trabajo de Rutherford sobre la dispersión de las partículas alfa.\n\nPublicación original\nVersión web en inglés\nTraducción al español (sin ecuaciones)\n\nTrabajaremos tentativamente los siguientes elementos en cada clase\n\nTipografía. Estilos, tipo y tamaño (Clase 01)\nEstilos de párrafo: Titulos, subtítulos, niveles (Clase 01)\nFiguras e imágenes: Leyendas y remisiones (Clase 02)\nEcuaciones: Numeración y estructura. TexMaths (Clase 02 y Clase 03)\nEstilo de página: Tamaño, márgenes, encabezados y pies de página (Clase 04)\nPortadas y numeración (Clase 04)\nTablas(Clase 05)\nSumarios e índices: Lista de figuras, tablas, ecuaciones, índice, bibliografía. (Clase 05)\n\n\n\nModalidad y fecha de entrega\nVía aula virtual acá según fecha indicada en la tarea.",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 01"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html",
+    "href": "trabajos practicos/tp 03.html",
+    "title": "TP 03",
+    "section": "",
+    "text": "Si se tiene una resistencia \\(R\\) de \\(12 M \\Omega\\) usando los datos de tensión en función del tiempo que se muestran en este archivo\n\nComplete la columna para la corriente \\(I\\) (en amperes) en función del tiempo sabiendo que por la ley de Ohm: \\[\n\\frac{V}{R}=I\n\\]\n\nExprese los valores en potencias de diez de la planilla de cálculo y represente las letras griegas y las fórmulas con los símbolos más adecuados\n\nComplete la columna para la potencia (en watts) sabiendo que \\(P=I^2 \\cdot R\\)\n\n\n\n\nPara un cuerpo en caída libre sin velocidad inicial, donde sólo se tiene en cuenta la fuerza de gravedad, el tiempo de vuelo se relaciona con la distancia recorrida por la fórmula \\[\nt=\\sqrt{\\frac{2h}{g}}\n\\]\n\nElabore una planilla donde tenga los datos de altura y tiempo. Considere \\(g=9,81 \\quad \\frac{m}{s^2}\\)\nReutilice sus datos para obtener la altura y el tiempo para \\(g=1,6 \\quad \\frac{m}{s^2}\\)\n\n\n\n\nEl calor emitido por segundo \\(H\\) por un cuerpo negro de área \\(A\\) a una temperatura \\(T\\) se puede calcular usando:\n\\[\nH=\\sigma A T^4\n\\]\nEn donde \\(\\sigma\\) es la constante de Stefan-Boltzmann (\\(5,67\\cdot 10^{-8} \\frac{W}{m^2 K^4}\\)). Si el área es \\(A=0,062 \\quad m^2\\)\n1.Cree una tabla, nombre a la constante de Stefan-Boltzmann SIGMA, y al área \\(A\\). Calcule \\(H\\) para \\(T=1000 K\\) a \\(T=6000 K\\)\n\n\n\nLa resistencia equivalente de colocar dos resistencias en paralelo se puede calcular usando:\n\\[\n\\frac{R_1 R_2}{R_1+R_2}\n\\]\nSi \\(R_1= 4,7 \\ k \\Omega\\) y \\(R_2= 6,8 \\ k \\Omega\\)\nCree una tabla para calcular la resistencia equivalente al colocar ambas en paralelo.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#ley-de-ohm",
+    "href": "trabajos practicos/tp 03.html#ley-de-ohm",
+    "title": "TP 03",
+    "section": "",
+    "text": "Si se tiene una resistencia \\(R\\) de \\(12 M \\Omega\\) usando los datos de tensión en función del tiempo que se muestran en este archivo\n\nComplete la columna para la corriente \\(I\\) (en amperes) en función del tiempo sabiendo que por la ley de Ohm: \\[\n\\frac{V}{R}=I\n\\]\n\nExprese los valores en potencias de diez de la planilla de cálculo y represente las letras griegas y las fórmulas con los símbolos más adecuados\n\nComplete la columna para la potencia (en watts) sabiendo que \\(P=I^2 \\cdot R\\)",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#tiempo-de-caída-y-distancia-recorrida",
+    "href": "trabajos practicos/tp 03.html#tiempo-de-caída-y-distancia-recorrida",
+    "title": "TP 03",
+    "section": "",
+    "text": "Para un cuerpo en caída libre sin velocidad inicial, donde sólo se tiene en cuenta la fuerza de gravedad, el tiempo de vuelo se relaciona con la distancia recorrida por la fórmula \\[\nt=\\sqrt{\\frac{2h}{g}}\n\\]\n\nElabore una planilla donde tenga los datos de altura y tiempo. Considere \\(g=9,81 \\quad \\frac{m}{s^2}\\)\nReutilice sus datos para obtener la altura y el tiempo para \\(g=1,6 \\quad \\frac{m}{s^2}\\)",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#emisión-de-un-cuerpo-negro",
+    "href": "trabajos practicos/tp 03.html#emisión-de-un-cuerpo-negro",
+    "title": "TP 03",
+    "section": "",
+    "text": "El calor emitido por segundo \\(H\\) por un cuerpo negro de área \\(A\\) a una temperatura \\(T\\) se puede calcular usando:\n\\[\nH=\\sigma A T^4\n\\]\nEn donde \\(\\sigma\\) es la constante de Stefan-Boltzmann (\\(5,67\\cdot 10^{-8} \\frac{W}{m^2 K^4}\\)). Si el área es \\(A=0,062 \\quad m^2\\)\n1.Cree una tabla, nombre a la constante de Stefan-Boltzmann SIGMA, y al área \\(A\\). Calcule \\(H\\) para \\(T=1000 K\\) a \\(T=6000 K\\)",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#resistencias-en-paralelo",
+    "href": "trabajos practicos/tp 03.html#resistencias-en-paralelo",
+    "title": "TP 03",
+    "section": "",
+    "text": "La resistencia equivalente de colocar dos resistencias en paralelo se puede calcular usando:\n\\[\n\\frac{R_1 R_2}{R_1+R_2}\n\\]\nSi \\(R_1= 4,7 \\ k \\Omega\\) y \\(R_2= 6,8 \\ k \\Omega\\)\nCree una tabla para calcular la resistencia equivalente al colocar ambas en paralelo.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#funciones-trigonométricas",
+    "href": "trabajos practicos/tp 03.html#funciones-trigonométricas",
+    "title": "TP 03",
+    "section": "2.1 Funciones trigonométricas",
+    "text": "2.1 Funciones trigonométricas\nLas funciones trigonométricas se encuentran dentro del apartado de funciones matemáticas de la barra lateral. En ese listado también aparecerán las funciones GRADOS() y RADIANES() que nos permient convertir entre una forma y otra de expresar los ángulos. De todas formas siempre podremos utilizar la relación \\(\\pi \\ \\text{rad} = 180 \\ \\text{grados}\\) si no queremos usar las funciones integradas.\n\n2.1.1 Tablas de valores\nCrear una tabla que contenga en la primera columna, el ángulo en radianes y en cada columna siguiente el valor de la función en ese punto. Completar para las siguientes funciones:\n\n\\(\\sin(\\theta)\\)\n\\(\\cos(\\theta)\\)\n\\(\\tan(\\theta)\\)\n\n\n\n2.1.2 Funciones inversas\n\nAgregar como primera columna del apartado anterior el ángulo en grados.\nAgregar tres columnas que calculen los valores de las funnciones inversas del punto anterior. Añadir una columna donde el resultado de las funciones inversas se exprese en grados y comprarar con la primera columna. ¿Coinciden?\n\nUse esta imagen como referencia\n\n\n\nFunciones trigonométricas\n\n\n\n\n2.1.3 La curva catenaria\nSi se cuelga una soga entre dos extremos, la geometría de la curva que forma es conocida como catenaria y se puede representar mediante la suguiente fórmula:\n\\[\ny = \\cosh(\\frac{x}{c})\n\\]\nDonde el par \\(x,y\\) son las coordenadas de un punto de la curva y \\(c\\) es una constante.\nConsidere que \\(c=250 \\ m\\) y calcule \\(y(x)\\) para \\(-100 \\ m&lt;x&lt;100 \\ m\\) a intervalos de 10 metros. Exprese sus resultados en notación científica o ingeneril con 4 cifras significativas.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#funciones-exponenciales-y-logarítmicas",
+    "href": "trabajos practicos/tp 03.html#funciones-exponenciales-y-logarítmicas",
+    "title": "TP 03",
+    "section": "2.2 Funciones exponenciales y logarítmicas",
+    "text": "2.2 Funciones exponenciales y logarítmicas\nLa exponenciación en calc se efectúa mediante el operador ^ por lo que \\(3^2\\) se escribe como 3^2.\nLa función exponencial natural, con base \\(e\\) se puede construir usando la función EXP(n) donde n es la potencia en \\(e^n\\). Las funciones logaritmo se introducen como LOG(NÚMERO, BASE) mientras que el logaritmo natural es la función LN(NÚMERO). También es posible usar la función LOG10(NÚMERO) para calcular el logaritmo en base diez.\nConstruya una tabla de valores para \\(-10&lt;x&lt;10\\) con intervalos \\(\\Delta x = 0,05\\) entre celdas. Calcule para cada columna\n\nLa función \\(y=10^x\\)\nLa función \\(y=10^{-x}\\)\nLa función \\(y=\\log{x}\\)\nLa función \\(y=\\log{-x}\\)\nLa función \\(y=e^x\\)\nLa función \\(y=\\ln(x)\\)",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
     ]
   }
 ]
