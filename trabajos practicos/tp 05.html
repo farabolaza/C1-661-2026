@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Writer 02 – C1-661 2026</title>
+<title>TP 05 – C1-661 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,8 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,10 +67,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Writer 02 – C1-661 2026">
-<meta property="og:description" content="Figuras, leyendas y remisiones">
+<meta property="og:title" content="TP 05 – C1-661 2026">
+<meta property="og:description" content="Linealización de datos, Solver y gráficas.">
 <meta property="og:site_name" content="C1-661 2026">
 </head>
 
@@ -85,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-02.html">Writer 02</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/tp 05.html">TP 05</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -153,13 +180,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Clases</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-01.html" class="sidebar-item-text sidebar-link">
@@ -168,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-02.html" class="sidebar-item-text sidebar-link active">
+  <a href="../clases/clase-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writer 02</span></a>
   </div>
 </li>
@@ -212,13 +239,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">trabajos practicos</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../trabajos practicos/tp 01.html" class="sidebar-item-text sidebar-link">
@@ -245,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../trabajos practicos/tp 05.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/tp 05.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">TP 05</span></a>
   </div>
 </li>
@@ -261,24 +288,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#figuras" id="toc-figuras" class="nav-link active" data-scroll-target="#figuras">Figuras</a>
+  <li><a href="#linealización-de-datos" id="toc-linealización-de-datos" class="nav-link active" data-scroll-target="#linealización-de-datos"><span class="header-section-number">1</span> Linealización de datos</a>
   <ul class="collapse">
-  <li><a href="#insertar-figuras-y-leyendas" id="toc-insertar-figuras-y-leyendas" class="nav-link" data-scroll-target="#insertar-figuras-y-leyendas">Insertar figuras y leyendas</a></li>
-  <li><a href="#posicionamiento" id="toc-posicionamiento" class="nav-link" data-scroll-target="#posicionamiento">Posicionamiento</a></li>
-  <li><a href="#leyenda" id="toc-leyenda" class="nav-link" data-scroll-target="#leyenda">Leyenda</a></li>
-  <li><a href="#remisiones" id="toc-remisiones" class="nav-link" data-scroll-target="#remisiones">Remisiones</a></li>
-  <li><a href="#estilos" id="toc-estilos" class="nav-link" data-scroll-target="#estilos">Estilos</a></li>
+  <li><a href="#caída-libre-con-resistencia" id="toc-caída-libre-con-resistencia" class="nav-link" data-scroll-target="#caída-libre-con-resistencia"><span class="header-section-number">1.1</span> Caída libre con resistencia</a></li>
+  <li><a href="#ley-de-enfriamiento-de-newton" id="toc-ley-de-enfriamiento-de-newton" class="nav-link" data-scroll-target="#ley-de-enfriamiento-de-newton"><span class="header-section-number">1.2</span> Ley de enfriamiento de Newton</a></li>
+  <li><a href="#posición-de-un-cuerpo-con-rozamiento-viscoso" id="toc-posición-de-un-cuerpo-con-rozamiento-viscoso" class="nav-link" data-scroll-target="#posición-de-un-cuerpo-con-rozamiento-viscoso"><span class="header-section-number">1.3</span> Posición de un cuerpo con rozamiento viscoso</a></li>
+  <li><a href="#decaimiento-radioactivo" id="toc-decaimiento-radioactivo" class="nav-link" data-scroll-target="#decaimiento-radioactivo"><span class="header-section-number">1.4</span> Decaimiento Radioactivo</a></li>
   </ul></li>
+  <li><a href="#solver" id="toc-solver" class="nav-link" data-scroll-target="#solver"><span class="header-section-number">2</span> Solver</a></li>
+  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link" data-scroll-target="#modalidad-y-fecha-de-entrega"><span class="header-section-number">3</span> Modalidad y fecha de entrega</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-02.html">Writer 02</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/tp 05.html">TP 05</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Writer 02</h1>
-<p class="subtitle lead">Figuras, leyendas y remisiones</p>
+<h1 class="title">TP 05</h1>
+<p class="subtitle lead">Linealización de datos, Solver y gráficas.</p>
 </div>
 
 
@@ -295,65 +323,100 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="figuras" class="level1">
-<h1>Figuras</h1>
-<p>En un documento de writer podemos agregar imágenes, gráficos, cuadros, tablas etc. con diferentes categorías de rotulos: es decir, podemos tener por un lado las imágenes, y por otro las tablas o cuadros e identificarlos con una numeración correlativa y de actualización secuencial automática para cada grupo.</p>
-<p>Para distinguir entre objetos se utilizan las <strong>leyendas</strong> y para mencionar dichos objetos se usan las <strong>remisiones</strong>. Veamos como</p>
-<section id="insertar-figuras-y-leyendas" class="level2">
-<h2 class="anchored" data-anchor-id="insertar-figuras-y-leyendas">Insertar figuras y leyendas</h2>
-<p>Podemos insertar gráficos e imagenes desde el menu <code>insertar</code> o pegando el elemento en el cuerpo del texto.</p>
+<section id="linealización-de-datos" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Linealización de datos</h1>
+<section id="caída-libre-con-resistencia" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="caída-libre-con-resistencia"><span class="header-section-number">1.1</span> Caída libre con resistencia</h2>
+<p>Un modelo posible para la velocidad de caída de un cuerpo que experimenta resistencia con el aire puede ser :</p>
+<p><span class="math display">\[
+v(t)=v_t \left(1-e^{kt} \right)
+\]</span></p>
+<p>Donde <span class="math inline">\(v_t\)</span> es la velocidad terminal del cuerpo (sumna de fuerzas igual a cero)</p>
+<div id="4a506b24" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="tp 05_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="1">
+<li>Importar los datos de <a href="..\assets/datos_caida_libre.csv">este archivo</a> a calc</li>
+<li>Graficar los datos originales</li>
+<li>Linealizar el modelo</li>
+<li>Obtener el valor de <span class="math inline">\(k\)</span> y el modelo físico resultante.</li>
+</ol>
+<p>RTA: <span class="math inline">\(k=0,2\)</span>, <span class="math inline">\(v(t)=50\cdot (1-e^{-0,2t})\)</span></p>
 </section>
-<section id="posicionamiento" class="level2">
-<h2 class="anchored" data-anchor-id="posicionamiento">Posicionamiento</h2>
-<p>Para obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.</p>
-<div class="quarto-figure quarto-figure-center">
+<section id="ley-de-enfriamiento-de-newton" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="ley-de-enfriamiento-de-newton"><span class="header-section-number">1.2</span> Ley de enfriamiento de Newton</h2>
+<p>Según la ley de enfriamiento de un cuerpo de Newton, la temperatura de un cuerpo en un entorno viene dada por el siguiente modelo: <span class="math display">\[
+T(t) = T_{\text{amb}} + (T_0 - T_{\text{amb}}) e^{-kt}
+\]</span></p>
+<p>Aplique los conceptos de linealización para ajustar los datos que se le proveen.</p>
+<div id="3249be90" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="..\assets/bara-imagen.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption>barra de herramientas de imagen</figcaption>
+<p><img src="tp 05_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>Toda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.</p>
-<p>Para poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla <code>enter</code> se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.</p>
+</div>
+</div>
+<ol type="1">
+<li>Importar los datos de <a href="..\assets/datos_enfriamiento.csv">este archivo</a> a calc.</li>
+<li>Grafique los datos. Encuentre <span class="math inline">\(T_0\)</span> y <span class="math inline">\(T_{\text{amb}}\)</span></li>
+<li>Graficar ln(T - T_amb) vs.&nbsp;tiempo.</li>
+<li>Realizar regresión lineal para obtener <span class="math inline">\(k\)</span>.</li>
+</ol>
+<p>RTA: <span class="math inline">\(T_0=80\)</span>, <span class="math inline">\(T_{\text{amb}}=20\)</span>, <span class="math inline">\(K=0,1\)</span></p>
 </section>
-<section id="leyenda" class="level2">
-<h2 class="anchored" data-anchor-id="leyenda">Leyenda</h2>
-<p>Si se selecciona la figura insertada y se va al menu <code>insertar</code> <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> <code>leyenda</code> se acceden a las opciones para la leyenda del elemento individual</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/leyenda.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption>cuadro de diálogo de leyenda</figcaption>
-</figure>
-</div>
+<section id="posición-de-un-cuerpo-con-rozamiento-viscoso" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="posición-de-un-cuerpo-con-rozamiento-viscoso"><span class="header-section-number">1.3</span> Posición de un cuerpo con rozamiento viscoso</h2>
+<p>Para determinado movimiento, se supone que el modelo que lo representa esta dado por: <span class="math display">\[
+x(t)=x_0 \cdot e^{-bt}
+\]</span></p>
+<p>LibreOffice Calc:</p>
+<ol type="1">
+<li>Importar los datos de <a href="..\assets/datos_rozamiento.csv">este archivo</a> a calc</li>
+<li>Grafique los datos</li>
+<li>Linealizar le modelo</li>
+<li>Graficar y realizar regresión lineal para obtener <span class="math inline">\(b\)</span>.</li>
+<li>Escriba la ecuación con los parámetros de los datos</li>
+</ol>
+<p>RTA: <span class="math inline">\(x_0=10\)</span>, <span class="math inline">\(b=0,3\)</span></p>
 </section>
-<section id="remisiones" class="level2">
-<h2 class="anchored" data-anchor-id="remisiones">Remisiones</h2>
-<p>Una vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las <code>remisiones</code> para ello vamos al menú <code>insertar</code> <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> <code>remisión</code></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/remision.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption>cuadro de diálogo remisio</figcaption>
-</figure>
-</div>
-<p>Si elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/remision-ejemplos.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption>cuadro de diálogo remisión</figcaption>
-</figure>
-</div>
+<section id="decaimiento-radioactivo" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="decaimiento-radioactivo"><span class="header-section-number">1.4</span> Decaimiento Radioactivo</h2>
+<p>El número de partículas de cierto isótopo que se desintegra por emisión radioactiva se supone modelado por la siguiente expesión:</p>
+<p><span class="math display">\[
+N(t) = N_0 e^{-\lambda t}
+\]</span></p>
+<p>Donde <span class="math inline">\(N_0\)</span> es la cantidad de particulas iniciales y <span class="math inline">\(\lambda\)</span> la constante de desintegración.</p>
+<ol type="1">
+<li>Importar los datos de <a href="..\assets/datos_desintegracion.csv">este archivo</a> a calc</li>
+<li>Graficar los datos.</li>
+<li>Linealizar el modelo.</li>
+<li>Graficar los datos linealizados</li>
+<li>Encuentre <span class="math inline">\(\lambda\)</span> y escriba la ecuación para los datos.</li>
+</ol>
+<p>RTA: <span class="math inline">\(N_0=500\)</span>, <span class="math inline">\(\lambda = 0,05\)</span></p>
 </section>
-<section id="estilos" class="level2">
-<h2 class="anchored" data-anchor-id="estilos">Estilos</h2>
-<p>Los estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde <code>ver</code> <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> <code>barra de estilos</code> y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/estilos-leyenda.png" class="img-fluid figure-img" style="width:30.0%"></p>
-<figcaption>estilos para las leyendas</figcaption>
-</figure>
-</div>
+</section>
+<section id="solver" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Solver</h1>
+<ol type="1">
+<li>Usar los archivos del punto anterior y obtener el la ecuación ajustando con <em>solver</em></li>
+<li>Graficar en un mismo lienzo (gráfico) los datos experimentales y la ecuación del ajuste</li>
+</ol>
+</section>
+<section id="modalidad-y-fecha-de-entrega" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Modalidad y fecha de entrega</h1>
+<p>Cada ejercicio deberá estar en una hoja diferente de un mismo libro de Libre Office Calc.</p>
+<p>Vía aula virtual <a href="https://inspt.cvg.utn.edu.ar/course/view.php?id=2201#section-1">acá</a> según fecha indicada en la tarea.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
