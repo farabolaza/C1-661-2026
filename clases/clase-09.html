@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Libre Office – C1-661 2026</title>
+<title>Linealización – C1-661 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,8 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,10 +67,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Libre Office – C1-661 2026">
-<meta property="og:description" content="Libre Office y Writer">
+<meta property="og:title" content="Linealización – C1-661 2026">
+<meta property="og:description" content="Linealización de datos">
 <meta property="og:site_name" content="C1-661 2026">
 </head>
 
@@ -85,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-01.html">Libre Office</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-09.html">Linealización</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -162,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../clases/clase-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Libre Office</span></a>
   </div>
 </li>
@@ -210,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-09.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Linealización</span></a>
   </div>
 </li>
@@ -273,38 +300,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#formulario-de-bienvenida" id="toc-formulario-de-bienvenida" class="nav-link active" data-scroll-target="#formulario-de-bienvenida">Formulario de bienvenida</a></li>
-  <li><a href="#linux-y-el-software-libre" id="toc-linux-y-el-software-libre" class="nav-link" data-scroll-target="#linux-y-el-software-libre">Linux y el software libre</a>
+  <li><a href="#regresión-lineal-y-cuadrados-mínimos" id="toc-regresión-lineal-y-cuadrados-mínimos" class="nav-link active" data-scroll-target="#regresión-lineal-y-cuadrados-mínimos">Regresión lineal y Cuadrados mínimos</a>
   <ul class="collapse">
-  <li><a href="#libre-no-significa-gratis" id="toc-libre-no-significa-gratis" class="nav-link" data-scroll-target="#libre-no-significa-gratis">Libre no significa gratis</a></li>
+  <li><a href="#planteo" id="toc-planteo" class="nav-link" data-scroll-target="#planteo">Planteo</a></li>
+  <li><a href="#minimización-de-la-suma-de-cuadrados" id="toc-minimización-de-la-suma-de-cuadrados" class="nav-link" data-scroll-target="#minimización-de-la-suma-de-cuadrados">Minimización de la suma de cuadrados</a></li>
+  <li><a href="#resolución-de-las-ecuaciones-normales" id="toc-resolución-de-las-ecuaciones-normales" class="nav-link" data-scroll-target="#resolución-de-las-ecuaciones-normales">Resolución de las ecuaciones normales</a></li>
+  <li><a href="#estimación-de-incertidumbres" id="toc-estimación-de-incertidumbres" class="nav-link" data-scroll-target="#estimación-de-incertidumbres">Estimación de incertidumbres</a></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen">Resumen</a></li>
   </ul></li>
-  <li><a href="#libre-office" id="toc-libre-office" class="nav-link" data-scroll-target="#libre-office">Libre office</a>
+  <li><a href="#regresión-lineal-en-calc" id="toc-regresión-lineal-en-calc" class="nav-link" data-scroll-target="#regresión-lineal-en-calc">Regresión lineal en Calc</a>
   <ul class="collapse">
-  <li><a href="#qué-es-libre-office" id="toc-qué-es-libre-office" class="nav-link" data-scroll-target="#qué-es-libre-office">¿Qué es libre office?</a></li>
-  <li><a href="#para-qué-libre-office" id="toc-para-qué-libre-office" class="nav-link" data-scroll-target="#para-qué-libre-office">¿Para qué libre office?</a></li>
-  <li><a href="#instalando-libre-office" id="toc-instalando-libre-office" class="nav-link" data-scroll-target="#instalando-libre-office">Instalando libre office</a></li>
-  <li><a href="#ayuda-en-línea-y-manuales" id="toc-ayuda-en-línea-y-manuales" class="nav-link" data-scroll-target="#ayuda-en-línea-y-manuales">Ayuda en línea y manuales</a></li>
+  <li><a href="#en-una-gráfica" id="toc-en-una-gráfica" class="nav-link" data-scroll-target="#en-una-gráfica">En una gráfica</a></li>
+  <li><a href="#funciones-pendiente-e-interseccion.eje" id="toc-funciones-pendiente-e-interseccion.eje" class="nav-link" data-scroll-target="#funciones-pendiente-e-interseccion.eje">Funciones PENDIENTE e INTERSECCION.EJE</a></li>
+  <li><a href="#función-estimacion.lineal" id="toc-función-estimacion.lineal" class="nav-link" data-scroll-target="#función-estimacion.lineal">Función ESTIMACION.LINEAL</a></li>
+  <li><a href="#datos-estadísticas-regresión" id="toc-datos-estadísticas-regresión" class="nav-link" data-scroll-target="#datos-estadísticas-regresión">Datos &gt; Estadísticas &gt; Regresión</a></li>
   </ul></li>
-  <li><a href="#libre-office-writer" id="toc-libre-office-writer" class="nav-link" data-scroll-target="#libre-office-writer">Libre Office-Writer</a>
+  <li><a href="#linealización-de-gráficas" id="toc-linealización-de-gráficas" class="nav-link" data-scroll-target="#linealización-de-gráficas">Linealización de gráficas</a></li>
+  <li><a href="#cambio-de-variable" id="toc-cambio-de-variable" class="nav-link" data-scroll-target="#cambio-de-variable">Cambio de variable</a></li>
+  <li><a href="#gráficas-log-vs-log" id="toc-gráficas-log-vs-log" class="nav-link" data-scroll-target="#gráficas-log-vs-log">Gráficas log vs log</a>
   <ul class="collapse">
-  <li><a href="#lista-de-videos" id="toc-lista-de-videos" class="nav-link" data-scroll-target="#lista-de-videos">Lista de videos <i class="fa-solid fa-film" aria-label="film"></i></a></li>
-  <li><a href="#estilos-en-writer" id="toc-estilos-en-writer" class="nav-link" data-scroll-target="#estilos-en-writer">Estilos en Writer</a></li>
-  <li><a href="#niveles-de-jearquía-numerados" id="toc-niveles-de-jearquía-numerados" class="nav-link" data-scroll-target="#niveles-de-jearquía-numerados">Niveles de jearquía numerados</a></li>
+  <li><a href="#demostración" id="toc-demostración" class="nav-link" data-scroll-target="#demostración">Demostración</a></li>
   </ul></li>
-  <li><a href="#actividad-inicial" id="toc-actividad-inicial" class="nav-link" data-scroll-target="#actividad-inicial">Actividad inicial</a>
-  <ul class="collapse">
-  <li><a href="#arqueología-de-publicaciones" id="toc-arqueología-de-publicaciones" class="nav-link" data-scroll-target="#arqueología-de-publicaciones">Arqueología de publicaciones</a></li>
-  </ul></li>
+  <li><a href="#gráficas-lineal-vs-log" id="toc-gráficas-lineal-vs-log" class="nav-link" data-scroll-target="#gráficas-lineal-vs-log">Gráficas lineal vs log</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-01.html">Libre Office</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-09.html">Linealización</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Libre Office</h1>
-<p class="subtitle lead">Libre Office y Writer</p>
+<h1 class="title">Linealización</h1>
+<p class="subtitle lead">Linealización de datos</p>
 </div>
 
 
@@ -321,107 +349,368 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="formulario-de-bienvenida" class="level2">
-<h2 class="anchored" data-anchor-id="formulario-de-bienvenida">Formulario de bienvenida</h2>
-<div id="fig-qr1" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-qr1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<section id="regresión-lineal-y-cuadrados-mínimos" class="level2">
+<h2 class="anchored" data-anchor-id="regresión-lineal-y-cuadrados-mínimos">Regresión lineal y Cuadrados mínimos</h2>
+<p>La regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:</p>
+<p><span class="math display">\[
+y = a + b x
+\]</span></p>
+<p>donde <span class="math inline">\(a\)</span> es la intersección con el eje <span class="math inline">\(y\)</span> (ordenada al origen) y <span class="math inline">\(b\)</span> es la pendiente de la línea. El objetivo es encontrar los valores de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> que minimicen la suma de los cuadrados de las diferencias entre los valores observados <span class="math inline">\(y_i\)</span> y los valores predichos por el modelo <span class="math inline">\(a + b x_i\)</span>. Estas diferencias se conocen como residuos.</p>
+<section id="planteo" class="level3">
+<h3 class="anchored" data-anchor-id="planteo">Planteo</h3>
+<p>Supongamos que tenemos un conjunto de <span class="math inline">\(n\)</span> puntos experimentales, cada uno con coordenadas <span class="math inline">\((x_i, y_i)\)</span>, donde <span class="math inline">\(x_i\)</span> es la variable independiente y <span class="math inline">\(y_i\)</span> es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.</p>
+<p>La suma de los cuadrados de los residuos, denotada como <span class="math inline">\(S\)</span>, se define como:</p>
+<p><span class="math display">\[
+S = \sum_{i=1}^{n} [y_i - (a + b x_i)]^2
+\]</span></p>
+<p>Nuestro objetivo es encontrar los valores de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> que minimicen <span class="math inline">\(S\)</span>.</p>
+</section>
+<section id="minimización-de-la-suma-de-cuadrados" class="level3">
+<h3 class="anchored" data-anchor-id="minimización-de-la-suma-de-cuadrados">Minimización de la suma de cuadrados</h3>
+<p>Para minimizar <span class="math inline">\(S\)</span>, calculamos las derivadas parciales de <span class="math inline">\(S\)</span> con respecto a <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, y las igualamos a cero.</p>
+<ol type="1">
+<li><strong>Derivada con respecto a <span class="math inline">\(a\)</span></strong>:</li>
+</ol>
+<p><span class="math display">\[
+\frac{\partial S}{\partial a} = -2 \sum_{i=1}^{n} [y_i - (a + b x_i)] = 0
+\]</span></p>
+<p>Simplificando:</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} y_i - n a - b \sum_{i=1}^{n} x_i = 0 \quad (1)
+\]</span></p>
+<ol start="2" type="1">
+<li><strong>Derivada con respecto a <span class="math inline">\(b\)</span></strong>:</li>
+</ol>
+<p><span class="math display">\[
+\frac{\partial S}{\partial b} = -2 \sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0
+\]</span></p>
+<p>Simplificando:</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} x_i y_i - a \sum_{i=1}^{n} x_i - b \sum_{i=1}^{n} x_i^2 = 0 \quad (2)
+\]</span></p>
+<p>Las ecuaciones (1) y (2) son conocidas como las <strong>ecuaciones normales</strong> de la regresión lineal.</p>
+</section>
+<section id="resolución-de-las-ecuaciones-normales" class="level3">
+<h3 class="anchored" data-anchor-id="resolución-de-las-ecuaciones-normales">Resolución de las ecuaciones normales</h3>
+<p>Reorganizamos las ecuaciones (1) y (2) para resolver el sistema:</p>
+<p><span class="math display">\[
+n a + b \sum_{i=1}^{n} x_i = \sum_{i=1}^{n} y_i \quad (1)
+\]</span></p>
+<p><span class="math display">\[
+a \sum_{i=1}^{n} x_i + b \sum_{i=1}^{n} x_i^2 = \sum_{i=1}^{n} x_i y_i \quad (2)
+\]</span></p>
+<section id="paso-1-resolver-para-a-en-función-de-b" class="level4">
+<h4 class="anchored" data-anchor-id="paso-1-resolver-para-a-en-función-de-b">Paso 1: Resolver para <span class="math inline">\(a\)</span> en función de <span class="math inline">\(b\)</span></h4>
+<p>De la ecuación (1):</p>
+<p><span class="math display">\[
+a = \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \quad (3)
+\]</span></p>
+</section>
+<section id="paso-2-sustituir-a-en-la-ecuación-2" class="level4">
+<h4 class="anchored" data-anchor-id="paso-2-sustituir-a-en-la-ecuación-2">Paso 2: Sustituir <span class="math inline">\(a\)</span> en la ecuación (2)</h4>
+<p>Sustituyendo (3) en (2):</p>
+<p><span class="math display">\[
+\left( \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \right) \sum_{i=1}^{n} x_i + b \sum_{i=1}^{n} x_i^2 = \sum_{i=1}^{n} x_i y_i
+\]</span></p>
+<p>Multiplicamos ambos lados por <span class="math inline">\(n\)</span> para eliminar el denominador:</p>
+<p><span class="math display">\[
+\left( \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \right) \sum_{i=1}^{n} x_i + b n \sum_{i=1}^{n} x_i^2 = n \sum_{i=1}^{n} x_i y_i
+\]</span></p>
+<p>Expandimos:</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} y_i \sum_{i=1}^{n} x_i - b \left( \sum_{i=1}^{n} x_i \right)^2 + b n \sum_{i=1}^{n} x_i^2 = n \sum_{i=1}^{n} x_i y_i
+\]</span></p>
+<p>Agrupamos los términos con <span class="math inline">\(b\)</span>:</p>
+<p><span class="math display">\[
+b \left[ n \sum_{i=1}^{n} x_i^2 - \left( \sum_{i=1}^{n} x_i \right)^2 \right] = n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} y_i \sum_{i=1}^{n} x_i
+\]</span></p>
+</section>
+<section id="paso-3-calcular-b" class="level4">
+<h4 class="anchored" data-anchor-id="paso-3-calcular-b">Paso 3: Calcular <span class="math inline">\(b\)</span></h4>
+<p>Despejamos <span class="math inline">\(b\)</span>:</p>
+<p><span class="math display">\[
+b = \frac{n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} x_i \sum_{i=1}^{n} y_i}{n \sum_{i=1}^{n} x_i^2 - \left( \sum_{i=1}^{n} x_i \right)^2} \quad (4)
+\]</span></p>
+</section>
+<section id="paso-4-calcular-a" class="level4">
+<h4 class="anchored" data-anchor-id="paso-4-calcular-a">Paso 4: Calcular <span class="math inline">\(a\)</span></h4>
+<p>Sustituimos <span class="math inline">\(b\)</span> de (4) en (3):</p>
+<p><span class="math display">\[
+a = \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n}
+\]</span></p>
+<p>Estas expresiones para <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son las fórmulas estándar de la regresión por mínimos cuadrados.</p>
+</section>
+</section>
+<section id="estimación-de-incertidumbres" class="level3">
+<h3 class="anchored" data-anchor-id="estimación-de-incertidumbres">Estimación de incertidumbres</h3>
+<p>En el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en <span class="math inline">\(y_i\)</span> son gaussianos y tienen la misma varianza <span class="math inline">\(\sigma^2\)</span> (homocedasticidad).</p>
+<section id="varianza-de-los-parámetros" class="level4">
+<h4 class="anchored" data-anchor-id="varianza-de-los-parámetros">Varianza de los parámetros</h4>
+<p>La varianza de <span class="math inline">\(b\)</span> es:</p>
+<p><span class="math display">\[ \text{Var}(b) = \frac{\sigma^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \]</span></p>
+<p>donde <span class="math inline">\(\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\)</span> es la media de los <span class="math inline">\(x_i\)</span>.</p>
+<p>La varianza de <span class="math inline">\(a\)</span> es:</p>
+<p><span class="math display">\[ \text{Var}(a) = \sigma^2 \left[ \frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \right] \]</span></p>
+</section>
+<section id="estimación-de-sigma2" class="level4">
+<h4 class="anchored" data-anchor-id="estimación-de-sigma2">Estimación de <span class="math inline">\(\sigma^2\)</span></h4>
+<p>En la práctica, <span class="math inline">\(\sigma^2\)</span> no se conoce y se estima a partir de los residuos:</p>
+<p><span class="math display">\[ s^2 = \frac{\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \]</span></p>
+<p>donde <span class="math inline">\(n - 2\)</span> refleja los grados de libertad, ya que hemos estimado dos parámetros (<span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>).</p>
+</section>
+<section id="incertidumbres-estándar" class="level4">
+<h4 class="anchored" data-anchor-id="incertidumbres-estándar">Incertidumbres estándar</h4>
+<p>Las incertidumbres estándar de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son las raíces cuadradas de sus varianzas, utilizando <span class="math inline">\(s^2\)</span> como estimación de <span class="math inline">\(\sigma^2\)</span>:</p>
+<p><span class="math display">\[ \sigma_b \approx \sqrt{\frac{s^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2}} \]</span></p>
+<p><span class="math display">\[ \sigma_a \approx \sqrt{s^2 \left[ \frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \right]} \]</span></p>
+</section>
+</section>
+<section id="resumen" class="level3">
+<h3 class="anchored" data-anchor-id="resumen">Resumen</h3>
+<p>La regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:</p>
+<ul>
+<li>Pendiente <span class="math inline">\(b\)</span>:</li>
+</ul>
+<p><span class="math display">\[ b = \frac{n \sum x_i y_i - \sum x_i \sum y_i}{n \sum x_i^2 - (\sum x_i)^2} \]</span></p>
+<ul>
+<li>Ordenada al origen <span class="math inline">\(a\)</span>:</li>
+</ul>
+<p><span class="math display">\[ a = \frac{\sum y_i - b \sum x_i}{n} \]</span></p>
+<p>Además, las incertidumbres de estos parámetros se estiman utilizando la varianza residual <span class="math inline">\(s^2\)</span>, lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.</p>
+</section>
+</section>
+<section id="regresión-lineal-en-calc" class="level2">
+<h2 class="anchored" data-anchor-id="regresión-lineal-en-calc">Regresión lineal en Calc</h2>
+<p>Para realizar un ajuste de regresión lineal en calc disponemos de diferente formas de hacerlo, algunas dan más información, otras menos y dependerá de las necesidaes del usuario cuál elegir.</p>
+<section id="en-una-gráfica" class="level3">
+<h3 class="anchored" data-anchor-id="en-una-gráfica">En una gráfica</h3>
+<p>Si tenemos los datos grafiacados, haciendo click derecho sobre los datos elegimos del menú <code>insertar línea de tendencia</code></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/qrcode-1-clase.png" class="img-fluid figure-img"></p>
-<figcaption>Código qr del formulario</figcaption>
+<p><img src="..\assets/calc-grafica-linea-tendencia.png" class="img-fluid figure-img"></p>
+<figcaption>linea de tendencia</figcaption>
+</figure>
+</div>
+<p>En esta pantalla podremos elegir el ajuste lineal y decidir que es lo que queremos que aparezca en el gráfico: ecuación, coeficiente de correlación, etc.</p>
+<p>La opción forzar intercepción obliga a deshacerse del término independiente y forzar a la ecuación dada como ajuste a pasar por el punt <span class="math inline">\((0;0)\)</span></p>
+</section>
+<section id="funciones-pendiente-e-interseccion.eje" class="level3">
+<h3 class="anchored" data-anchor-id="funciones-pendiente-e-interseccion.eje">Funciones PENDIENTE e INTERSECCION.EJE</h3>
+<p>Como su nombre lo indican, estas funciones permiten obtener los valores de la pendiente y la ordenada al origen (o intersección con el eje vertical) del conjunto de datos. NOTA: en estas funciones el primer parámetro corresponde a los datos de la variable dependiente y el segundo a los de la independiente. Es decir la sintaxis es del tipo <code>PENDIENTE(valores_y;valores_x)</code></p>
+</section>
+<section id="función-estimacion.lineal" class="level3">
+<h3 class="anchored" data-anchor-id="función-estimacion.lineal">Función ESTIMACION.LINEAL</h3>
+<p>Además de los datos de pendiente e intersección, esta función nos da las incertidumbres en los parámetros calculados y otros datos estadísticos como los grados de libertad usados para calcularlas, etc.</p>
+<p>Su sintaxis es</p>
+<p><code>ESTIMACION.LINEAL(Datos_Y ; Datos_X ; tipo_lineal ; estadísticas)</code></p>
+<p>Si <code>tipo_lineal</code> = 0 (o falso) se fuerza la intersección con el eje en cero. Caso contrario, devolverá el valor encontrado para la intersección. Por defecto se lo considera verdadero.</p>
+<p>Si <code>estadísticas</code> = 0 (o falso) se excluyen las estadísticas del resultado, que se extiende matricialmente en donde insertemos la función.</p>
+<p>En algunas versiones de LO se debe ingresar como función matricial (haciendo <code>ctrl+shift+enter</code>) de manera obligada, aunque se aconseja hacerlo por compatibilidad.</p>
+</section>
+<section id="datos-estadísticas-regresión" class="level3">
+<h3 class="anchored" data-anchor-id="datos-estadísticas-regresión">Datos &gt; Estadísticas &gt; Regresión</h3>
+<p>Si accedemos al menú indicado en el título veremos lo siguiente:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-estadisticas-regresion.png" class="img-fluid figure-img"></p>
+<figcaption>Regresión en calc</figcaption>
+</figure>
+</div>
+<p>Allí podremos seleccionar las opciones que consideremos convenientes. En este caso, el orden de las columnas no es como en las funciones pendiente, intersección y estimación lineal, sino que respeta el orden en el que las hemos introducido.</p>
+<p>Los resultados que esta función, más allá de los parámetros que se buscan, los analizaremos (no todos) al momento de ver la herramienta <code>solver</code> en próximas clases.</p>
+</section>
+</section>
+<section id="linealización-de-gráficas" class="level2">
+<h2 class="anchored" data-anchor-id="linealización-de-gráficas">Linealización de gráficas</h2>
+<p>Cuando se desea obtener información de los parámetros que modelan un sistema que no responde a una relación lineal, el procedimiento de regresión lineal es completamente inútil siendo que los datos de origen no se adaptan al modelo matemático en el cual los queremos hacer “entrar”. Se puede realizar el procedimiento análogo al reemplazar el modelo matemático por el que consideramos se adapta a nuestros datos y obtener las ecuaciones normales para cada caso.</p>
+<p>Una opción menos intensiva matemáticamente es intentar hacer que nuestros datos se “vean” como una función lineal y aplicar sobre ellos la regresión lineal.</p>
+<div id="dd26e4e3" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="clase-09_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-qr1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;1: Código para llenar formulario
-</figcaption>
+</div>
+<p>Otra forma es utilizar un ajuste de datos no lineal o intentar resolver el planteo de mínimos cuadrados para esa forma funcional en particular. Sobre los ajustes no lineales volveremos más adelante.</p>
+</section>
+<section id="cambio-de-variable" class="level2">
+<h2 class="anchored" data-anchor-id="cambio-de-variable">Cambio de variable</h2>
+<p>Analicemos el ejemplo de datos experimentales de una caída libre. Sabemos que el modelo matemático (con la gravedad como única fuerza) es:</p>
+<p><span class="math display">\[
+y(t)= \dfrac{g}{2}  \cdot x^2 +v_{0}y +y_0
+\]</span></p>
+<p>Si suponemos que no hay velocidad inicial:</p>
+<p><span class="math display">\[
+y(t)= \dfrac{g}{2}  \cdot x^2 +y_0
+\]</span></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">tiempo (s)</th>
+<th style="text-align: right;">altura (m)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">9.93</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0.24</td>
+<td style="text-align: right;">9.73</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">9.38</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0.47</td>
+<td style="text-align: right;">8.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0.59</td>
+<td style="text-align: right;">8.29</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0.71</td>
+<td style="text-align: right;">7.53</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0.82</td>
+<td style="text-align: right;">6.64</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0.94</td>
+<td style="text-align: right;">5.62</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1.06</td>
+<td style="text-align: right;">4.45</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1.18</td>
+<td style="text-align: right;">3.15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1.29</td>
+<td style="text-align: right;">1.71</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1.41</td>
+<td style="text-align: right;">0.13</td>
+</tr>
+</tbody>
+</table>
+<div id="4a51a176" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="clase-09_files/figure-html/cell-4-output-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
+</div>
+</div>
+<p>Si hacemos el siguiente cambio de varbles:</p>
+<p><span class="math display">\[
+\begin{align*}
+y-c &amp;= Y \\
+t^2 &amp;= T
+\end{align*}
+\]</span></p>
+<p>Nuetros datos se puden representar como</p>
+<p><span class="math display">\[
+Y= a \cdot T
+\]</span></p>
+<p>de aquí podemos obtener el parámetro <span class="math inline">\(a=\frac{g}{2}\)</span> como la pendiente de la recta, que puede obtenerse gráficamente o por regresión lineal.</p>
+<div id="5040e2f8" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="clase-09_files/figure-html/cell-5-output-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="linux-y-el-software-libre" class="level2">
-<h2 class="anchored" data-anchor-id="linux-y-el-software-libre">Linux y el software libre</h2>
-<p>Nos nos vamos a adentrar demasiado en este tema, pero vale la pena hacer una breve descripción ya que estaremos usando en las computadoras del instituto tanto software libre como privativo y es necesario conocer las diferencias entre ambos modelos de gestión de software.</p>
-<section id="libre-no-significa-gratis" class="level3">
-<h3 class="anchored" data-anchor-id="libre-no-significa-gratis">Libre no significa gratis</h3>
-<p>La diferencia más notoria es respecto de acceso y permisos sobre el código, valga decir, la posibilidad de ver, modificar y/o redistribuirlo.</p>
-<p>El software de código abierto es aquel que es público. Casi todo el software nació de esa manera. En los inicios el producto por excelencia era el hardware, y el software, era comúnmente compartido entre emrpesas, universidades, entidades de gobierno etc. que podían modificar, adaptar, encontrar errores y mejorar así el funcionamiento de sus instalaciones.</p>
-<p>La historia oficial involucra a IBM, creador del sistema UNIX que de un momento a otro dejó de compartir su software con terceros, y de esa manera dió lugar a la aparición de sistemas que basándose en lo que ya era público fueron ofreciendo variantes. En estas categorías podemos incluir (simplificando un poco) tanto a Windows como a GNU-LINUX.</p>
-<p>Windows se limitó a constuir sobre lo que ya se tenía, pero adoptó el nuevo modelo de código cerrado. Tanto usuarios como programadores no pueden acceder a concoer cómo está hecho aquello que están usando, y por supuesto, tampoco modificarlo ni auditarlo. GNU-LINUX nace con la visión de que hacer el software de libre acceso produciría avances tecnológicos más rápidos, mejor control de los errores y una comunidad científica mejor comunicada entre si.</p>
-<p>Como dice el título de la sección, que el código sea libre de copiar, modificar o distribuir no significa que no haya modelos de negocio que puedan usarlo para ofrecer un sevicio que sí se cobra: desde el soporte técnico hasta modificaciones ad-hoc para clientes particulares.</p>
-<p>La confusión respecto de libre vs gratis surge de que muchas organizaciones que trabajan con software libre ofrecen también versiones gratuitas de esos mismos productos, que conviven con versiones pagas que incluyen soporte extendido para el ámbito empresarial, personalizaciones, etc.</p>
-<p>En resumen, el software libre tiene como principios la transparencia, y la auditabilidad como rectores éticos ligados al conocimiento científico. Si un proceso no puede ser puesto a prueba por otros expertos en el tema, su jerarquía, virtudes o prestaciones pueden ser cuestionadas. El ejemplo más claro en donde este paradigma entra en tensión es en la elaboración de medicamentos y alimentos. Si no es posible acceder a los detalles químicos y de fabricación de los alimentos y medicamentos ¿Cómo podemos saber que son seguros? De la misma manera ocurre con el software: El software cerrado no es auditable y la seguridad de los datos y equipos de los usuarios queda sólo en la <em>confianza</em> que éstos tengan en las virtudes técnicas y éticas de la entidad que los ofrece.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/sQDvkd2wtxU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-</section>
-<section id="libre-office" class="level2">
-<h2 class="anchored" data-anchor-id="libre-office">Libre office</h2>
-<section id="qué-es-libre-office" class="level3">
-<h3 class="anchored" data-anchor-id="qué-es-libre-office">¿Qué es libre office?</h3>
-<p>Libre office es una suite de ofimática (herramientas de software para producción en entornos de trabajo) libre y de código abierto mantenida por sus propios usuarios. Es gratuita y en casi todos los casos igual o mejor que sus contrapartes no gratuitas.</p>
-</section>
-<section id="para-qué-libre-office" class="level3">
-<h3 class="anchored" data-anchor-id="para-qué-libre-office">¿Para qué libre office?</h3>
-<p>Todo trabajo, incluso aquellos que son la manufactura de algún producto requieren piezas de comunicación visual y escrita: manuales, tutoriales, folletos, informes, etc. La comunicación del quehacer de la ciencia no es la excepción: bitácoras e informes de laboratorio, artículos para revistas e instituciones científicas, libros de texto, de divulgación o material de estudio de caracter académico. Estos textos tienen cada uno su propio estilo de escritura y estructura según su función y algunos soportes preferidos por conveniencia, uso, costumbre en algunos casos y millones bien invertidos en otros.</p>
-<p>Existen formatos que son preferidos en ciertos ámbitos, como <em>Latex</em> para publicaciones científicas y parte del mundo editorial o softwares como <em>in-design</em> o <em>illustrator</em> para los mismos fines para otras publicaciones.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/q-PoKzTlJY8?si=k8oDYOUmAfCb3lzz" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Nostoros usaremos libre office como soporte por su unviersalidad (todos podemos conseguirlo) y sabemos que siempre contaremos con el sofware: no dejaremos de tener acceso a lo que hicimos porque la nueva versión no es compatible (y la vieja ya no está disponible) y al tener una gran red de usuarios que pueden extender la funcionalidad del paquete: es posible encontrar extensiones que se vayan adaptando a nuestras necesidades.</p>
-<p>Por último pero no menos importante, siendo que <em>Latex</em> es el formato de-facto para publicaciones académicas o científicas ¿por qué no lo usamos? Sencillamente porque latex no es un procesador de texto. Es un lenguaje de programación completo y aprenderlo nos llevaría mucho mas tiempo del que tenemos en este curso, además de que para los fines de escribir informes de laboratorio el costo inversión de tiempo vs resultados obtenidos está bastante corrido a favor de lo primero: se requiere poner mucho en latex para obtener algo decente. Sin embargo como el tratamiento de las expresiones matemáticas que latex ofrece es superior a lo que cualquier procesador de texto traiga por defecto, lo incluiiremos en nuestro flujo de trabajo a través de la extensión <a href="http://roland65.free.fr/texmaths/docs.html">tex maths</a></p>
-</section>
-<section id="instalando-libre-office" class="level3">
-<h3 class="anchored" data-anchor-id="instalando-libre-office">Instalando libre office</h3>
-<p><a href="https://es.libreoffice.org/">En su web oficial</a> podemos acceder a la sección <span style="color:green;"><strong>descarga</strong></span> y desde allí bajar la versión que necesitemos. La <a href="https://es.libreoffice.org/descarga/libreoffice/">útima disponible</a> en general funciona con casi todos los dispositivos pero si tenemos probelmas en la instalación podemos buscar en la página alguna versión anterior.</p>
-<section id="instalando-tex-maths" class="level4">
-<h4 class="anchored" data-anchor-id="instalando-tex-maths">Instalando tex-maths</h4>
-<p>En <a href="http://roland65.free.fr/texmaths/docs.html">este enlace</a> se puede descargar la última versión. Una vez descargado se ejecuta e instala siguiendo los pasos que el instalador ofrece.</p>
-</section>
-</section>
-<section id="ayuda-en-línea-y-manuales" class="level3">
-<h3 class="anchored" data-anchor-id="ayuda-en-línea-y-manuales">Ayuda en línea y manuales</h3>
-<p>La <a href="https://help.libreoffice.org/latest/es/text/shared/05/new_help.html">ayuda</a> de libre office está en casi todos los idiomas, aunque a veces la traducción automática falla un poco (se “olvida” de traducir algún que otro párrafo) es bastante completa. Además podemos descargar <a href="https://documentation.libreoffice.org/es/documentacion-en-espanol/">manuales</a> (los más actualizados están en inglés) en pdf para quienes prefieran buscar en un documento y no en la web o para cuando no se tenga acceso a internet.</p>
-</section>
-</section>
-<section id="libre-office-writer" class="level2">
-<h2 class="anchored" data-anchor-id="libre-office-writer">Libre Office-Writer</h2>
-<section id="lista-de-videos" class="level3">
-<h3 class="anchored" data-anchor-id="lista-de-videos">Lista de videos <i class="fa-solid fa-film" aria-label="film"></i></h3>
-<p>En esta <a href="https://youtube.com/playlist?list=PLLLaU95AMQPqAgeXCjQgXawAPABR19U2k&amp;si=J19XCH3bHMSLO99U">lista de reproducción</a> podrán ver una serie de videos que cubren bastatante de la funcionalidad de libre office Writer.</p>
-</section>
-<section id="estilos-en-writer" class="level3">
-<h3 class="anchored" data-anchor-id="estilos-en-writer">Estilos en Writer</h3>
-<p>Hemos visto que desde el menú <code>ver</code> -&gt; <code>barra de estilos</code> accedemos a los estilos que vienen predefinidos para las diferentes secciones de writer: párrafo, página, listas, etc.</p>
-<p>A continuación les comparto algunos videos que resumen un poco lo que vimos en esta clase:</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0gvovKKfEAw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Jkd6uZpBPtM?si=CD8bLuxJvktLup6w" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>En versiones anteriores de libre office si bien los menús se ven diferentes, la dinámica es idéntica</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/XutBsSTk_dY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Fd4R78_9FBA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="niveles-de-jearquía-numerados" class="level3">
-<h3 class="anchored" data-anchor-id="niveles-de-jearquía-numerados">Niveles de jearquía numerados</h3>
-<p>Por ejemplo, los niveles de titulo se pueden auto numerar yendo a <code>herramientas</code> -&gt; <code>numeración de títulos</code></p>
-<p>Esta configuración no está disponible como un estilo predeterminado sino que se aplica a los estilos existentes o a aquellos creados que sean niveles de jerárquicos.</p>
-<p>En la <a href="https://help.libreoffice.org/latest/es/text/swriter/guide/header_with_chapter.html?DbPAR=WRITER">ayuda de libre office</a> podemos ver una explicación un poco más detallada.</p>
+<section id="gráficas-log-vs-log" class="level2">
+<h2 class="anchored" data-anchor-id="gráficas-log-vs-log">Gráficas log vs log</h2>
+<p>En general, si tenemos datos que suponemos se ajustan a una función de tipo potencia o polinómica <span class="math inline">\(a \cdot x^n\)</span> es posible hacer una linealización usando logaritmos.</p>
+<section id="demostración" class="level3">
+<h3 class="anchored" data-anchor-id="demostración">Demostración</h3>
+<p>El procedimiento consiste en tomar logaritmo a ambos lados de la ecuación y usar algunas de sus propiedades:</p>
+<p><span class="math display">\[
+\begin{align*}
+y &amp;= a \cdot x^2 \\
+\ln(y) &amp;= \ln(a \cdot x^2) \\
+\ln(y) &amp;= \ln(a) + 2\cdot \ln(x)
+\end{align*}
+\]</span></p>
+<p>Si ahora hacemos el cambio de variables:</p>
+<p><span class="math display">\[
+\begin{align*}
+\ln(y) &amp;= Y \\
+\ln(a) &amp;= B \\
+\ln(x) &amp;= X
+\end{align*}
+\]</span></p>
+<p>y Reemplazamos</p>
+<p><span class="math display">\[
+\begin{align*}
+\ln(y) &amp;= \ln(a) + 2\cdot \ln(x) \\
+Y &amp;= B + 2 \cdot X
+\end{align*}
+\]</span></p>
+<p>De esta gráfica la ordenada al origen contiene la información de la aceleración mientras que la pendiente es el grado del polinomio, en este caso 2.</p>
+<p>Esta gráfica se la suele llamar log/log ya que tanto el eje horizontal como el vertical muestran los logaritmos de las variables originales.</p>
 </section>
 </section>
-<section id="actividad-inicial" class="level2">
-<h2 class="anchored" data-anchor-id="actividad-inicial">Actividad inicial</h2>
-<section id="arqueología-de-publicaciones" class="level3">
-<h3 class="anchored" data-anchor-id="arqueología-de-publicaciones">Arqueología de publicaciones</h3>
-<p><strong>Instrucciones inciales</strong> Los detalles de presentación los verán en las próximas clases en el apartado de <em>trabajos prácticos</em> y su entrega será vía el campus virtual.</p>
-<p>De momento, alcanza conque sepan que deberán armar una versión del trabajo de Rutherord tomando como origen la <a href="../assets/rutherford traducido.txt">traducción</a>, junto a la <a href="https://www.chemteam.info/Chem-History/Rutherford-1911/Rutherford-1911.html">versión web</a> y como guía para el estilo visual la <a href="../assets/rutherford-original.pdf">publicación original</a>. Los elementos a tener en cuenta para este documento incial serán</p>
-<ul>
-<li>Tipografía: tamaño y tipo de letra (encontrar alguna o algunas tipografías que puedan servir)</li>
-<li>Encabezados y pies de página</li>
-<li>Texto: interlineado, orientación, sangría</li>
-<li>Tablas</li>
-<li>Tamaño de página</li>
-<li>Ecuaciones</li>
-</ul>
-<p>Iremos trabajando los detalles de cada elemento en las primeras clases mientras exploramos las funciones elementales de Writer</p>
+<section id="gráficas-lineal-vs-log" class="level2">
+<h2 class="anchored" data-anchor-id="gráficas-lineal-vs-log">Gráficas lineal vs log</h2>
+<p>Si nuestros datos experimentales, son del tipo exponencial:</p>
+<p><span class="math display">\[
+y(x)= a e^{kx}
+\]</span></p>
+<p>Podemos usar el mismo procedimiento</p>
+<p><span class="math display">\[
+\begin{align*}
+y &amp;= a e^{kx} \\
+\ln(y) &amp;= \ln(a e^{k\cdot x}) \\
+\ln(y) &amp;= \ln(a) + k\cdot x\cdot \ln(e) \\
+\ln(y) &amp;= \ln(a) + k\cdot x
+\end{align*}
+\]</span></p>
+<p>Con los cambiobs de variables:</p>
+<p><span class="math display">\[
+\begin{align*}
+\ln(y) &amp;= Y \\
+\ln(a) &amp;= C
+\end{align*}
+\]</span></p>
+<p>Podemos obtener los parámetros del modelo a través de la gráfica de</p>
+<p><span class="math display">\[
+Y = C + k\cdot x
+\]</span></p>
+<p>En este caso, en el eje horizontal se sigue representando la variable indpendiente de nuestro conjunto de datos, mientras que en el vertical tenemos el logaritmo de la variable dependiente (<span class="math inline">\(Y=\ln(y)\)</span>) y por eso se llama a esta gráfica semi-log o lineal-log</p>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<ol type="1">
+<li><a href="https://matematicas.uam.es/~pablo.angulo/doc/laboratorio/b6regresion.html">Regresión y ajuste de modelos</a></li>
+<li><a href="https://help.libreoffice.org/latest/es/text/scalc/01/statistics_regression.html?DbPAR=CALC">Regresión lineal en calc</a></li>
+<li><a href="https://es.blog.documentfoundation.org/wp-content/uploads/sites/6/2020/08/Bozo-Ameck-Regresi%C3%B3n-lineal-con-LibreOffice-Calc.pdf">Diapositivas regresión lineal en calc</a></li>
+<li><a href="https://help.libreoffice.org/latest/es/text/schart/01/04050100.html">Función <code>ESTIMACION.LINEAL</code></a></li>
+<li><a href="https://www.youtube.com/watch?v=2nMyMiJ51pE">Video sobre ajustes en calc</a></li>
+<li><a href="https://help.libreoffice.org/latest/es/text/scalc/01/04060107.html?&amp;DbPAR=SHARED&amp;System=WIN#Section8">Más sobre <code>ESTIMACION.LINEAL</code></a></li>
+<li><a href="https://help.libreoffice.org/latest/es/text/scalc/01/statistics.html">Estadísticas de regresión</a></li>
+</ol>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

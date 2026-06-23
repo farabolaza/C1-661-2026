@@ -150,6 +150,50 @@
     "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
   },
   {
+    "objectID": "clases/clase-10.html",
+    "href": "clases/clase-10.html",
+    "title": "Solver en Calc",
+    "section": "",
+    "text": "Si suponemos que los datos que se han obtenido de un experimento no pueden ser linealizados para su análisis, o si el modelo matemático al que deseamos ajustarlos no es ninguna de las funciones que la planilla de cálculo ofrece como línea de tendencia, no está todo perdido: podemos utilizar la herramienta solver para ajustar nuestros datos a un modelo matemático de \\(n\\) parámetros que podremos obtener de los datos.\nEl planteo teórico se establece de la misma forma que para los cuadrados mínimos\n\\[\n\\sum_i (f(x_i,\\beta) - y_i)^2\n\\]\nen donde \\(\\beta\\) son los parámetros que podemos variar, y \\(x_i\\) y \\(y_i\\) conforman los pares de valores obtenidos experimentalmente (suponemos el caso de una variable de entrada y una de salida por simplicidad en la notación).\nEl principio de funcionamiento de Solver, aunque no profundizaremos en ello, se basa en minimizar las diferencias entre el modelo propuesto y los datos al iterar sobre los valores de los parámetros (en lugar de encontrar el mínimo de forma analítica como haríamos en lápiz y papel) hasta que dichas diferencias alcancen un mínimo cuya magnitud puede establecerse de antemano.",
+    "crumbs": [
+      "Clases",
+      "Solver en Calc"
+    ]
+  },
+  {
+    "objectID": "clases/clase-10.html#fundamientación-del-solver",
+    "href": "clases/clase-10.html#fundamientación-del-solver",
+    "title": "Solver en Calc",
+    "section": "",
+    "text": "Si suponemos que los datos que se han obtenido de un experimento no pueden ser linealizados para su análisis, o si el modelo matemático al que deseamos ajustarlos no es ninguna de las funciones que la planilla de cálculo ofrece como línea de tendencia, no está todo perdido: podemos utilizar la herramienta solver para ajustar nuestros datos a un modelo matemático de \\(n\\) parámetros que podremos obtener de los datos.\nEl planteo teórico se establece de la misma forma que para los cuadrados mínimos\n\\[\n\\sum_i (f(x_i,\\beta) - y_i)^2\n\\]\nen donde \\(\\beta\\) son los parámetros que podemos variar, y \\(x_i\\) y \\(y_i\\) conforman los pares de valores obtenidos experimentalmente (suponemos el caso de una variable de entrada y una de salida por simplicidad en la notación).\nEl principio de funcionamiento de Solver, aunque no profundizaremos en ello, se basa en minimizar las diferencias entre el modelo propuesto y los datos al iterar sobre los valores de los parámetros (en lugar de encontrar el mínimo de forma analítica como haríamos en lápiz y papel) hasta que dichas diferencias alcancen un mínimo cuya magnitud puede establecerse de antemano.",
+    "crumbs": [
+      "Clases",
+      "Solver en Calc"
+    ]
+  },
+  {
+    "objectID": "clases/clase-10.html#uso-de-solver",
+    "href": "clases/clase-10.html#uso-de-solver",
+    "title": "Solver en Calc",
+    "section": "Uso de solver",
+    "text": "Uso de solver\nNos guiaremos con este archivo de ejemplo\nPara aplicar solver a un conjunto de datos debemos hacer lo siguiente:\n\nTener nuestros datos experimentales en la planilla de cáculo\nCrear el modelo al cual ajustaremos nuestros datos en una celda 2.1 Usar una celda para cada parámetro que deseemos encontrar (dar un valo estimado)\nCrear una columna con las diferencias cuadráticas entre el modelo calculado y el medido\nCrear una celda con la sumatoria de las diferencias cuadráticas\nir a herramientas &gt; solver. Tener seleccionada la celda de la sumatoria de las diferencias cuadráticas.\nSeguir los pasos del menu de solver como se muestra en las imágenes.\n\n\n\n\nMenú de solver\n\n\n\nElegiremos minimizar los valores y luego pondremos las restriccione que consideremos a los signos o intervalos que pueden tener.\nEn opciones seleccionaremos algunas de las opciones no lineales\n\n\n\n\nElección de algoritmo\n\n\n\n\n\nFinalización\n\n\nUna vez ejecutado veremos como los resultados de nuestras columnas variables han cambiado. Si graficamos los valores del modelo junto a los experimentales podremos tener una visualización de que tan “bueno” es el ajuste. Podemos agregar mas puntos para graficar al crear una nueva tabla a partir de nuestro modelo con un intervalo menor entre valores sucesivos.",
+    "crumbs": [
+      "Clases",
+      "Solver en Calc"
+    ]
+  },
+  {
+    "objectID": "clases/clase-10.html#referencias",
+    "href": "clases/clase-10.html#referencias",
+    "title": "Solver en Calc",
+    "section": "Referencias",
+    "text": "Referencias\n\n🔗 Ajuste no lineal\n🔗 Ajustes de ecuaciones a curvas\n🔗 Ajustes no lineales UBA\n🔗 Ajustes para otras formas funcionales\n🔗 Ajustes no lineales 2\n🔗 Solver en libre office",
+    "crumbs": [
+      "Clases",
+      "Solver en Calc"
+    ]
+  },
+  {
     "objectID": "clases/clase-08.html",
     "href": "clases/clase-08.html",
     "title": "Calc 02",
@@ -748,6 +792,94 @@
     "crumbs": [
       "Clases",
       "Calc 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html",
+    "href": "clases/clase-09.html",
+    "title": "Linealización",
+    "section": "",
+    "text": "La regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:\n\\[\ny = a + b x\n\\]\ndonde \\(a\\) es la intersección con el eje \\(y\\) (ordenada al origen) y \\(b\\) es la pendiente de la línea. El objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen la suma de los cuadrados de las diferencias entre los valores observados \\(y_i\\) y los valores predichos por el modelo \\(a + b x_i\\). Estas diferencias se conocen como residuos.\n\n\nSupongamos que tenemos un conjunto de \\(n\\) puntos experimentales, cada uno con coordenadas \\((x_i, y_i)\\), donde \\(x_i\\) es la variable independiente y \\(y_i\\) es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.\nLa suma de los cuadrados de los residuos, denotada como \\(S\\), se define como:\n\\[\nS = \\sum_{i=1}^{n} [y_i - (a + b x_i)]^2\n\\]\nNuestro objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen \\(S\\).\n\n\n\nPara minimizar \\(S\\), calculamos las derivadas parciales de \\(S\\) con respecto a \\(a\\) y \\(b\\), y las igualamos a cero.\n\nDerivada con respecto a \\(a\\):\n\n\\[\n\\frac{\\partial S}{\\partial a} = -2 \\sum_{i=1}^{n} [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} y_i - n a - b \\sum_{i=1}^{n} x_i = 0 \\quad (1)\n\\]\n\nDerivada con respecto a \\(b\\):\n\n\\[\n\\frac{\\partial S}{\\partial b} = -2 \\sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} x_i y_i - a \\sum_{i=1}^{n} x_i - b \\sum_{i=1}^{n} x_i^2 = 0 \\quad (2)\n\\]\nLas ecuaciones (1) y (2) son conocidas como las ecuaciones normales de la regresión lineal.\n\n\n\nReorganizamos las ecuaciones (1) y (2) para resolver el sistema:\n\\[\nn a + b \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} y_i \\quad (1)\n\\]\n\\[\na \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\quad (2)\n\\]\n\n\nDe la ecuación (1):\n\\[\na = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\quad (3)\n\\]\n\n\n\nSustituyendo (3) en (2):\n\\[\n\\left( \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\right) \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i\n\\]\nMultiplicamos ambos lados por \\(n\\) para eliminar el denominador:\n\\[\n\\left( \\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i \\right) \\sum_{i=1}^{n} x_i + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i\n\\]\nExpandimos:\n\\[\n\\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i - b \\left( \\sum_{i=1}^{n} x_i \\right)^2 + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i\n\\]\nAgrupamos los términos con \\(b\\):\n\\[\nb \\left[ n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2 \\right] = n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i\n\\]\n\n\n\nDespejamos \\(b\\):\n\\[\nb = \\frac{n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} x_i \\sum_{i=1}^{n} y_i}{n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2} \\quad (4)\n\\]\n\n\n\nSustituimos \\(b\\) de (4) en (3):\n\\[\na = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n}\n\\]\nEstas expresiones para \\(a\\) y \\(b\\) son las fórmulas estándar de la regresión por mínimos cuadrados.\n\n\n\n\nEn el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en \\(y_i\\) son gaussianos y tienen la misma varianza \\(\\sigma^2\\) (homocedasticidad).\n\n\nLa varianza de \\(b\\) es:\n\\[ \\text{Var}(b) = \\frac{\\sigma^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]\ndonde \\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\) es la media de los \\(x_i\\).\nLa varianza de \\(a\\) es:\n\\[ \\text{Var}(a) = \\sigma^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right] \\]\n\n\n\nEn la práctica, \\(\\sigma^2\\) no se conoce y se estima a partir de los residuos:\n\\[ s^2 = \\frac{\\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \\]\ndonde \\(n - 2\\) refleja los grados de libertad, ya que hemos estimado dos parámetros (\\(a\\) y \\(b\\)).\n\n\n\nLas incertidumbres estándar de \\(a\\) y \\(b\\) son las raíces cuadradas de sus varianzas, utilizando \\(s^2\\) como estimación de \\(\\sigma^2\\):\n\\[ \\sigma_b \\approx \\sqrt{\\frac{s^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}} \\]\n\\[ \\sigma_a \\approx \\sqrt{s^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right]} \\]\n\n\n\n\nLa regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:\n\nPendiente \\(b\\):\n\n\\[ b = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - (\\sum x_i)^2} \\]\n\nOrdenada al origen \\(a\\):\n\n\\[ a = \\frac{\\sum y_i - b \\sum x_i}{n} \\]\nAdemás, las incertidumbres de estos parámetros se estiman utilizando la varianza residual \\(s^2\\), lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.",
+    "crumbs": [
+      "Clases",
+      "Linealización"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#regresión-lineal-y-cuadrados-mínimos",
+    "href": "clases/clase-09.html#regresión-lineal-y-cuadrados-mínimos",
+    "title": "Linealización",
+    "section": "",
+    "text": "La regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:\n\\[\ny = a + b x\n\\]\ndonde \\(a\\) es la intersección con el eje \\(y\\) (ordenada al origen) y \\(b\\) es la pendiente de la línea. El objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen la suma de los cuadrados de las diferencias entre los valores observados \\(y_i\\) y los valores predichos por el modelo \\(a + b x_i\\). Estas diferencias se conocen como residuos.\n\n\nSupongamos que tenemos un conjunto de \\(n\\) puntos experimentales, cada uno con coordenadas \\((x_i, y_i)\\), donde \\(x_i\\) es la variable independiente y \\(y_i\\) es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.\nLa suma de los cuadrados de los residuos, denotada como \\(S\\), se define como:\n\\[\nS = \\sum_{i=1}^{n} [y_i - (a + b x_i)]^2\n\\]\nNuestro objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen \\(S\\).\n\n\n\nPara minimizar \\(S\\), calculamos las derivadas parciales de \\(S\\) con respecto a \\(a\\) y \\(b\\), y las igualamos a cero.\n\nDerivada con respecto a \\(a\\):\n\n\\[\n\\frac{\\partial S}{\\partial a} = -2 \\sum_{i=1}^{n} [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} y_i - n a - b \\sum_{i=1}^{n} x_i = 0 \\quad (1)\n\\]\n\nDerivada con respecto a \\(b\\):\n\n\\[\n\\frac{\\partial S}{\\partial b} = -2 \\sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} x_i y_i - a \\sum_{i=1}^{n} x_i - b \\sum_{i=1}^{n} x_i^2 = 0 \\quad (2)\n\\]\nLas ecuaciones (1) y (2) son conocidas como las ecuaciones normales de la regresión lineal.\n\n\n\nReorganizamos las ecuaciones (1) y (2) para resolver el sistema:\n\\[\nn a + b \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} y_i \\quad (1)\n\\]\n\\[\na \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\quad (2)\n\\]\n\n\nDe la ecuación (1):\n\\[\na = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\quad (3)\n\\]\n\n\n\nSustituyendo (3) en (2):\n\\[\n\\left( \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\right) \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i\n\\]\nMultiplicamos ambos lados por \\(n\\) para eliminar el denominador:\n\\[\n\\left( \\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i \\right) \\sum_{i=1}^{n} x_i + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i\n\\]\nExpandimos:\n\\[\n\\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i - b \\left( \\sum_{i=1}^{n} x_i \\right)^2 + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i\n\\]\nAgrupamos los términos con \\(b\\):\n\\[\nb \\left[ n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2 \\right] = n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i\n\\]\n\n\n\nDespejamos \\(b\\):\n\\[\nb = \\frac{n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} x_i \\sum_{i=1}^{n} y_i}{n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2} \\quad (4)\n\\]\n\n\n\nSustituimos \\(b\\) de (4) en (3):\n\\[\na = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n}\n\\]\nEstas expresiones para \\(a\\) y \\(b\\) son las fórmulas estándar de la regresión por mínimos cuadrados.\n\n\n\n\nEn el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en \\(y_i\\) son gaussianos y tienen la misma varianza \\(\\sigma^2\\) (homocedasticidad).\n\n\nLa varianza de \\(b\\) es:\n\\[ \\text{Var}(b) = \\frac{\\sigma^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]\ndonde \\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\) es la media de los \\(x_i\\).\nLa varianza de \\(a\\) es:\n\\[ \\text{Var}(a) = \\sigma^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right] \\]\n\n\n\nEn la práctica, \\(\\sigma^2\\) no se conoce y se estima a partir de los residuos:\n\\[ s^2 = \\frac{\\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \\]\ndonde \\(n - 2\\) refleja los grados de libertad, ya que hemos estimado dos parámetros (\\(a\\) y \\(b\\)).\n\n\n\nLas incertidumbres estándar de \\(a\\) y \\(b\\) son las raíces cuadradas de sus varianzas, utilizando \\(s^2\\) como estimación de \\(\\sigma^2\\):\n\\[ \\sigma_b \\approx \\sqrt{\\frac{s^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}} \\]\n\\[ \\sigma_a \\approx \\sqrt{s^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right]} \\]\n\n\n\n\nLa regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:\n\nPendiente \\(b\\):\n\n\\[ b = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - (\\sum x_i)^2} \\]\n\nOrdenada al origen \\(a\\):\n\n\\[ a = \\frac{\\sum y_i - b \\sum x_i}{n} \\]\nAdemás, las incertidumbres de estos parámetros se estiman utilizando la varianza residual \\(s^2\\), lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.",
+    "crumbs": [
+      "Clases",
+      "Linealización"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#regresión-lineal-en-calc",
+    "href": "clases/clase-09.html#regresión-lineal-en-calc",
+    "title": "Linealización",
+    "section": "Regresión lineal en Calc",
+    "text": "Regresión lineal en Calc\nPara realizar un ajuste de regresión lineal en calc disponemos de diferente formas de hacerlo, algunas dan más información, otras menos y dependerá de las necesidaes del usuario cuál elegir.\n\nEn una gráfica\nSi tenemos los datos grafiacados, haciendo click derecho sobre los datos elegimos del menú insertar línea de tendencia\n\n\n\nlinea de tendencia\n\n\nEn esta pantalla podremos elegir el ajuste lineal y decidir que es lo que queremos que aparezca en el gráfico: ecuación, coeficiente de correlación, etc.\nLa opción forzar intercepción obliga a deshacerse del término independiente y forzar a la ecuación dada como ajuste a pasar por el punt \\((0;0)\\)\n\n\nFunciones PENDIENTE e INTERSECCION.EJE\nComo su nombre lo indican, estas funciones permiten obtener los valores de la pendiente y la ordenada al origen (o intersección con el eje vertical) del conjunto de datos. NOTA: en estas funciones el primer parámetro corresponde a los datos de la variable dependiente y el segundo a los de la independiente. Es decir la sintaxis es del tipo PENDIENTE(valores_y;valores_x)\n\n\nFunción ESTIMACION.LINEAL\nAdemás de los datos de pendiente e intersección, esta función nos da las incertidumbres en los parámetros calculados y otros datos estadísticos como los grados de libertad usados para calcularlas, etc.\nSu sintaxis es\nESTIMACION.LINEAL(Datos_Y ; Datos_X ; tipo_lineal ; estadísticas)\nSi tipo_lineal = 0 (o falso) se fuerza la intersección con el eje en cero. Caso contrario, devolverá el valor encontrado para la intersección. Por defecto se lo considera verdadero.\nSi estadísticas = 0 (o falso) se excluyen las estadísticas del resultado, que se extiende matricialmente en donde insertemos la función.\nEn algunas versiones de LO se debe ingresar como función matricial (haciendo ctrl+shift+enter) de manera obligada, aunque se aconseja hacerlo por compatibilidad.\n\n\nDatos &gt; Estadísticas &gt; Regresión\nSi accedemos al menú indicado en el título veremos lo siguiente:\n\n\n\nRegresión en calc\n\n\nAllí podremos seleccionar las opciones que consideremos convenientes. En este caso, el orden de las columnas no es como en las funciones pendiente, intersección y estimación lineal, sino que respeta el orden en el que las hemos introducido.\nLos resultados que esta función, más allá de los parámetros que se buscan, los analizaremos (no todos) al momento de ver la herramienta solver en próximas clases.",
+    "crumbs": [
+      "Clases",
+      "Linealización"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#linealización-de-gráficas",
+    "href": "clases/clase-09.html#linealización-de-gráficas",
+    "title": "Linealización",
+    "section": "Linealización de gráficas",
+    "text": "Linealización de gráficas\nCuando se desea obtener información de los parámetros que modelan un sistema que no responde a una relación lineal, el procedimiento de regresión lineal es completamente inútil siendo que los datos de origen no se adaptan al modelo matemático en el cual los queremos hacer “entrar”. Se puede realizar el procedimiento análogo al reemplazar el modelo matemático por el que consideramos se adapta a nuestros datos y obtener las ecuaciones normales para cada caso.\nUna opción menos intensiva matemáticamente es intentar hacer que nuestros datos se “vean” como una función lineal y aplicar sobre ellos la regresión lineal.\n\n\n\n\n\n\n\n\n\nOtra forma es utilizar un ajuste de datos no lineal o intentar resolver el planteo de mínimos cuadrados para esa forma funcional en particular. Sobre los ajustes no lineales volveremos más adelante.",
+    "crumbs": [
+      "Clases",
+      "Linealización"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#cambio-de-variable",
+    "href": "clases/clase-09.html#cambio-de-variable",
+    "title": "Linealización",
+    "section": "Cambio de variable",
+    "text": "Cambio de variable\nAnalicemos el ejemplo de datos experimentales de una caída libre. Sabemos que el modelo matemático (con la gravedad como única fuerza) es:\n\\[\ny(t)= \\dfrac{g}{2}  \\cdot x^2 +v_{0}y +y_0\n\\]\nSi suponemos que no hay velocidad inicial:\n\\[\ny(t)= \\dfrac{g}{2}  \\cdot x^2 +y_0\n\\]\n\n\n\ntiempo (s)\naltura (m)\n\n\n\n\n0\n10\n\n\n0.12\n9.93\n\n\n0.24\n9.73\n\n\n0.35\n9.38\n\n\n0.47\n8.9\n\n\n0.59\n8.29\n\n\n0.71\n7.53\n\n\n0.82\n6.64\n\n\n0.94\n5.62\n\n\n1.06\n4.45\n\n\n1.18\n3.15\n\n\n1.29\n1.71\n\n\n1.41\n0.13\n\n\n\n\n\n\n\n\n\n\n\n\nSi hacemos el siguiente cambio de varbles:\n\\[\n\\begin{align*}\ny-c &= Y \\\\\nt^2 &= T\n\\end{align*}\n\\]\nNuetros datos se puden representar como\n\\[\nY= a \\cdot T\n\\]\nde aquí podemos obtener el parámetro \\(a=\\frac{g}{2}\\) como la pendiente de la recta, que puede obtenerse gráficamente o por regresión lineal.",
+    "crumbs": [
+      "Clases",
+      "Linealización"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#gráficas-log-vs-log",
+    "href": "clases/clase-09.html#gráficas-log-vs-log",
+    "title": "Linealización",
+    "section": "Gráficas log vs log",
+    "text": "Gráficas log vs log\nEn general, si tenemos datos que suponemos se ajustan a una función de tipo potencia o polinómica \\(a \\cdot x^n\\) es posible hacer una linealización usando logaritmos.\n\nDemostración\nEl procedimiento consiste en tomar logaritmo a ambos lados de la ecuación y usar algunas de sus propiedades:\n\\[\n\\begin{align*}\ny &= a \\cdot x^2 \\\\\n\\ln(y) &= \\ln(a \\cdot x^2) \\\\\n\\ln(y) &= \\ln(a) + 2\\cdot \\ln(x)\n\\end{align*}\n\\]\nSi ahora hacemos el cambio de variables:\n\\[\n\\begin{align*}\n\\ln(y) &= Y \\\\\n\\ln(a) &= B \\\\\n\\ln(x) &= X\n\\end{align*}\n\\]\ny Reemplazamos\n\\[\n\\begin{align*}\n\\ln(y) &= \\ln(a) + 2\\cdot \\ln(x) \\\\\nY &= B + 2 \\cdot X\n\\end{align*}\n\\]\nDe esta gráfica la ordenada al origen contiene la información de la aceleración mientras que la pendiente es el grado del polinomio, en este caso 2.\nEsta gráfica se la suele llamar log/log ya que tanto el eje horizontal como el vertical muestran los logaritmos de las variables originales.",
+    "crumbs": [
+      "Clases",
+      "Linealización"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#gráficas-lineal-vs-log",
+    "href": "clases/clase-09.html#gráficas-lineal-vs-log",
+    "title": "Linealización",
+    "section": "Gráficas lineal vs log",
+    "text": "Gráficas lineal vs log\nSi nuestros datos experimentales, son del tipo exponencial:\n\\[\ny(x)= a e^{kx}\n\\]\nPodemos usar el mismo procedimiento\n\\[\n\\begin{align*}\ny &= a e^{kx} \\\\\n\\ln(y) &= \\ln(a e^{k\\cdot x}) \\\\\n\\ln(y) &= \\ln(a) + k\\cdot x\\cdot \\ln(e) \\\\\n\\ln(y) &= \\ln(a) + k\\cdot x\n\\end{align*}\n\\]\nCon los cambiobs de variables:\n\\[\n\\begin{align*}\n\\ln(y) &= Y \\\\\n\\ln(a) &= C\n\\end{align*}\n\\]\nPodemos obtener los parámetros del modelo a través de la gráfica de\n\\[\nY = C + k\\cdot x\n\\]\nEn este caso, en el eje horizontal se sigue representando la variable indpendiente de nuestro conjunto de datos, mientras que en el vertical tenemos el logaritmo de la variable dependiente (\\(Y=\\ln(y)\\)) y por eso se llama a esta gráfica semi-log o lineal-log",
+    "crumbs": [
+      "Clases",
+      "Linealización"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#referencias",
+    "href": "clases/clase-09.html#referencias",
+    "title": "Linealización",
+    "section": "Referencias",
+    "text": "Referencias\n\nRegresión y ajuste de modelos\nRegresión lineal en calc\nDiapositivas regresión lineal en calc\nFunción ESTIMACION.LINEAL\nVideo sobre ajustes en calc\nMás sobre ESTIMACION.LINEAL\nEstadísticas de regresión",
+    "crumbs": [
+      "Clases",
+      "Linealización"
     ]
   },
   {
