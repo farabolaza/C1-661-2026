@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>C1-661 – C1-661 2026</title>
+<title>Práctica Parcial – C1-661 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/C1-filete.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-95e83f4da31dee5d32739e5e564a3209.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/C1-filete.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-95e83f4da31dee5d32739e5e564a3209.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,10 +71,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="C1-661 – C1-661 2026">
-<meta property="og:description" content="Sitio de la materia Computación 1">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Práctica Parcial – C1-661 2026">
+<meta property="og:description" content="Consultas pre-parcial">
 <meta property="og:site_name" content="C1-661 2026">
 </head>
 
@@ -89,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">C1-661</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-11.html">Práctica Parcial</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -99,13 +126,13 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./assets/C1.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./assets/C1.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../assets/C1.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../assets/C1.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://help.libreoffice.org/latest/es/text/shared/05/new_help.html" title="ayuda libre office" class="quarto-navigation-tool px-1" aria-label="ayuda libre office"><i class="bi bi-file-word"></i></a>
@@ -131,25 +158,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursada.html" class="sidebar-item-text sidebar-link">
+  <a href="../cursada.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Información de cursada</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./calendario.html" class="sidebar-item-text sidebar-link">
+  <a href="../calendario.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Calendario de clases</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./programa.html" class="sidebar-item-text sidebar-link">
+  <a href="../programa.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Programa de la materia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bibliografia.html" class="sidebar-item-text sidebar-link">
+  <a href="../bibliografia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografía</span></a>
   </div>
 </li>
@@ -158,76 +185,76 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Clases</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Libre Office</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writer 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writer 03</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writer 04</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writer 05</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writer 06</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Calc 01</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Calc 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Linealización</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Solver en Calc</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/clase-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-11.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Práctica Parcial</span></a>
   </div>
 </li>
@@ -244,31 +271,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/tp 01.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/tp 01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 01</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/tp 02.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/tp 02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/tp 03.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/tp 03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 03</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/tp 04.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/tp 04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 04</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/tp 05.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/tp 05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 05</span></a>
   </div>
 </li>
@@ -279,21 +306,35 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#simulacro-de-parcial" id="toc-simulacro-de-parcial" class="nav-link active" data-scroll-target="#simulacro-de-parcial">Simulacro de parcial</a>
+  <ul class="collapse">
+  <li><a href="#difusión-térmica-en-un-sólido" id="toc-difusión-térmica-en-un-sólido" class="nav-link" data-scroll-target="#difusión-térmica-en-un-sólido">Difusión térmica en un sólido</a>
+  <ul class="collapse">
+  <li><a href="#libre-office-calc" id="toc-libre-office-calc" class="nav-link" data-scroll-target="#libre-office-calc">Libre Office Calc</a></li>
+  <li><a href="#libre-offie-writer" id="toc-libre-offie-writer" class="nav-link" data-scroll-target="#libre-offie-writer">Libre Offie Writer</a></li>
+  <li><a href="#modalidad-de-entrega" id="toc-modalidad-de-entrega" class="nav-link" data-scroll-target="#modalidad-de-entrega">Modalidad de entrega</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-11.html">Práctica Parcial</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">C1-661</h1>
-<p class="subtitle lead">Sitio de la materia Computación 1</p>
+<h1 class="title">Práctica Parcial</h1>
+<p class="subtitle lead">Consultas pre-parcial</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta">
 
     
   
@@ -305,38 +346,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-layout-panel" data-layout-ncol="3">
-<div class="quarto-layout-row">
-<section id="profesor" class="level3 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="profesor">Profesor</h3>
+<section id="simulacro-de-parcial" class="level1">
+<h1>Simulacro de parcial</h1>
+<section id="difusión-térmica-en-un-sólido" class="level2">
+<h2 class="anchored" data-anchor-id="difusión-térmica-en-un-sólido">Difusión térmica en un sólido</h2>
+<p>La temperatura <span class="math inline">\(T\)</span> a la profundidad <span class="math inline">\(x\)</span> dentro un sólido puede ser modelada mediante la siguiente expresión: <span class="math display">\[
+T(x) = T_0 e^{-kx}
+\]</span></p>
+<p>Utilice las herramientas vistas hasta el momento de la siguiente forma</p>
+<section id="libre-office-calc" class="level3">
+<h3 class="anchored" data-anchor-id="libre-office-calc">Libre Office Calc</h3>
 <ul>
-<li><i class="fa-solid fa-user" aria-label="user"></i> Prof.&nbsp;Federico Arabolaza</li>
-<li><i class="fa-solid fa-envelope" aria-label="envelope"></i> federico.arabolaza@inspt.utn.edu.ar</li>
-<li><i class="fa-solid fa-building-columns" aria-label="building-columns"></i> INSPT UTN</li>
+<li>Importar a calc <a href="../assets/datos_difusion.csv">los datos</a></li>
+<li>Linealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos</li>
+<li>Graficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica</li>
 </ul>
 </section>
-<section id="cursada" class="level3 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="cursada">Cursada</h3>
+<section id="libre-offie-writer" class="level3">
+<h3 class="anchored" data-anchor-id="libre-offie-writer">Libre Offie Writer</h3>
+<p>En un documento de Writer</p>
 <ul>
-<li><i class="fa-solid fa-location-dot" aria-label="location-dot"></i> Triunvirato 3174</li>
-<li><i class="fa-solid fa-clock" aria-label="clock"></i> Miércoles de 21:10 a 22:30</li>
+<li>Cree un encabezado “Datos experimentales”</li>
+<li>Inserte una tabla con los datos experimentales (incluya una leyenda)</li>
+<li>Cree un encabezado “Difusión térmica en un sólido”</li>
+<li>Agregue en calc el contenido del apartado de igual nombre de esta página</li>
+<li>Coloque la gráfica creada en calc. (incluya una leyenda)</li>
 </ul>
 </section>
-<section id="secciones" class="level3 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="secciones">Secciones</h3>
+<section id="modalidad-de-entrega" class="level3">
+<h3 class="anchored" data-anchor-id="modalidad-de-entrega">Modalidad de entrega</h3>
 <ul>
-<li><i class="fa-solid fa-calendar-check" aria-label="calendar-check"></i> Programa de la materia</li>
-<li><i class="fa-solid fa-calendar-days" aria-label="calendar-days"></i> Calendario de clases</li>
-<li><i class="fa-solid fa-file-pen" aria-label="file-pen"></i> Trabajos prácticos</li>
-<li><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> Clases</li>
-<li><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Bibliografía</li>
-<li><i class="fa-solid fa-file-arrow-down" aria-label="file-arrow-down"></i> Descargas</li>
+<li>Hoja de cálculo de Calc</li>
+<li>Documento de Writer</li>
+<li>Documento pdf de lo producido en Writer</li>
 </ul>
-</section>
-</div>
-</div>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

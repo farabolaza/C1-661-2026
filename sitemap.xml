@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/programa.html</loc>
+    <lastmod>2026-03-24T23:33:11.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/bibliografia.html</loc>
+    <lastmod>2026-03-24T23:33:11.226Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-05.html</loc>
+    <lastmod>2026-05-05T12:19:50.802Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-03.html</loc>
+    <lastmod>2026-04-21T13:01:26.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-08.html</loc>
+    <lastmod>2026-06-16T13:54:53.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-01.html</loc>
+    <lastmod>2026-03-24T23:33:11.230Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-07.html</loc>
+    <lastmod>2026-05-29T15:11:17.570Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/calendario.html</loc>
+    <lastmod>2026-06-16T14:29:35.501Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/index.html</loc>
+    <lastmod>2026-03-24T23:33:11.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/trabajos practicos/tp 04.html</loc>
+    <lastmod>2026-06-16T14:01:15.142Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/trabajos practicos/tp 01.html</loc>
+    <lastmod>2026-04-14T18:01:45.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/trabajos practicos/tp 02.html</loc>
+    <lastmod>2025-05-23T22:53:10.143Z</lastmod>
+  </url>
+  <url>
     <loc>https://farabolaza.github.io/C1-661-2026/trabajos practicos/tp 05.html</loc>
     <lastmod>2025-10-03T21:54:53.840Z</lastmod>
   </url>
@@ -9,79 +57,35 @@
     <lastmod>2026-05-29T15:38:32.015Z</lastmod>
   </url>
   <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/trabajos practicos/tp 01.html</loc>
-    <lastmod>2026-04-14T18:01:45.496Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/index.html</loc>
-    <lastmod>2026-03-24T23:33:11.235Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-10.html</loc>
-    <lastmod>2026-06-23T01:01:58.687Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-08.html</loc>
-    <lastmod>2026-06-16T13:54:53.846Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-06.html</loc>
-    <lastmod>2026-05-22T12:02:37.671Z</lastmod>
+    <loc>https://farabolaza.github.io/C1-661-2026/cursada.html</loc>
+    <lastmod>2026-03-24T23:33:11.232Z</lastmod>
   </url>
   <url>
     <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-04.html</loc>
     <lastmod>2026-04-28T13:20:31.946Z</lastmod>
   </url>
   <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-02.html</loc>
-    <lastmod>2025-07-22T19:05:05.058Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/calendario.html</loc>
-    <lastmod>2026-06-16T14:29:35.501Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/about.html</loc>
-    <lastmod>2026-03-24T23:33:10.419Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/bibliografia.html</loc>
-    <lastmod>2026-03-24T23:33:11.226Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-01.html</loc>
-    <lastmod>2026-03-24T23:33:11.230Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-03.html</loc>
-    <lastmod>2026-04-21T13:01:26.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-05.html</loc>
-    <lastmod>2026-05-05T12:19:50.802Z</lastmod>
-  </url>
-  <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-07.html</loc>
-    <lastmod>2026-05-29T15:11:17.570Z</lastmod>
-  </url>
-  <url>
     <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-09.html</loc>
     <lastmod>2026-06-23T00:58:12.218Z</lastmod>
   </url>
   <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/cursada.html</loc>
-    <lastmod>2026-03-24T23:33:11.232Z</lastmod>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-11.html</loc>
+    <lastmod>2026-07-08T19:30:29.805Z</lastmod>
   </url>
   <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/programa.html</loc>
-    <lastmod>2026-03-24T23:33:11.235Z</lastmod>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-02.html</loc>
+    <lastmod>2025-07-22T19:05:05.058Z</lastmod>
   </url>
   <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/trabajos practicos/tp 02.html</loc>
-    <lastmod>2025-05-23T22:53:10.143Z</lastmod>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-06.html</loc>
+    <lastmod>2026-05-22T12:02:37.671Z</lastmod>
   </url>
   <url>
-    <loc>https://farabolaza.github.io/C1-661-2026/trabajos practicos/tp 04.html</loc>
-    <lastmod>2026-06-16T14:01:15.142Z</lastmod>
+    <loc>https://farabolaza.github.io/C1-661-2026/clases/clase-10.html</loc>
+    <lastmod>2026-06-23T01:01:58.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661-2026/about.html</loc>
+    <lastmod>2026-03-24T23:33:10.419Z</lastmod>
   </url>
 </urlset>
