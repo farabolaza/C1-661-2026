@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Solver en Calc – C1-661 2026</title>
+<title>Primer Parcial – C1-661 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,7 +26,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -70,6 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -102,12 +105,9 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Solver en Calc – C1-661 2026">
-<meta property="og:description" content="Solver">
-<meta property="og:image" content="https://farabolaza.github.io/C1-661-2026/assets/calc-solver-01.png">
+<meta property="og:title" content="Primer Parcial – C1-661 2026">
+<meta property="og:description" content="Writer, Calc y ajuste de datos.">
 <meta property="og:site_name" content="C1-661 2026">
-<meta property="og:image:height" content="470">
-<meta property="og:image:width" content="629">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -119,7 +119,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-10.html">Solver en Calc</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-12.html">Primer Parcial</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -251,7 +251,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-10.html" class="sidebar-item-text sidebar-link active">
+  <a href="../clases/clase-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Solver en Calc</span></a>
   </div>
 </li>
@@ -263,7 +263,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-12.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-12.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Primer Parcial</span></a>
   </div>
 </li>
@@ -320,19 +320,24 @@ window.Quarto = {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#fundamientación-del-solver" id="toc-fundamientación-del-solver" class="nav-link active" data-scroll-target="#fundamientación-del-solver">Fundamientación del solver</a></li>
-  <li><a href="#uso-de-solver" id="toc-uso-de-solver" class="nav-link" data-scroll-target="#uso-de-solver">Uso de solver</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  <li><a href="#rúbrica" id="toc-rúbrica" class="nav-link active" data-scroll-target="#rúbrica">Rúbrica</a></li>
+  <li><a href="#período-de-un-péndulo-simple" id="toc-período-de-un-péndulo-simple" class="nav-link" data-scroll-target="#período-de-un-péndulo-simple">Período de un péndulo simple</a></li>
+  <li><a href="#desarrollo" id="toc-desarrollo" class="nav-link" data-scroll-target="#desarrollo">Desarrollo</a>
+  <ul class="collapse">
+  <li><a href="#libre-office-calc" id="toc-libre-office-calc" class="nav-link" data-scroll-target="#libre-office-calc">Libre Office Calc</a></li>
+  <li><a href="#libre-offie-writer" id="toc-libre-offie-writer" class="nav-link" data-scroll-target="#libre-offie-writer">Libre Offie Writer</a></li>
+  <li><a href="#modalidad-de-entrega" id="toc-modalidad-de-entrega" class="nav-link" data-scroll-target="#modalidad-de-entrega">Modalidad de entrega</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-10.html">Solver en Calc</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-12.html">Primer Parcial</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Solver en Calc</h1>
-<p class="subtitle lead">Solver</p>
+<h1 class="title">Primer Parcial</h1>
+<p class="subtitle lead">Writer, Calc y ajuste de datos.</p>
 </div>
 
 
@@ -349,64 +354,171 @@ window.Quarto = {
 </header>
 
 
-<section id="fundamientación-del-solver" class="level2">
-<h2 class="anchored" data-anchor-id="fundamientación-del-solver">Fundamientación del solver</h2>
-<p>Si suponemos que los datos que se han obtenido de un experimento no pueden ser linealizados para su análisis, o si el modelo matemático al que deseamos ajustarlos no es ninguna de las funciones que la planilla de cálculo ofrece como línea de tendencia, no está todo perdido: podemos utilizar la herramienta solver para ajustar nuestros datos a un modelo matemático de <span class="math inline">\(n\)</span> parámetros que podremos obtener de los datos.</p>
-<p>El planteo teórico se establece de la misma forma que para los cuadrados mínimos</p>
+<section id="rúbrica" class="level1">
+<h1>Rúbrica</h1>
+<div id="aede03aa" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Seccion</th>
+<th data-quarto-table-cell-role="th">Tarea</th>
+<th data-quarto-table-cell-role="th">Descripción</th>
+<th data-quarto-table-cell-role="th">valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Libre Office Calc</td>
+<td>Importar archivo csv</td>
+<td>Importa el archivo un documento de calc</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Libre Office Calc</td>
+<td>Importar archivo csv</td>
+<td>Los formatos de número y texto son los correct...</td>
+<td>2,5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Libre Office Calc</td>
+<td>Fórmulas y Números</td>
+<td>Usa las fórmulas requeridas (referencias, sint...</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Libre Office Calc</td>
+<td>Fórmulas y Números</td>
+<td>Usa los formatos numéricos adecuados (not. cie...</td>
+<td>2,5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Libre Office Calc</td>
+<td>Gráficas</td>
+<td>Crea gráficas acorde a los datos e instruccion...</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>Libre Office Calc</td>
+<td>Gráficas</td>
+<td>Incluye los elementos necesarios/pedidos (leye...</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>Libre Office Calc</td>
+<td>Ajuste de datos</td>
+<td>Aplica la linealización a series de datos y ob...</td>
+<td>45</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>Libre Office Calc</td>
+<td>Ajuste de datos</td>
+<td>Usa la herramienta solver a series de datos y ...</td>
+<td>45</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>Libre Office Writer</td>
+<td>Formato y estructura</td>
+<td>Usa títulos y tipografía de acuerdo a lo que p...</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>Libre Office Writer</td>
+<td>Ecuaciones</td>
+<td>Usa el editor de ecuaciones cuando es requerido</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">10</th>
+<td>Libre Office Writer</td>
+<td>Tablas</td>
+<td>Crea tabalas de acuerdo a lo pedido</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">11</th>
+<td>Libre Office Writer</td>
+<td>Leyendas</td>
+<td>Incluye las leyendas y elementos de referencia...</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">12</th>
+<td>Libre Office Writer</td>
+<td>Exportación</td>
+<td>Exporta a pdf el documento de writer</td>
+<td>2,5</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="período-de-un-péndulo-simple" class="level1">
+<h1>Período de un péndulo simple</h1>
+<p>Se sabe que el período de un péndulo simple está determinado por la siguiente expresión:</p>
 <p><span class="math display">\[
-\sum_i (f(x_i,\beta) - y_i)^2
+T = 2\pi \sqrt{\frac{L}{g}} \quad \Rightarrow \quad T = a L^b
 \]</span></p>
-<p>en donde <span class="math inline">\(\beta\)</span> son los parámetros que podemos variar, y <span class="math inline">\(x_i\)</span> y <span class="math inline">\(y_i\)</span> conforman los pares de valores obtenidos experimentalmente (suponemos el caso de una variable de entrada y una de salida por simplicidad en la notación).</p>
-<p>El principio de funcionamiento de Solver, aunque no profundizaremos en ello, se basa en minimizar las diferencias entre el modelo propuesto y los datos al iterar sobre los valores de los parámetros (en lugar de encontrar el mínimo de forma analítica como haríamos en lápiz y papel) hasta que dichas diferencias alcancen un mínimo cuya magnitud puede establecerse de antemano.</p>
+<ul>
+<li><span class="math inline">\(T\)</span>: Periodo (s)</li>
+<li><span class="math inline">\(L\)</span>: Longitud del péndulo (m)</li>
+<li><span class="math inline">\(b\)</span>: Exponente teórico (0.5)</li>
+</ul>
+<p>Es decir, sigue una ley de potencia con valor <span class="math inline">\(0,5\)</span>. Los datos de un experimento que desea corroborar el valor de de dicha constante se han registrado los tiempos para el período de pendulos de diferentes longitudes.</p>
 </section>
-<section id="uso-de-solver" class="level2">
-<h2 class="anchored" data-anchor-id="uso-de-solver">Uso de solver</h2>
-<p>Nos guiaremos con <a href="../assets/solver.ods">este archivo de ejemplo</a></p>
-<p>Para aplicar <em>solver</em> a un conjunto de datos debemos hacer lo siguiente:</p>
-<ol type="1">
-<li>Tener nuestros datos experimentales en la planilla de cáculo</li>
-<li>Crear el modelo al cual ajustaremos nuestros datos en una celda 2.1 Usar una celda para cada parámetro que deseemos encontrar (dar un valo estimado)</li>
-<li>Crear una columna con las diferencias cuadráticas entre el modelo calculado y el medido</li>
-<li>Crear una celda con la sumatoria de las diferencias cuadráticas</li>
-<li>ir a <code>herramientas &gt; solver</code>. Tener seleccionada la celda de la sumatoria de las diferencias cuadráticas.</li>
-<li>Seguir los pasos del menu de solver como se muestra en las imágenes.</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/calc-solver-01.png" class="img-fluid figure-img"></p>
-<figcaption>Menú de solver</figcaption>
-</figure>
-</div>
-<ol type="1">
-<li>Elegiremos minimizar los valores y luego pondremos las restriccione que consideremos a los signos o intervalos que pueden tener.</li>
-<li>En <code>opciones</code> seleccionaremos algunas de las opciones <code>no lineales</code></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/calc-solver-algoritmo.png" class="img-fluid figure-img"></p>
-<figcaption>Elección de algoritmo</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/calc-solver-fin.png" class="img-fluid figure-img"></p>
-<figcaption>Finalización</figcaption>
-</figure>
-</div>
-<p>Una vez ejecutado veremos como los resultados de nuestras columnas variables han cambiado. Si graficamos los valores del modelo junto a los experimentales podremos tener una visualización de que tan “bueno” es el ajuste. Podemos agregar mas puntos para graficar al crear una nueva tabla a partir de nuestro modelo con un intervalo menor entre valores sucesivos.</p>
+<section id="desarrollo" class="level1">
+<h1>Desarrollo</h1>
+<p>Según lo expuesto previamente la relación entre la longitud y el período es del tipo <span class="math inline">\(T = aL^b\)</span> donde <span class="math inline">\(b=0,5\)</span> y <span class="math inline">\(a=\frac{2 \pi}{\sqrt{g}}\)</span></p>
+<p>Suponga que sólo dispone de los datos experimentales (no sabe cuanto valen <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>) pero que intuye que la relación entre la longitud del péndulo y su perído sigue una relación potencial de la forma <span class="math inline">\(T = aL^b\)</span></p>
+<section id="libre-office-calc" class="level2">
+<h2 class="anchored" data-anchor-id="libre-office-calc">Libre Office Calc</h2>
+<ul>
+<li>Importar a calc <a href="../assets/datos_pendulo-parcial.csv">los datos</a></li>
+<li>Linealizar el modelo o usar Solver para encontrar los valores para la constante <span class="math inline">\(a\)</span> y para el exponente <span class="math inline">\(b\)</span> y luego encuentre ecuación que mejor se ajusta a los datos.</li>
+<li>Sabiendo <span class="math inline">\(a\)</span> calcule el valor de <span class="math inline">\(g\)</span>.</li>
+<li>Graficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación del ajuste en la gráfica.</li>
+</ul>
 </section>
-<section id="referencias" class="level2">
-<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
-<ol type="1">
-<li><a href="http://www.sc.ehu.es/sbweb/fisica3/datos/ajuste/nolineal.html"><span class="emoji" data-emoji="link">🔗</span> Ajuste no lineal</a></li>
-<li><a href="https://cidta.usal.es/cursos/simulacion/practicas/Practica7/ajustecurvas.pdf"><span class="emoji" data-emoji="link">🔗</span> Ajustes de ecuaciones a curvas</a></li>
-<li><a href="https://materias.df.uba.ar/l1b2023c2/files/2012/07/Clase-09-Labo-1-Ajustes-no-lineales.pdf"><span class="emoji" data-emoji="link">🔗</span> Ajustes no lineales UBA</a></li>
-<li><a href="https://matesup.cl/cursos/modelos/08-ajustes-no-lineales/regresion-no-lin.pdf"><span class="emoji" data-emoji="link">🔗</span> Ajustes para otras formas funcionales</a></li>
-<li><a href="https://materias.df.uba.ar/f1qa2020c2/files/2020/10/guia_colab_06_no_lineal.ipynb-Colaboratory.pdf"><span class="emoji" data-emoji="link">🔗</span> Ajustes no lineales 2</a></li>
-<li><a href="https://proglinealtemas.blogspot.com/2024/11/utilizando-solver-en-libre-office.html"><span class="emoji" data-emoji="link">🔗</span> Solver en libre office</a></li>
-</ol>
+<section id="libre-offie-writer" class="level2">
+<h2 class="anchored" data-anchor-id="libre-offie-writer">Libre Offie Writer</h2>
+<p>En un documento de Writer</p>
+<ul>
+<li>Cree un encabezado “Datos experimentales”</li>
+<li>Inserte una tabla con los datos experimentales (incluya una leyenda)</li>
+<li>Cree un encabezado “Período de un péndulo simple”</li>
+<li>Agregue a continuación el contenido del apartado de <strong>Período de un péndulo simple</strong> de esta página</li>
+<li>Coloque la gráfica creada en calc. (incluya una leyenda)</li>
+<li>Incluya los resultados para <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> y el valor de <span class="math inline">\(g\)</span> obtenido previamente.</li>
+<li>Justifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.</li>
+</ul>
+</section>
+<section id="modalidad-de-entrega" class="level2">
+<h2 class="anchored" data-anchor-id="modalidad-de-entrega">Modalidad de entrega</h2>
+<ul>
+<li>Hoja de cálculo de Calc</li>
+<li>Documento de Writer</li>
+<li>Documento pdf de lo producido en Writer</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
