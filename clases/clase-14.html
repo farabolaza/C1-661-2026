@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TP 01 – C1-661 2026</title>
+<title>Otras Herramientas – C1-661 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,11 +71,43 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="TP 01 – C1-661 2026">
-<meta property="og:description" content="Reproducción de paper">
+<meta property="og:title" content="Otras Herramientas – C1-661 2026">
+<meta property="og:description" content="Software Complementario">
+<meta property="og:image" content="https://farabolaza.github.io/C1-661-2026/assets/cymath-ejemplos.png">
 <meta property="og:site_name" content="C1-661 2026">
+<meta property="og:image:height" content="388">
+<meta property="og:image:width" content="617">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -87,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">TP 01</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-14.html">Otras Herramientas</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -156,13 +188,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Clases</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-01.html" class="sidebar-item-text sidebar-link">
@@ -243,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-14.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-14.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Otras Herramientas</span></a>
   </div>
 </li>
@@ -251,16 +283,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">trabajos practicos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../trabajos practicos/tp 01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../trabajos practicos/tp 01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 01</span></a>
   </div>
 </li>
@@ -300,18 +332,43 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#consignas" id="toc-consignas" class="nav-link active" data-scroll-target="#consignas">Consignas</a></li>
-  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link" data-scroll-target="#modalidad-y-fecha-de-entrega">Modalidad y fecha de entrega</a></li>
+  <li><a href="#matemáticas-solvers-y-paso-a-paso" id="toc-matemáticas-solvers-y-paso-a-paso" class="nav-link active" data-scroll-target="#matemáticas-solvers-y-paso-a-paso">Matemáticas: Solvers y paso a paso</a>
+  <ul class="collapse">
+  <li><a href="#cymath" id="toc-cymath" class="nav-link" data-scroll-target="#cymath">Cymath</a></li>
+  <li><a href="#wolfram-alpha" id="toc-wolfram-alpha" class="nav-link" data-scroll-target="#wolfram-alpha">Wolfram Alpha</a></li>
+  <li><a href="#symy-gamma-y-sympy-beta" id="toc-symy-gamma-y-sympy-beta" class="nav-link" data-scroll-target="#symy-gamma-y-sympy-beta">Symy Gamma y Sympy Beta</a></li>
+  <li><a href="#symbolab" id="toc-symbolab" class="nav-link" data-scroll-target="#symbolab">Symbolab</a></li>
+  <li><a href="#gauthmath" id="toc-gauthmath" class="nav-link" data-scroll-target="#gauthmath">GauthMath</a></li>
+  </ul></li>
+  <li><a href="#calculadoras-gráficas-ilustraciones-y-esquemas" id="toc-calculadoras-gráficas-ilustraciones-y-esquemas" class="nav-link" data-scroll-target="#calculadoras-gráficas-ilustraciones-y-esquemas">Calculadoras Gráficas, Ilustraciones y esquemas</a>
+  <ul class="collapse">
+  <li><a href="#desmos" id="toc-desmos" class="nav-link" data-scroll-target="#desmos">Desmos</a></li>
+  <li><a href="#geogebra" id="toc-geogebra" class="nav-link" data-scroll-target="#geogebra">Geogebra</a></li>
+  </ul></li>
+  <li><a href="#esquemas-ilustraciones-y-otros" id="toc-esquemas-ilustraciones-y-otros" class="nav-link" data-scroll-target="#esquemas-ilustraciones-y-otros">Esquemas, ilustraciones y otros</a>
+  <ul class="collapse">
+  <li><a href="#chemix" id="toc-chemix" class="nav-link" data-scroll-target="#chemix">Chemix</a></li>
+  <li><a href="#alternativas-a-chemix" id="toc-alternativas-a-chemix" class="nav-link" data-scroll-target="#alternativas-a-chemix">Alternativas a Chemix</a></li>
+  </ul></li>
+  <li><a href="#gráficas-y-ajuste-de-curvas" id="toc-gráficas-y-ajuste-de-curvas" class="nav-link" data-scroll-target="#gráficas-y-ajuste-de-curvas">Gráficas y ajuste de curvas</a></li>
+  <li><a href="#mención-honorífica-mathcha" id="toc-mención-honorífica-mathcha" class="nav-link" data-scroll-target="#mención-honorífica-mathcha">Mención Honorífica: MathCha</a></li>
+  <li><a href="#llms-como-herramienta" id="toc-llms-como-herramienta" class="nav-link" data-scroll-target="#llms-como-herramienta">LLM’s como herramienta</a></li>
+  <li><a href="#actividades" id="toc-actividades" class="nav-link" data-scroll-target="#actividades">Actividades</a>
+  <ul class="collapse">
+  <li><a href="#solvers" id="toc-solvers" class="nav-link" data-scroll-target="#solvers">Solvers</a></li>
+  <li><a href="#diagramas" id="toc-diagramas" class="nav-link" data-scroll-target="#diagramas">Diagramas</a></li>
+  </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">TP 01</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-14.html">Otras Herramientas</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">TP 01</h1>
-<p class="subtitle lead">Reproducción de paper</p>
+<h1 class="title">Otras Herramientas</h1>
+<p class="subtitle lead">Software Complementario</p>
 </div>
 
 
@@ -328,29 +385,180 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="consignas" class="level1">
-<h1>Consignas</h1>
-<p>En la medida que se vayan viendo los contenidos necesarios, se deberán aplicar a la reproducción del famoso trabajo de Rutherford sobre la dispersión de las partículas alfa.</p>
-<ul>
-<li><a href="../assets/rutherford-original.pdf">Publicación original</a></li>
-<li><a href="https://www.chemteam.info/Chem-History/Rutherford-1911/Rutherford-1911.html">Versión web en inglés</a></li>
-<li><a href="../assets/rutherford traducido.txt">Traducción al español (sin ecuaciones)</a></li>
-</ul>
-<p>Trabajaremos tentativamente los siguientes elementos en cada clase</p>
-<ol type="1">
-<li>Tipografía. Estilos, tipo y tamaño (Clase 01)</li>
-<li>Estilos de párrafo: Titulos, subtítulos, niveles (Clase 01)</li>
-<li>Figuras e imágenes: Leyendas y remisiones (Clase 02)</li>
-<li>Ecuaciones: Numeración y estructura. TexMaths (Clase 02 y Clase 03)</li>
-<li>Estilo de página: Tamaño, márgenes, encabezados y pies de página (Clase 04)</li>
-<li>Portadas y numeración (Clase 04)</li>
-<li>Tablas(Clase 05)</li>
-<li>Sumarios e índices: Lista de figuras, tablas, ecuaciones, índice, bibliografía. (Clase 05)</li>
-</ol>
+<p>En esta clase vamos a mostrar el funcionamiento de algunas herramientas que pueden ser de ayuda en la cursada de otras asignaturas.</p>
+<section id="matemáticas-solvers-y-paso-a-paso" class="level2">
+<h2 class="anchored" data-anchor-id="matemáticas-solvers-y-paso-a-paso">Matemáticas: Solvers y paso a paso</h2>
+<p>Ofrecen resoluciones para operaciones matemáticas y en algunos casos el paso a paso de las mismas.</p>
+<section id="cymath" class="level3">
+<h3 class="anchored" data-anchor-id="cymath">Cymath</h3>
+<p>Es la más elemental de todas, pero ofrece lo básico: derivadas, integrales, factorziaciones, etc.</p>
+<p>Como extra, tiene resúmenes de los conceptos mas usuales en la sección <a href="https://www.cymath.com/sp/reference">referencia</a></p>
+<p>La interfaz es bastante sencilla y la curva de aprendizaje, rápida. Las ayudas integradas durante la ejecución lo hacen bastante intuitivo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/cymath-ejemplos.png" class="img-fluid figure-img"></p>
+<figcaption>Cymath</figcaption>
+</figure>
+</div>
+<p>Ofrece soluciones paso a paso con un nivel de automatización evidente pero efectivo para los casos mas usuales.</p>
+<p><strong>Sitaxis</strong>: Podremos escribir Latex. Lo ingresado se muestra en pantalla antes de que lo ejecutemos, lo que es útil para saber que hayamos escrito la expresión correctamente. En algunas operaciones, como integrales o gráficas, suele completar automáticamente algunas partes de la expresión.</p>
+<p>Se accede desde <a href="https://www.cymath.com/sp/practice">acá</a></p>
 </section>
-<section id="modalidad-y-fecha-de-entrega" class="level1">
-<h1>Modalidad y fecha de entrega</h1>
-<p>Vía aula virtual <a href="https://inspt.cvg.utn.edu.ar/course/view.php?id=2760">acá</a> según fecha indicada en la tarea.</p>
+<section id="wolfram-alpha" class="level3">
+<h3 class="anchored" data-anchor-id="wolfram-alpha">Wolfram Alpha</h3>
+<p>Es uno de los más poderosos, ofrece una amplia gama de conceptos y contenidos de todas las ramas de la ciencia (y conocimiento en general) bastante confiable.</p>
+<p>Como lado negativo, es que su potencia real se ve solo cuando se paga. La versión libre tiene serias limitaciones por lo que sólo vale la pena cuando no haya otra alternativa.</p>
+<p><strong>Sitaxis</strong>: Se puede escribrir en lenguaje natural “<code>derive sin(x)</code>” o con látex.</p>
+<p>Se accede desde <a href="https://www.wolframalpha.com/">acá</a></p>
+</section>
+<section id="symy-gamma-y-sympy-beta" class="level3">
+<h3 class="anchored" data-anchor-id="symy-gamma-y-sympy-beta">Symy Gamma y Sympy Beta</h3>
+<p>Ambos estan basados en la librería Sympy de python para cálculo simbólico. Permite resolver problemas de matemática tal como lo haríamos con lápiz y papel.</p>
+<p>Sympy Gamma es una puesta en línea de este paquete de python de sus mismos creadores a la que se accede desde <a href="https://live.sympy.org/">acá</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/sympy-beta.png" class="img-fluid figure-img"></p>
+<figcaption>Sympy</figcaption>
+</figure>
+</div>
+<p>Sympy Beta no pertenece a los creadores de Sympy pero ofrece un funcionamiento similar y se accede desde <a href="https://sympy-beta.vercel.app/">acá</a>. Tiene una breve ayuda para los usos mas comunes que puede ser de ayuda a principiantes</p>
+<p><strong>Sintaxis</strong>: Se puede usar la sintaxis de Python, lo que es aconsejable si uno está queriendo familiarizarse con ello o latex/Mathlive.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/sympy-ejemplos.png" class="img-fluid figure-img"></p>
+<figcaption>Sympy Ejemplos</figcaption>
+</figure>
+</div>
+<p>En la página de inicio se pueden ver ejemplos para guiarse. Aunque como se trata de una versión “en vivo” de sympy, todo lo que sympy pueda hacer estará disponible. Si quieren darle una mirada, la ayuda de Sympy, está <a href="https://docs.sympy.org/latest/index.html">acá</a> y una breve ayuda se puede consultar <a href="https://moonpiedumplings.github.io/guides/sympy/">acá</a></p>
+</section>
+<section id="symbolab" class="level3">
+<h3 class="anchored" data-anchor-id="symbolab">Symbolab</h3>
+<p>Simlar a Cymath, ofrece soluciones paso a paso con más opciones, aunque con menos robustez que Wolfram Alpha. También muestra una fuerte “barrera de pago” en donde las mejores prestaciones sólo se dan luego de una suscripción. Útil para los cálculos más sencillos o para corroborar respuestas.</p>
+<p>Se accede desde <a href="https://es.symbolab.com/">acá</a> y tiene una extension para navegadores basados en Chromium.</p>
+</section>
+<section id="gauthmath" class="level3">
+<h3 class="anchored" data-anchor-id="gauthmath">GauthMath</h3>
+<p>Al igual que Symbolab, Wolfram alpha y en menor medida CyMath hacen uso de los modelos de lenguaje de IA para mejorar sus respuestas.</p>
+<p>Resulta potente para resolver desde una fotografía (existe una app) aunque la web suele tener fallos al pedirle resoluciones desde el teclado.</p>
+<p>Se accede desde <a href="https://pe.gauthmath.com/">acá</a></p>
+</section>
+</section>
+<section id="calculadoras-gráficas-ilustraciones-y-esquemas" class="level2">
+<h2 class="anchored" data-anchor-id="calculadoras-gráficas-ilustraciones-y-esquemas">Calculadoras Gráficas, Ilustraciones y esquemas</h2>
+<section id="desmos" class="level3">
+<h3 class="anchored" data-anchor-id="desmos">Desmos</h3>
+<p>Ya sea para graficar funciones, para resovler una integral definida o graficar una derivada, Desmos es una herramienta muy intuitiva y ágil. Sólo con interactuar un poco con la interfaz (también tiene su versión app moóvil) o dándole una leída a su <a href="https://desmos.s3.amazonaws.com/Desmos_User_Guide_ES-ES.pdf">ayuda en español</a> podemos empezar a usarlo. Personalmente lo presento como el primo ágil (aunque menos abarcador) de Geogebra.</p>
+<p>Se accede desde <a href="https://www.desmos.com/calculator?lang=es">acá</a></p>
+</section>
+<section id="geogebra" class="level3">
+<h3 class="anchored" data-anchor-id="geogebra">Geogebra</h3>
+<p>Con varios años funcionando, no necesita presentación. Ha ido incrementando su poder y posibilidades con el tiempo, lo que también lo ha hecho ganar complejidad, haciéndolo un poco menos rápido que otras opciones similares.</p>
+<p>En geogebra se puede hacer mucho, realmente mucho:calculadora elemental, graficadora, planilla de cálculos,geometría, cálculo simbólico, etc. asi que nos limitaremos mencionarlo.</p>
+<p>Se accede <a href="https://www.geogebra.org/classic?lang=es">acá</a> y cuenta con versiones de app móvil.</p>
+<p>Usar geogebra/desmos junto a otras herramientas mientras se estudia es siempre aconsejable.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/geogebra-simbolico.png" class="img-fluid figure-img"></p>
+<figcaption>Geogebra</figcaption>
+</figure>
+</div>
+<p>Nota: Cuando estemos usando el CAS (calculadora simbólica) si comenzamos a tipear aquello que deseamos que se haga, por ejemplo “deriv..” o “limit..” la interfaz nos ofrece ayuda de sintaxis y posibles comandos que suelen hacer de su uso muy fácil.</p>
+</section>
+</section>
+<section id="esquemas-ilustraciones-y-otros" class="level2">
+<h2 class="anchored" data-anchor-id="esquemas-ilustraciones-y-otros">Esquemas, ilustraciones y otros</h2>
+<p>Para informes de laboratorio, trabajos prácticos o de final muchas veces el estudiante debe confeccionar esquemas o ilustraciones. Hacerlo a mano no sólo es complejo sino que no todo el mundo tiene la habilidad para presentar algo decente. Las siguientes herramientas nos dan una mano para ello.</p>
+<section id="chemix" class="level3">
+<h3 class="anchored" data-anchor-id="chemix">Chemix</h3>
+<p>Es un software de pago que en su versión gratuita es “usable” para varias situaciones, en particular para representar diseños experimentales y los materiales involucrados. Contiene una base de datos de imágenes (cliparts) o plantillas de elementos usuales: mesas,probetas, balanzas, componentes eléctricos y aparatos de medición listos para usar en nuestros diseños. Algunos elementos muy usuales, como las pinzas cocodirlo, sólo están disponibles en la versión de pago.</p>
+<p>Ejemplos de como se ven sus diseños</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/chemix-02.png" class="img-fluid figure-img"></p>
+<figcaption>Chemix</figcaption>
+</figure>
+</div>
+<p>Se accede <a href="https://chemix.org/">acá</a></p>
+</section>
+<section id="alternativas-a-chemix" class="level3">
+<h3 class="anchored" data-anchor-id="alternativas-a-chemix">Alternativas a Chemix</h3>
+<p>Si bien no hay otro software que tenga las mismas prestaciones específicas existen hoy numerosas alternativas para crear esquemas a partir de piezas prediseñadas, donde podremos buscar o crear las nuestras según sea necesario.</p>
+<p>Algunas de estas herramientas son:</p>
+<ol type="1">
+<li><a href="https://app.diagrams.net/">diagrams.net</a></li>
+<li><a href="https://excalidraw.com/">Excalidraw</a></li>
+<li><a href="https://www.drawio.com/">Drawio</a></li>
+<li><a href="https://www.figma.com/es-es/figjam/diagramas/">figma</a></li>
+</ol>
+<p>Una forma de acelerar la creación de esquemas de laboratorio es tener un repositorio de imágenes de elementos comunes. Los pueden crear buscando imágenes en algún sitio de banco de imágenes o a partir de los elementos del laboratorio. Para los más artísticos, pueden usar alguna herramienta de IA para hacer <a href="https://www.yeschat.ai/es/features/photo-to-sketch">un boceto a partir de una fotografía</a> y así obtener una presentación agradable desde un registro de laboratorio.</p>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/foto-labo.jpg" class="img-fluid figure-img"></p>
+<figcaption>foto</figcaption>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/foto-boceto.png" class="img-fluid figure-img"></p>
+<figcaption>foto</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="gráficas-y-ajuste-de-curvas" class="level2">
+<h2 class="anchored" data-anchor-id="gráficas-y-ajuste-de-curvas">Gráficas y ajuste de curvas</h2>
+<p>Existe software dedicado que permite la elaboración de gráficas a partir de datos experimentales tabulados (ya sea formato planilla de calculo o texto plano) que presentan un escenario intermedio entre usar el software de planilla de cálculo y herramientas de programacion como python, r, u otros lenguajes que también tienen su propio aresenal de herramientas para tratamiento de datos científicos.</p>
+<ul>
+<li><a href="https://labplot.org/">labplot</a></li>
+<li><a href="https://scidavis.sourceforge.net/">scidavis</a></li>
+</ul>
+<p>Ambos ejemplos son opciones de código abierto y con una buena comunidad que los utiliza lo que los vuelve atractivos en ámbitos educativos y científicos en general.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=PRlyk4RFLPg">Tutorial de scidavis</a></li>
+<li><a href="https://www.youtube.com/watch?v=Kj3BI5X-cyo&amp;list=PLuLdYJVi3HfvJfu5USh2XBJ6DsPPmQzHJ">Demo de labplot</a></li>
+</ul>
+</section>
+<section id="mención-honorífica-mathcha" class="level2">
+<h2 class="anchored" data-anchor-id="mención-honorífica-mathcha">Mención Honorífica: MathCha</h2>
+<p>Un poco inclasificable, ya que hace un poco de todo, MathCha es un editor de ecuaciones, procesador de texto, graficador y herramienta de diseño de diagramas todo en uno.</p>
+<p>Como toda navaja suiza, no tiene los elementos más potentes en cada caso, pero al contar con muy buena integración con latex y gráficos vectoriales es una excelente herramienta intermedia para tipear ecuaciones difíciles, graficar funciones y exportar sin pérdida de calidad, MathCha es digno de ser tenido en cuenta para resolvernos la elaboración de informes y material escrito.</p>
+<p>Interacción: si tipeamos “" accedemos a una ayuda para autocompletar que no ofrece un gran abanico de elementos de tablas, gráficas, matemáticas, etc.</p>
+<p>El apartado de gráficos y diagramas es bastante bueno y nos permite exportar a svg, lo que es útil si deseamos no perder calidad de imagen al cambiar de tamaño. Los componentes para diagramas son los elementales y con un poco de ingenio se puede reproducir cualquier forma uniendo las existentes.</p>
+<p>Se accede desde <a href="https://www.mathcha.io/editor">acá</a></p>
+</section>
+<section id="llms-como-herramienta" class="level2">
+<h2 class="anchored" data-anchor-id="llms-como-herramienta">LLM’s como herramienta</h2>
+<p>No podemos dejar de mencionar los modelos predictivos de lenguaje de ia, conocidos llanamiente como “chatbots de ia” o simplmente (de manera errónea) “ia”. La primera aclaración que debemos hacer es que lo que vulgarmente se llama “ia” es en realidad una rama grande de investigación científica con años de desarrollo, y los llm’s (o modelos garndes de lenguaje) son solo una parte de dicho ámbito cientifico, no dedicadas a operar sobre ningún área de la ciencia en particular, cuya función es la predicción estadística de texto. Las puertas de entrada que conocemos (claude, chatgpt, kimi, qwen,gemini,deepseek) son implementaciones principalmente pensadas con fines comerciales (y por qué no geopolíticos), y a diferencia de por ejemplo alpha-fold, cuyo entrenamiento especializado permitió decodificar la estructura molecular de cientos de miles de proteínas, sólo se limitan a “predecir” cuál podría ser la próxima palabra en un contexto determinado, y si bien los llm’s comparten algunos principios básicos con los modelos entrenados para tareas específicas, sus funcionalidades son muy diferentes. Nunca debemos olvidar que los llm’s están creados sólo para producir texto coherente.</p>
+<p>Los llm’s pueden resultar atractivos, pero su uso debe hacerse con criterio debido que su propia naturaleza (como les conté más arriba) los vuelven propnensos a errores en lo relativo a desarrollos matemáticos complejos, y si bien parecen responder fielmente en situaciones sencillas, para el estudio de cualquier asignatura de una carrera de grado, existe bibliografía que tendrá la información mejor presentada y de manera más dedicada que los llm’s. Sin embargo, usarlos para cotejar diferentes fuentes, pedirle que nos resuma los diferente enfoques vigentes sobre algún tema, o que parafrasee, resuma o amplíe una explicación, pueden ser casos válidos de uso. Para realizar una operación matemática sencilla, aunque seguramente den la respuesta correcta, tenemos otras opciones. Si les interesa conocer un poco sobre en flujo de trabajo posible donde se integra un llm como herramienta real en la investigación, pueden leer este <a href="https://moiseszeleny.github.io/posts/llm-cas-flujo-de-trabajo/">artículo</a> y su fundamentación en <a href="https://moiseszeleny.github.io/posts/por-que-existe-esta-bitacora/">este otro</a></p>
+</section>
+<section id="actividades" class="level1">
+<h1>Actividades</h1>
+<section id="solvers" class="level2">
+<h2 class="anchored" data-anchor-id="solvers">Solvers</h2>
+<p>Con los diferentes solvers (también pueden probar con el CAS de Geogebra) resolver</p>
+<ul>
+<li><span class="math inline">\(\int \tan(x^2)dx\)</span></li>
+<li><span class="math inline">\(\int \frac{1}{x}dx\)</span></li>
+<li><span class="math inline">\(\int_0^4 e^{-x^2}dx\)</span></li>
+<li><span class="math inline">\(\lim_{x\to \infty}\left(x \cdot \sin x \right)\)</span></li>
+<li><span class="math inline">\(\frac{df}{dx} \left( \ln(x) \right)\)</span></li>
+<li>Factorizar: <span class="math inline">\(x^3+x-2\)</span></li>
+<li>Factorizar: <span class="math inline">\(x^2+1\)</span></li>
+</ul>
+</section>
+<section id="diagramas" class="level2">
+<h2 class="anchored" data-anchor-id="diagramas">Diagramas</h2>
+<p>Usar alguna de las herramientas mostradas para crear un diagrama de laboratorio (de un TP actual o que ya esté hecho).</p>
+</section>
+</section>
+<section id="referencias" class="level1">
+<h1>Referencias</h1>
+<p><a href="https://moonpiedumplings.github.io/guides/sympy/">Uso de sympy (elemental)</a> <a href="https://www.geeksforgeeks.org/data-science/sympy-tutorial/">Tutorial de sympy de geeks for geeks</a></p>
 
 
 </section>
