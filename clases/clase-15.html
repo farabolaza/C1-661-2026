@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TP 01 – C1-661 2026</title>
+<title>Tracker 01 – C1-661 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,10 +71,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="TP 01 – C1-661 2026">
-<meta property="og:description" content="Reproducción de paper">
+<meta property="og:title" content="Tracker 01 – C1-661 2026">
+<meta property="og:description" content="Introducción">
 <meta property="og:site_name" content="C1-661 2026">
 </head>
 
@@ -87,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">TP 01</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-15.html">Tracker 01</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -156,13 +185,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Clases</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-01.html" class="sidebar-item-text sidebar-link">
@@ -249,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-15.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-15.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tracker 01</span></a>
   </div>
 </li>
@@ -263,16 +292,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">trabajos practicos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../trabajos practicos/tp 01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../trabajos practicos/tp 01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 01</span></a>
   </div>
 </li>
@@ -312,18 +341,34 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#consignas" id="toc-consignas" class="nav-link active" data-scroll-target="#consignas">Consignas</a></li>
-  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link" data-scroll-target="#modalidad-y-fecha-de-entrega">Modalidad y fecha de entrega</a></li>
+  <li><a href="#fundamentos-de-tracker" id="toc-fundamentos-de-tracker" class="nav-link active" data-scroll-target="#fundamentos-de-tracker">Fundamentos de Tracker</a>
+  <ul class="collapse">
+  <li><a href="#carcterísticas-principales" id="toc-carcterísticas-principales" class="nav-link" data-scroll-target="#carcterísticas-principales">Carcterísticas principales:</a></li>
+  <li><a href="#uso-en-entornos-educativos" id="toc-uso-en-entornos-educativos" class="nav-link" data-scroll-target="#uso-en-entornos-educativos">Uso en entornos educativos:</a></li>
+  </ul></li>
+  <li><a href="#trackear-un-video" id="toc-trackear-un-video" class="nav-link" data-scroll-target="#trackear-un-video">Trackear un video</a>
+  <ul class="collapse">
+  <li><a href="#ejes-de-coordenadas-y-calibración" id="toc-ejes-de-coordenadas-y-calibración" class="nav-link" data-scroll-target="#ejes-de-coordenadas-y-calibración">Ejes de coordenadas y calibración</a>
+  <ul class="collapse">
+  <li><a href="#sistema-de-coordenadas" id="toc-sistema-de-coordenadas" class="nav-link" data-scroll-target="#sistema-de-coordenadas"><strong>Sistema de coordenadas:</strong></a></li>
+  <li><a href="#vara-de-calibración" id="toc-vara-de-calibración" class="nav-link" data-scroll-target="#vara-de-calibración"><strong>Vara de calibración:</strong></a></li>
+  </ul></li>
+  <li><a href="#detalles-de-video" id="toc-detalles-de-video" class="nav-link" data-scroll-target="#detalles-de-video">Detalles de video</a></li>
+  <li><a href="#tracking" id="toc-tracking" class="nav-link" data-scroll-target="#tracking">Tracking</a></li>
+  <li><a href="#exportar-datos-registrados" id="toc-exportar-datos-registrados" class="nav-link" data-scroll-target="#exportar-datos-registrados">Exportar datos registrados</a></li>
+  </ul></li>
+  <li><a href="#actividad-galileos-projectile" id="toc-actividad-galileos-projectile" class="nav-link" data-scroll-target="#actividad-galileos-projectile">Actividad “Galileo’s Projectile”:</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">TP 01</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-15.html">Tracker 01</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">TP 01</h1>
-<p class="subtitle lead">Reproducción de paper</p>
+<h1 class="title">Tracker 01</h1>
+<p class="subtitle lead">Introducción</p>
 </div>
 
 
@@ -340,29 +385,169 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="consignas" class="level1">
-<h1>Consignas</h1>
-<p>En la medida que se vayan viendo los contenidos necesarios, se deberán aplicar a la reproducción del famoso trabajo de Rutherford sobre la dispersión de las partículas alfa.</p>
+<section id="fundamentos-de-tracker" class="level1">
+<h1>Fundamentos de Tracker</h1>
+<p><strong>Tracker</strong> es un software de análisis de video de <strong>código abierto</strong> desarrollado específicamente para la investigación y enseñanza de la física. Su potencia radica en transformar videos de fenómenos físicos en <strong>laboratorios</strong>, permitiendo explorar conceptos mediante datos obtenidos de los videos.</p>
+<section id="carcterísticas-principales" class="level2">
+<h2 class="anchored" data-anchor-id="carcterísticas-principales">Carcterísticas principales:</h2>
 <ul>
-<li><a href="../assets/rutherford-original.pdf">Publicación original</a></li>
-<li><a href="https://www.chemteam.info/Chem-History/Rutherford-1911/Rutherford-1911.html">Versión web en inglés</a></li>
-<li><a href="../assets/rutherford traducido.txt">Traducción al español (sin ecuaciones)</a></li>
+<li><strong>Seguimiento de objetos:</strong><br>
+Identifica automáticamente movimientos en 2D usando algoritmos de luminancia o color. Permite rastrear desde una partícula simple hasta sistemas complejos con múltiples cuerpos.<br>
+</li>
+<li><strong>Calibración y Sistema de referencia:</strong><br>
+Con herramientas como la <strong>vara de calibración</strong> y <strong>ejes rotativos</strong>, convierte píxeles en unidades físicas (metros, segundos), incluso en planos inclinados. Por ejemplo, una regla filmada puede ser usada como referencia métrica.<br>
+</li>
+<li><strong>Modelado matemático:</strong><br>
+Permite poner en correspondencia ecuaciones teóricas con los datos experimentales.</li>
+<li><strong>Análisis vectorial:</strong><br>
+Visualiza vectores de posición, velocidad y aceleración directamente sobre el video.</li>
 </ul>
-<p>Trabajaremos tentativamente los siguientes elementos en cada clase</p>
+</section>
+<section id="uso-en-entornos-educativos" class="level2">
+<h2 class="anchored" data-anchor-id="uso-en-entornos-educativos">Uso en entornos educativos:</h2>
 <ol type="1">
-<li>Tipografía. Estilos, tipo y tamaño (Clase 01)</li>
-<li>Estilos de párrafo: Titulos, subtítulos, niveles (Clase 01)</li>
-<li>Figuras e imágenes: Leyendas y remisiones (Clase 02)</li>
-<li>Ecuaciones: Numeración y estructura. TexMaths (Clase 02 y Clase 03)</li>
-<li>Estilo de página: Tamaño, márgenes, encabezados y pies de página (Clase 04)</li>
-<li>Portadas y numeración (Clase 04)</li>
-<li>Tablas(Clase 05)</li>
-<li>Sumarios e índices: Lista de figuras, tablas, ecuaciones, índice, bibliografía. (Clase 05)</li>
+<li><strong>Puente teoría-práctica:</strong><br>
+Validar leyes físicas (como <span class="math inline">\(F = m a\)</span> o conservación de energía) mediante videos.<br>
+</li>
+<li><strong>Desarrollo de habilidades científicas:</strong>
+<ul>
+<li><strong>Diseño experimental:</strong> Controlar variables (ángulos de cámara, iluminación).<br>
+</li>
+<li><strong>Análisis cuantitativo:</strong> Extraer datos para calcular coeficientes (e.g., restitución, viscosidad).<br>
+</li>
+<li><strong>Pensamiento crítico:</strong> Contrastar modelos ideales con comportamientos reales (rozamiento, turbulencias).<br>
+</li>
+</ul></li>
+<li><strong>Preparación para investigación:</strong><br>
+Permite trabajar con ajuste de curvas y análisis de incertidumbre que son la base de metodologías usadas en cualquier laboratorio</li>
+</ol>
+<p><a href="https://opensourcephysics.github.io/tracker-website/">Descripción de tracker</a></p>
+</section>
+</section>
+<section id="trackear-un-video" class="level1">
+<h1>Trackear un video</h1>
+<p>Cuando se inicia tracker se ve una pantalla como esta</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/interface.gif" class="img-fluid figure-img"></p>
+<figcaption>Pantalla de Tracker</figcaption>
+</figure>
+</div>
+<p>Si cargamos un video local o desde una librería en línea lo hacemos desde este menú</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/open_menu.gif" class="img-fluid figure-img"></p>
+<figcaption>Abrir archivo</figcaption>
+</figure>
+</div>
+<p>Los archivos que se pueden abrir son tanto videos como proyectos de tracker que ya contienen la información del análisis del video así como otros parámetros, variables, ajustes, etc. Una vez que se abre un proyecto, vemos una pantalla como ésta:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/tracker_2.gif" class="img-fluid figure-img"></p>
+<figcaption>Tracker con datos cargados</figcaption>
+</figure>
+</div>
+<section id="ejes-de-coordenadas-y-calibración" class="level2">
+<h2 class="anchored" data-anchor-id="ejes-de-coordenadas-y-calibración">Ejes de coordenadas y calibración</h2>
+<p>Cuando cargamos un video para su análisis debemos establecer tanto un sistema de coordenadas como una relación métrica con el video, es decir, debemos decirle a tracker cuanto mide un pixel. Para eso, cada vez que filmemos un video o usemos uno, debemos poder establecer una longitud patrón para calibrar las longitudes mostradas en tracker. Caso contrario, nuestros resultados no tendrán unidades ajustadas a la realidad.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/toolbar.gif" class="img-fluid figure-img"></p>
+<figcaption>Barra de herramientas</figcaption>
+</figure>
+</div>
+<section id="sistema-de-coordenadas" class="level3">
+<h3 class="anchored" data-anchor-id="sistema-de-coordenadas"><strong>Sistema de coordenadas:</strong></h3>
+<p>Si hacemos click en el ícono de los ejes cartesianos se activa el menú correspondiente. Los ejes pueden rotarse como se ve en las siguientes imágenes</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/axes_fields.gif" class="img-fluid figure-img"></p>
+<figcaption>Barra de ejes</figcaption>
+</figure>
+</div>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/origin_selected.gif" class="img-fluid figure-img"></p>
+<figcaption>ejes1</figcaption>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/x-axis_selected.gif" class="img-fluid figure-img"></p>
+<figcaption>inclinar ejes</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="vara-de-calibración" class="level3">
+<h3 class="anchored" data-anchor-id="vara-de-calibración"><strong>Vara de calibración:</strong></h3>
+<p>La vara de calibración establece la siguiente relación: <span class="math display">\[
+\text{Relación de escala} = \frac{\text{Longitud real (m)}}{\text{Longitud en píxeles}}
+\]</span></p>
+<p>Ejemplo: Si una regla de 1 m ocupa 200 píxeles → Escala = 0.005 m/píxel.</p>
+<p>Para agregar una vara de calibración hacemos click en el ícono que muestra la barra de herramientas correspondiente.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/stick_fields.gif" class="img-fluid figure-img"></p>
+<figcaption>vara de calibración</figcaption>
+</figure>
+</div>
+<p>Se puede también girar e ingresar tanto valores como unidades en la misma</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/stick_initial_tilt.gif" class="img-fluid figure-img"></p>
+<figcaption>detalles vara de calibración</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="detalles-de-video" class="level2">
+<h2 class="anchored" data-anchor-id="detalles-de-video">Detalles de video</h2>
+<p>Es necesario conocer cuántos cuadros por segundo tiene nuestro video para que el tiempo esté correctamente contabilizado en tracker. La información del video se puede obtener de su origen (cámara, teléfono, propiedades del archivo, etc.). Esto se ajusta haciendo click sobre la imagen de video en la barra de herramientas. En este menú también puede restringirse la parte útil del clip definiendo los frames de inicio y fin.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://opensourcephysics.github.io/tracker-website/help_images/clip_inspector.gif" class="img-fluid figure-img"></p>
+<figcaption>opciones de video</figcaption>
+</figure>
+</div>
+</section>
+<section id="tracking" class="level2">
+<h2 class="anchored" data-anchor-id="tracking">Tracking</h2>
+<p>Para obtener los datos de posición en función del tiempo, y a partir de ellos el resto de las propiedades del sistema que estemos analizado debemos <em>rastrear</em> nuestro objetivo. Esto puede hacerse manualmente cuadro a cuadro de la siguiente manera.</p>
+<p><strong>Seguimiento de partículas:</strong></p>
+<p>Haciendo: <code>Trayectoria &gt; nuevo &gt; masa puntual</code> o <code>Rastreo &gt; nuevo &gt; masa puntual</code></p>
+<p>Una vez que tenemos masa creada haciendo <code>shift + click</code> se marca un frame de interés, el programa avanza hacia el siguiente y podemos ir marcando así todas las posiciones de nuestro objetivo.</p>
+</section>
+<section id="exportar-datos-registrados" class="level2">
+<h2 class="anchored" data-anchor-id="exportar-datos-registrados">Exportar datos registrados</h2>
+<p>Cuando trackeamos los resultados aparecen en forma de gráficas y tablas en la parte de derecha de la pantalla. Ya veremos como ejecutar análisis con estos datos tanto en tracker, ahora veremos que para poder “llevarnos” esos datos a otro software, primero debemos elegir que magnitudes queremos ver, haciendo click en <code>Datos</code> seleccionamos los parámetros o variables de nuestro interés. Luego, haciendo doble click sobre la tabla se selecciona todo y con ello podemos hacer o bien click derecho <code>copiar datos seleccionados</code> &gt; <code>precisión total</code> o <code>como formateado</code>, o desde el menú <code>Editar</code> accedemos a las mismas opciones. Otra opción es hacer <code>Archivo</code> &gt; <code>Exportar</code> &gt; <code>Archivo de datos</code> y seleccionar allí las variables de nuestro interés.</p>
+</section>
+</section>
+<section id="actividad-galileos-projectile" class="level1">
+<h1>Actividad “Galileo’s Projectile”:</h1>
+<ol type="1">
+<li>Importar video desde <code>Archivo → Navegador de biblioteca → Tracker Workshop → Projectile Motion</code></li>
+<li>Ubicar sistema de referencia y vara de calibración</li>
+<li>Trackear la pelota</li>
+<li>Exportar a un archivo externo <span class="math inline">\(x(t)\)</span>, <span class="math inline">\(y(t)\)</span>,<span class="math inline">\(v_x(t)\)</span>, <span class="math inline">\(v_y(t)\)</span></li>
+<li>Encontrar <span class="math inline">\(g\)</span> a partir de los datos experimentales</li>
 </ol>
 </section>
-<section id="modalidad-y-fecha-de-entrega" class="level1">
-<h1>Modalidad y fecha de entrega</h1>
-<p>Vía aula virtual <a href="https://inspt.cvg.utn.edu.ar/course/view.php?id=2760">acá</a> según fecha indicada en la tarea.</p>
+<section id="referencias" class="level1">
+<h1>Referencias</h1>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=La3H7JywgX0">Video de iniciación a tracker</a></li>
+<li><a href="https://www.youtube.com/watch?v=Dn0Zz7rtkZw">Video sobre autotracking</a> → autotracker</li>
+<li><a href="https://physlets.org/tracker/help/tableview.html">Análisis de datos en tracker</a></li>
+<li><a href="https://opensourcephysics.github.io/tracker-website/help/library_browser.html">Librería de videos de tracker</a></li>
+<li><a href="https://opensourcephysics.github.io/tracker-website/help/frameset.html">Ayuda en inglés</a></li>
+<li><a href="https://opensourcephysics.github.io/tracker-website/download/tracker_help_es.pdf">Ayuda en español (no muy bien traducida)</a></li>
+<li><a href="https://opensourcephysics.github.io/tracker-website/help/library_browser.html">Ayuda sobre librerías</a></li>
+</ul>
 
 
 </section>

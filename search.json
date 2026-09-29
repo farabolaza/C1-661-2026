@@ -220,157 +220,146 @@
     ]
   },
   {
-    "objectID": "clases/clase-08.html",
-    "href": "clases/clase-08.html",
-    "title": "Calc 02",
+    "objectID": "clases/clase-16.html",
+    "href": "clases/clase-16.html",
+    "title": "Tracker 01",
     "section": "",
-    "text": "Los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.\nPara representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.\nPara representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.\nPara insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente:\ninsertar &gt; gráfico&gt; tipo de gráfico &gt; xy dispersión",
+    "text": "Tracker es un software de análisis de video de código abierto desarrollado específicamente para la investigación y enseñanza de la física. Su potencia radica en transformar videos de fenómenos físicos en laboratorios, permitiendo explorar conceptos mediante datos obtenidos de los videos.\n\n\n\nSeguimiento de objetos:\nIdentifica automáticamente movimientos en 2D usando algoritmos de luminancia o color. Permite rastrear desde una partícula simple hasta sistemas complejos con múltiples cuerpos.\n\nCalibración y Sistema de referencia:\nCon herramientas como la vara de calibración y ejes rotativos, convierte píxeles en unidades físicas (metros, segundos), incluso en planos inclinados. Por ejemplo, una regla filmada puede ser usada como referencia métrica.\n\nModelado matemático:\nPermite poner en correspondencia ecuaciones teóricas con los datos experimentales.\nAnálisis vectorial:\nVisualiza vectores de posición, velocidad y aceleración directamente sobre el video.\n\n\n\n\n\nPuente teoría-práctica:\nValidar leyes físicas (como \\(F = m a\\) o conservación de energía) mediante videos.\n\nDesarrollo de habilidades científicas:\n\nDiseño experimental: Controlar variables (ángulos de cámara, iluminación).\n\nAnálisis cuantitativo: Extraer datos para calcular coeficientes (e.g., restitución, viscosidad).\n\nPensamiento crítico: Contrastar modelos ideales con comportamientos reales (rozamiento, turbulencias).\n\n\nPreparación para investigación:\nPermite trabajar con ajuste de curvas y análisis de incertidumbre que son la base de metodologías usadas en cualquier laboratorio\n\nDescripción de tracker",
     "crumbs": [
       "Clases",
-      "Calc 02"
+      "Tracker 01"
     ]
   },
   {
-    "objectID": "clases/clase-08.html#series-de-datos",
-    "href": "clases/clase-08.html#series-de-datos",
-    "title": "Calc 02",
-    "section": "Series de datos",
-    "text": "Series de datos\nPara hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.\nEsto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.\n\n\n\nElementos del gráfico",
-    "crumbs": [
-      "Clases",
-      "Calc 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#formato-del-gráfico",
-    "href": "clases/clase-08.html#formato-del-gráfico",
-    "title": "Calc 02",
-    "section": "Formato del gráfico",
-    "text": "Formato del gráfico\nLa correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.\nSe deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.\nPara los títulos y subtitlos de figuras, es preferible usar tipografías sin serif ya que su legibilidad es mejor en tamaños pequeños.\n\n\n\nEjemplo de gráfico de dispersión\n\n\nMás allá de los estilos preferibles a nivel estético existen algunos principios generales que escapan a los alcances de este apunte pero el ejemplo de arriba vale como muestra de como una misma información se puede disponer de forma distinta y ayudar o entorpecer el entendimiento de aquello que se está queriendo comunicar.\n\n\n\nDos visualizaciones diferentes\n\n\n\nLíneas de cuadrícula\nSi se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de\n\n\n\nEjes y cuadrículas\n\n\nTambién con el gráfico seleccionado a través del menú insertar &gt; cuadrículas\n\n\nEjes, leyendas y rótulos\nLa información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú insertar\n\n\n\nSeries de datos\n\n\n\n\nBarras de error\nCon el gráfico seleccionado hacemos insertar &gt; barras de error ahi podremos elegir las diferentes variantes que contamos para las barras de error\n\n\n\nBarras de error",
-    "crumbs": [
-      "Clases",
-      "Calc 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#histogramas",
-    "href": "clases/clase-08.html#histogramas",
-    "title": "Calc 02",
-    "section": "Histogramas",
-    "text": "Histogramas\nUsualmente cuando se tienen datos a tratarse de forma estadística, resulta útil usar hitogramas para representarlos. Por ejemplo, si se efectúan n mediciones para obtener un valor para la constante gravitatoria en la tierra (\\(9,8 \\dfrac{m}{s^2}\\)) y si se han tomando los recaudos necesarios para llevar adelante el experimento es de esperar que la gran mayoría de los valores obtenidos se agrupen cerca del valor más probable, que dependiendo de la incerteza del método o los experimentadores, podrá ser más o menos cercano al “verdadero”, que es aquél contra el cual comparamos nuestros resultados.\nEn este caso, si graficamos “cuantas veces obutvimos” valores para cierto intervalo o clase, obtendremos algo similar a esto:\n\n\n\n\n\n\n\n\n\nDonde se observa una distribución de datos normal como se ve en la siguiente figura:\n\n\n\nDistribución normal y porcentaje del área bajo la curva\n\n\nSi por el contrario, tiramos un dado n veces (y lo hacemos muuuuchas veces) veremos que la distribución de “cuantas veces salió el uno”, “cuantas veces salió el dos”, etc. tiene esta pinta:\n\n\n\n\n\n\n\n\n\nEn ambos casos estamos viendo un gráfico de clase vs frecuencia, las clases pueden ser intervalos de alguna magnitud medida: lluvias de entre 3 y 5 mm, alturas entre 1.6 y 1.8 m, etc y la frecuencia la cantidad de elementos que pertenecen a esa clase o intervalo.\nUna regla útil para saber en cuantos intervalos debemos “seccionar” nuestros datos es usar \\(N=\\sqrt{n}\\) en donde \\(N\\) es la cantidad de intervalos y \\(n\\) la cantidad de datos. El ancho del intervalo, luego de reondear \\(N\\) a un entero sera \\(\\frac{\\text{rango}}{N}\\) en donde el rango es \\(\\text{valor máximo} - \\text{valor minimo}\\).\n\nFuncion FRECUENCIA() y funciones matriciales\nLas funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector sobre la planilla dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas ctrl + shift + enter al momento de ejecutar la función.\nLa función FRECUENCIA(DATOS,CLASES) es una función matricial y como indica su sintaxis tiene dos argumentos, los datos que usará y los intervalos en los que ubicará a los datos. Freuencia devuelve una matriz donde indica cuántos elementos hay en cada intervalo indicado.\n\n\nCrear un histograma\n\nUna vez que tenemos nuestro datos en la planilla debemos decidicir cuántos intervalos o clases construiremos a partir de ellos, una vez hecho eso, creamos una celda qe contenga como valor el extremo superior del intervalo (podemos desplegarlos en columnas o en filas).\nEn Otra celda, llamamos a la función FRECUENCIA y seleccionamos los datos y nuestras clases. No olvidar de apretar ctrl + shift + enter al finalizar.\nCon los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.",
-    "crumbs": [
-      "Clases",
-      "Calc 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#funciones-estadísticas-promedio-moda-y-mediana",
-    "href": "clases/clase-08.html#funciones-estadísticas-promedio-moda-y-mediana",
-    "title": "Calc 02",
-    "section": "Funciones estadísticas: Promedio, moda y mediana",
-    "text": "Funciones estadísticas: Promedio, moda y mediana\nDentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.\nEl cálculo matemático para cada uno de ellos es;\n\nPromedioModaMediana\n\n\nEl promedio representa la media aritmética de los valores de un conjunto \\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\nEn calc la función PROMEDIO(datos) devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).\nPromedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.\nEl ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.\n\n\nLa moda representa el valor que más se repite en un conjunto de datos\n\\[\n\\text{Moda} = \\{x_i \\mid \\max \\text{frecuencia}(x_i)\\}\n\\]\nEn calc, las funciones MODA.UNO() y MODA.VARIOS() nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando ctrl+shift+enter al finalizar la escritura en la celda.\nPara más información acerca de las funciones matriciales podés ver la ayuda oficial sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.\nLa moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.\n\n\nLa mediana representa el valor central de un conjunto de datos ordenado. \\[\n\\tilde{x} =\n\\begin{cases}\nx_{\\frac{n+1}{2}}, & \\text{si } n \\text{ es impar} \\\\\n\\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2}, & \\text{si } n \\text{ es par}\n\\end{cases}\n\\]\nEn LO la mediana se calcula con la función MEDIANA(datos). La mediana suele ser un dato representativo de un cojunto incluso cuando existen datos que ocupan los extremos por un margen considerable. Consideremos el conjunto: \\[\n\\left( -1000,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1000 \\right)\n\\]\nAquí la mediana da una información más representativa de los datos.",
-    "crumbs": [
-      "Clases",
-      "Calc 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#varianza-y-desviación-estándar",
-    "href": "clases/clase-08.html#varianza-y-desviación-estándar",
-    "title": "Calc 02",
-    "section": "Varianza y Desviación Estándar",
-    "text": "Varianza y Desviación Estándar\nLa varianza y la desviación estándar son medidas de dispersión que nos indican cuán dispersos están los datos respecto a la media.\nLa varianza (\\(\\sigma^2\\)) se define como el promedio de los cuadrados de las diferencias entre cada dato y la media:\n\\[\\sigma^2 = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}\\]\nLa desviación estándar (\\(\\sigma\\)) es simplemente la raíz cuadrada de la varianza:\n\\[\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\\]\n\nDeducción\nLa varianza surge al considerar cómo se dispersan los datos alrededor de la media. Primero, calculamos la distancia de cada dato respecto a la media \\(\\bar{x}\\):\n\\[\nd_i = x_i - \\bar{x}\n\\]\nSi sumamos estas distancias, obtenemos cero (ya que la media balancea los datos). Para evitar esto, usamos los cuadrados de las diferencias:\n\\[\n\\sum_{i=1}^{n} (x_i - \\bar{x})^2\n\\]\nDividiendo por \\(n\\), obtenemos la varianza, que mide la dispersión promedio de los datos. La desviación estándar es su raíz cuadrada, proporcionando una medida en las mismas unidades que los datos originales.\n\n\nInterpretación\n\nValores pequeños de \\(\\sigma\\) indican poca variabilidad en los datos.\nValores grandes de \\(\\sigma\\) muestran que los datos están más dispersos respecto a la media.\n\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\n\\]\n\n\nDesviación para una muestra o una población\nCuando consideramos el promedio \\(\\bar{x}\\) para una muestra, no estamos accediendo a los posibles infinitos valores que pudiera tener la población en estudio, por ejemplo, no podemos medir la carga de todos los electrones del universo para luego promediarlas, por lo que nuestras medidas están restringidas no a la población, sino a una muestra de ella.\nPara calcular la desviación estándar para una muestra (y no para una población) debemos primero usar los datos de la muestra para obtener \\(\\bar{x}\\), al hacer esto, por la definición de media, existen sólo \\(n-1\\) valores realimente “libres” en cuanto a la diferencia que pueden tener con la media, el último valor que intentemos calcular necesariamente deberá ser tal que la suma nos de cero.\nPor eso se dice que el sistema tiene “un grado menos de libertad” y siempre que calculemos la varianza o la desviación estándar para una muestra, la fórmula se ajusta de la siguiente forma:\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n-1}}\n\\]\nSi el número de muestras \\(n\\) es suficientemente grande, \\(\\bar{x} \\to \\mu\\) (la media de la muestra tiene a la media de la población) y por lo tanto, el ajuste no representa una gran cambio en resultado.\n\n\nResumen estadístico\nSi hacemos datos&gt; estadísticas &gt; estadíticas descriptivas podremos obtener los parámetros estadísticos mencionados arriba (junto a otros que no trabajaremos) para un intervalo de celdas de la planilla.",
-    "crumbs": [
-      "Clases",
-      "Calc 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#ejercitación",
-    "href": "clases/clase-08.html#ejercitación",
-    "title": "Calc 02",
-    "section": "Ejercitación",
-    "text": "Ejercitación\nLos contenidos vistos en esta clase se aplican tanto al TP 4 (que ya están en condiciones de encarar) como al TP 5, para el que necesitarán elementos de próximas clases.\n\nGraficar una función\nGrafique las funciones que se mencionan en el punto 2 del TP3. Agrupe las funciones de la siguiente forma\n\nFunciones trigonométrias\nFunciones trigonométricas inversas\nCatenaria\nFunciones exponenciales\nFunciones logarítmicas\n\nCada grupo de funciones deberá estar en una sola gráfica y contener:\n\nNombres en los ejes (x,y)\nTítulo y subtítulo\nLeyenda\n\nPruebe utilizar:\n\nGáficos de dispersión\nGráficos de barras (use primera columna como etiquetas)\n\nComo ejemplo de usar un gráfico de barras, debería ver algo como esto:\n\n\n\ngráficas trigonométricas\n\n\n\n\nHistogramas\nUsando este archivo como base, crear un histograma para la la hoja masas.",
-    "crumbs": [
-      "Clases",
-      "Calc 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#referencias",
-    "href": "clases/clase-08.html#referencias",
-    "title": "Calc 02",
-    "section": "Referencias",
-    "text": "Referencias\n\n🔗 Ayuda oficial de Libre Office\n🎥 Gráficas de dispersión\n🔗 Barras de error en Libre Office\n🔗 Diseño de gráficos basados en el estilo de Edward Tufte\n🔗 Sitio de Edward Tufte\n🔗 Guía de Nature para figuras\n🔗 Guía de principios para visualización\n🔗 Apunte de la materia laboratorio 1 Sobre Gráficas en Excel\n🔗 Histogramas en LO\n🔗 Datasets CERN\n🔗 Distribución normal en matplotlib\n🔗 Histogramas en matplotlib",
-    "crumbs": [
-      "Clases",
-      "Calc 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-01.html",
-    "href": "clases/clase-01.html",
-    "title": "Libre Office",
+    "objectID": "clases/clase-16.html#carcterísticas-principales",
+    "href": "clases/clase-16.html#carcterísticas-principales",
+    "title": "Tracker 01",
     "section": "",
-    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "text": "Seguimiento de objetos:\nIdentifica automáticamente movimientos en 2D usando algoritmos de luminancia o color. Permite rastrear desde una partícula simple hasta sistemas complejos con múltiples cuerpos.\n\nCalibración y Sistema de referencia:\nCon herramientas como la vara de calibración y ejes rotativos, convierte píxeles en unidades físicas (metros, segundos), incluso en planos inclinados. Por ejemplo, una regla filmada puede ser usada como referencia métrica.\n\nModelado matemático:\nPermite poner en correspondencia ecuaciones teóricas con los datos experimentales.\nAnálisis vectorial:\nVisualiza vectores de posición, velocidad y aceleración directamente sobre el video.",
     "crumbs": [
       "Clases",
-      "Libre Office"
+      "Tracker 01"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#formulario-de-bienvenida",
-    "href": "clases/clase-01.html#formulario-de-bienvenida",
-    "title": "Libre Office",
+    "objectID": "clases/clase-16.html#uso-en-entornos-educativos",
+    "href": "clases/clase-16.html#uso-en-entornos-educativos",
+    "title": "Tracker 01",
     "section": "",
-    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "text": "Puente teoría-práctica:\nValidar leyes físicas (como \\(F = m a\\) o conservación de energía) mediante videos.\n\nDesarrollo de habilidades científicas:\n\nDiseño experimental: Controlar variables (ángulos de cámara, iluminación).\n\nAnálisis cuantitativo: Extraer datos para calcular coeficientes (e.g., restitución, viscosidad).\n\nPensamiento crítico: Contrastar modelos ideales con comportamientos reales (rozamiento, turbulencias).\n\n\nPreparación para investigación:\nPermite trabajar con ajuste de curvas y análisis de incertidumbre que son la base de metodologías usadas en cualquier laboratorio\n\nDescripción de tracker",
     "crumbs": [
       "Clases",
-      "Libre Office"
+      "Tracker 01"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#linux-y-el-software-libre",
-    "href": "clases/clase-01.html#linux-y-el-software-libre",
-    "title": "Libre Office",
-    "section": "Linux y el software libre",
-    "text": "Linux y el software libre\nNos nos vamos a adentrar demasiado en este tema, pero vale la pena hacer una breve descripción ya que estaremos usando en las computadoras del instituto tanto software libre como privativo y es necesario conocer las diferencias entre ambos modelos de gestión de software.\n\nLibre no significa gratis\nLa diferencia más notoria es respecto de acceso y permisos sobre el código, valga decir, la posibilidad de ver, modificar y/o redistribuirlo.\nEl software de código abierto es aquel que es público. Casi todo el software nació de esa manera. En los inicios el producto por excelencia era el hardware, y el software, era comúnmente compartido entre emrpesas, universidades, entidades de gobierno etc. que podían modificar, adaptar, encontrar errores y mejorar así el funcionamiento de sus instalaciones.\nLa historia oficial involucra a IBM, creador del sistema UNIX que de un momento a otro dejó de compartir su software con terceros, y de esa manera dió lugar a la aparición de sistemas que basándose en lo que ya era público fueron ofreciendo variantes. En estas categorías podemos incluir (simplificando un poco) tanto a Windows como a GNU-LINUX.\nWindows se limitó a constuir sobre lo que ya se tenía, pero adoptó el nuevo modelo de código cerrado. Tanto usuarios como programadores no pueden acceder a concoer cómo está hecho aquello que están usando, y por supuesto, tampoco modificarlo ni auditarlo. GNU-LINUX nace con la visión de que hacer el software de libre acceso produciría avances tecnológicos más rápidos, mejor control de los errores y una comunidad científica mejor comunicada entre si.\nComo dice el título de la sección, que el código sea libre de copiar, modificar o distribuir no significa que no haya modelos de negocio que puedan usarlo para ofrecer un sevicio que sí se cobra: desde el soporte técnico hasta modificaciones ad-hoc para clientes particulares.\nLa confusión respecto de libre vs gratis surge de que muchas organizaciones que trabajan con software libre ofrecen también versiones gratuitas de esos mismos productos, que conviven con versiones pagas que incluyen soporte extendido para el ámbito empresarial, personalizaciones, etc.\nEn resumen, el software libre tiene como principios la transparencia, y la auditabilidad como rectores éticos ligados al conocimiento científico. Si un proceso no puede ser puesto a prueba por otros expertos en el tema, su jerarquía, virtudes o prestaciones pueden ser cuestionadas. El ejemplo más claro en donde este paradigma entra en tensión es en la elaboración de medicamentos y alimentos. Si no es posible acceder a los detalles químicos y de fabricación de los alimentos y medicamentos ¿Cómo podemos saber que son seguros? De la misma manera ocurre con el software: El software cerrado no es auditable y la seguridad de los datos y equipos de los usuarios queda sólo en la confianza que éstos tengan en las virtudes técnicas y éticas de la entidad que los ofrece.",
+    "objectID": "clases/clase-16.html#ejes-de-coordenadas-y-calibración",
+    "href": "clases/clase-16.html#ejes-de-coordenadas-y-calibración",
+    "title": "Tracker 01",
+    "section": "Ejes de coordenadas y calibración",
+    "text": "Ejes de coordenadas y calibración\nCuando cargamos un video para su análisis debemos establecer tanto un sistema de coordenadas como una relación métrica con el video, es decir, debemos decirle a tracker cuanto mide un pixel. Para eso, cada vez que filmemos un video o usemos uno, debemos poder establecer una longitud patrón para calibrar las longitudes mostradas en tracker. Caso contrario, nuestros resultados no tendrán unidades ajustadas a la realidad.\n\n\n\nBarra de herramientas\n\n\n\nSistema de coordenadas:\nSi hacemos click en el ícono de los ejes cartesianos se activa el menú correspondiente. Los ejes pueden rotarse como se ve en las siguientes imágenes\n\n\n\nBarra de ejes\n\n\n\n\n\n\n\nejes1\n\n\n\n\n\n\ninclinar ejes\n\n\n\n\n\n\nVara de calibración:\nLa vara de calibración establece la siguiente relación: \\[\n\\text{Relación de escala} = \\frac{\\text{Longitud real (m)}}{\\text{Longitud en píxeles}}\n\\]\nEjemplo: Si una regla de 1 m ocupa 200 píxeles → Escala = 0.005 m/píxel.\nPara agregar una vara de calibración hacemos click en el ícono que muestra la barra de herramientas correspondiente.\n\n\n\nvara de calibración\n\n\nSe puede también girar e ingresar tanto valores como unidades en la misma\n\n\n\ndetalles vara de calibración",
     "crumbs": [
       "Clases",
-      "Libre Office"
+      "Tracker 01"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#libre-office",
-    "href": "clases/clase-01.html#libre-office",
-    "title": "Libre Office",
-    "section": "Libre office",
-    "text": "Libre office\n\n¿Qué es libre office?\nLibre office es una suite de ofimática (herramientas de software para producción en entornos de trabajo) libre y de código abierto mantenida por sus propios usuarios. Es gratuita y en casi todos los casos igual o mejor que sus contrapartes no gratuitas.\n\n\n¿Para qué libre office?\nTodo trabajo, incluso aquellos que son la manufactura de algún producto requieren piezas de comunicación visual y escrita: manuales, tutoriales, folletos, informes, etc. La comunicación del quehacer de la ciencia no es la excepción: bitácoras e informes de laboratorio, artículos para revistas e instituciones científicas, libros de texto, de divulgación o material de estudio de caracter académico. Estos textos tienen cada uno su propio estilo de escritura y estructura según su función y algunos soportes preferidos por conveniencia, uso, costumbre en algunos casos y millones bien invertidos en otros.\nExisten formatos que son preferidos en ciertos ámbitos, como Latex para publicaciones científicas y parte del mundo editorial o softwares como in-design o illustrator para los mismos fines para otras publicaciones.\n\nNostoros usaremos libre office como soporte por su unviersalidad (todos podemos conseguirlo) y sabemos que siempre contaremos con el sofware: no dejaremos de tener acceso a lo que hicimos porque la nueva versión no es compatible (y la vieja ya no está disponible) y al tener una gran red de usuarios que pueden extender la funcionalidad del paquete: es posible encontrar extensiones que se vayan adaptando a nuestras necesidades.\nPor último pero no menos importante, siendo que Latex es el formato de-facto para publicaciones académicas o científicas ¿por qué no lo usamos? Sencillamente porque latex no es un procesador de texto. Es un lenguaje de programación completo y aprenderlo nos llevaría mucho mas tiempo del que tenemos en este curso, además de que para los fines de escribir informes de laboratorio el costo inversión de tiempo vs resultados obtenidos está bastante corrido a favor de lo primero: se requiere poner mucho en latex para obtener algo decente. Sin embargo como el tratamiento de las expresiones matemáticas que latex ofrece es superior a lo que cualquier procesador de texto traiga por defecto, lo incluiiremos en nuestro flujo de trabajo a través de la extensión tex maths\n\n\nInstalando libre office\nEn su web oficial podemos acceder a la sección descarga y desde allí bajar la versión que necesitemos. La útima disponible en general funciona con casi todos los dispositivos pero si tenemos probelmas en la instalación podemos buscar en la página alguna versión anterior.\n\nInstalando tex-maths\nEn este enlace se puede descargar la última versión. Una vez descargado se ejecuta e instala siguiendo los pasos que el instalador ofrece.\n\n\n\nAyuda en línea y manuales\nLa ayuda de libre office está en casi todos los idiomas, aunque a veces la traducción automática falla un poco (se “olvida” de traducir algún que otro párrafo) es bastante completa. Además podemos descargar manuales (los más actualizados están en inglés) en pdf para quienes prefieran buscar en un documento y no en la web o para cuando no se tenga acceso a internet.",
+    "objectID": "clases/clase-16.html#detalles-de-video",
+    "href": "clases/clase-16.html#detalles-de-video",
+    "title": "Tracker 01",
+    "section": "Detalles de video",
+    "text": "Detalles de video\nEs necesario conocer cuántos cuadros por segundo tiene nuestro video para que el tiempo esté correctamente contabilizado en tracker. La información del video se puede obtener de su origen (cámara, teléfono, propiedades del archivo, etc.). Esto se ajusta haciendo click sobre la imagen de video en la barra de herramientas. En este menú también puede restringirse la parte útil del clip definiendo los frames de inicio y fin.\n\n\n\nopciones de video",
     "crumbs": [
       "Clases",
-      "Libre Office"
+      "Tracker 01"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#libre-office-writer",
-    "href": "clases/clase-01.html#libre-office-writer",
-    "title": "Libre Office",
-    "section": "Libre Office-Writer",
-    "text": "Libre Office-Writer\n\nLista de videos \nEn esta lista de reproducción podrán ver una serie de videos que cubren bastatante de la funcionalidad de libre office Writer.\n\n\nEstilos en Writer\nHemos visto que desde el menú ver -&gt; barra de estilos accedemos a los estilos que vienen predefinidos para las diferentes secciones de writer: párrafo, página, listas, etc.\nA continuación les comparto algunos videos que resumen un poco lo que vimos en esta clase:\n\n\nEn versiones anteriores de libre office si bien los menús se ven diferentes, la dinámica es idéntica\n\n\n\n\nNiveles de jearquía numerados\nPor ejemplo, los niveles de titulo se pueden auto numerar yendo a herramientas -&gt; numeración de títulos\nEsta configuración no está disponible como un estilo predeterminado sino que se aplica a los estilos existentes o a aquellos creados que sean niveles de jerárquicos.\nEn la ayuda de libre office podemos ver una explicación un poco más detallada.",
+    "objectID": "clases/clase-16.html#tracking",
+    "href": "clases/clase-16.html#tracking",
+    "title": "Tracker 01",
+    "section": "Tracking",
+    "text": "Tracking\nPara obtener los datos de posición en función del tiempo, y a partir de ellos el resto de las propiedades del sistema que estemos analizado debemos rastrear nuestro objetivo. Esto puede hacerse manualmente cuadro a cuadro de la siguiente manera.\nSeguimiento de partículas:\nHaciendo: Trayectoria &gt; nuevo &gt; masa puntual o Rastreo &gt; nuevo &gt; masa puntual\nUna vez que tenemos masa creada haciendo shift + click se marca un frame de interés, el programa avanza hacia el siguiente y podemos ir marcando así todas las posiciones de nuestro objetivo.",
     "crumbs": [
       "Clases",
-      "Libre Office"
+      "Tracker 01"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#actividad-inicial",
-    "href": "clases/clase-01.html#actividad-inicial",
-    "title": "Libre Office",
-    "section": "Actividad inicial",
-    "text": "Actividad inicial\n\nArqueología de publicaciones\nInstrucciones inciales Los detalles de presentación los verán en las próximas clases en el apartado de trabajos prácticos y su entrega será vía el campus virtual.\nDe momento, alcanza conque sepan que deberán armar una versión del trabajo de Rutherord tomando como origen la traducción, junto a la versión web y como guía para el estilo visual la publicación original. Los elementos a tener en cuenta para este documento incial serán\n\nTipografía: tamaño y tipo de letra (encontrar alguna o algunas tipografías que puedan servir)\nEncabezados y pies de página\nTexto: interlineado, orientación, sangría\nTablas\nTamaño de página\nEcuaciones\n\nIremos trabajando los detalles de cada elemento en las primeras clases mientras exploramos las funciones elementales de Writer",
+    "objectID": "clases/clase-16.html#exportar-datos-registrados",
+    "href": "clases/clase-16.html#exportar-datos-registrados",
+    "title": "Tracker 01",
+    "section": "Exportar datos registrados",
+    "text": "Exportar datos registrados\nCuando trackeamos los resultados aparecen en forma de gráficas y tablas en la parte de derecha de la pantalla. Ya veremos como ejecutar análisis con estos datos tanto en tracker, ahora veremos que para poder “llevarnos” esos datos a otro software, primero debemos elegir que magnitudes queremos ver, haciendo click en Datos seleccionamos los parámetros o variables de nuestro interés. Luego, haciendo doble click sobre la tabla se selecciona todo y con ello podemos hacer o bien click derecho copiar datos seleccionados &gt; precisión total o como formateado, o desde el menú Editar accedemos a las mismas opciones. Otra opción es hacer Archivo &gt; Exportar &gt; Archivo de datos y seleccionar allí las variables de nuestro interés.",
     "crumbs": [
       "Clases",
-      "Libre Office"
+      "Tracker 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-11.html",
+    "href": "clases/clase-11.html",
+    "title": "Práctica Parcial",
+    "section": "",
+    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "crumbs": [
+      "Clases",
+      "Práctica Parcial"
+    ]
+  },
+  {
+    "objectID": "clases/clase-11.html#difusión-térmica-en-un-sólido",
+    "href": "clases/clase-11.html#difusión-térmica-en-un-sólido",
+    "title": "Práctica Parcial",
+    "section": "",
+    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "crumbs": [
+      "Clases",
+      "Práctica Parcial"
+    ]
+  },
+  {
+    "objectID": "clases/clase-12.html",
+    "href": "clases/clase-12.html",
+    "title": "Primer Parcial",
+    "section": "",
+    "text": "Seccion\nTarea\nDescripción\nvalor\n\n\n\n\n0\nLibre Office Calc\nImportar archivo csv\nImporta el archivo un documento de calc\n2,5\n\n\n1\nLibre Office Calc\nImportar archivo csv\nLos formatos de número y texto son los correct...\n2,5\n\n\n2\nLibre Office Calc\nFórmulas y Números\nUsa las fórmulas requeridas (referencias, sint...\n12\n\n\n3\nLibre Office Calc\nFórmulas y Números\nUsa los formatos numéricos adecuados (not. cie...\n2,5\n\n\n4\nLibre Office Calc\nGráficas\nCrea gráficas acorde a los datos e instruccion...\n15\n\n\n5\nLibre Office Calc\nGráficas\nIncluye los elementos necesarios/pedidos (leye...\n5\n\n\n6\nLibre Office Calc\nAjuste de datos\nAplica la linealización a series de datos y ob...\n45\n\n\n7\nLibre Office Calc\nAjuste de datos\nUsa la herramienta solver a series de datos y ...\n45\n\n\n8\nLibre Office Writer\nFormato y estructura\nUsa títulos y tipografía de acuerdo a lo que p...\n5\n\n\n9\nLibre Office Writer\nEcuaciones\nUsa el editor de ecuaciones cuando es requerido\n8\n\n\n10\nLibre Office Writer\nTablas\nCrea tabalas de acuerdo a lo pedido\n5\n\n\n11\nLibre Office Writer\nLeyendas\nIncluye las leyendas y elementos de referencia...\n5\n\n\n12\nLibre Office Writer\nExportación\nExporta a pdf el documento de writer\n2,5",
+    "crumbs": [
+      "Clases",
+      "Primer Parcial"
+    ]
+  },
+  {
+    "objectID": "clases/clase-12.html#libre-office-calc",
+    "href": "clases/clase-12.html#libre-office-calc",
+    "title": "Primer Parcial",
+    "section": "Libre Office Calc",
+    "text": "Libre Office Calc\n\nImportar a calc los datos\nLinealizar el modelo o usar Solver para encontrar los valores para la constante \\(a\\) y para el exponente \\(b\\) y luego encuentre ecuación que mejor se ajusta a los datos.\nSabiendo \\(a\\) calcule el valor de \\(g\\).\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación del ajuste en la gráfica.",
+    "crumbs": [
+      "Clases",
+      "Primer Parcial"
+    ]
+  },
+  {
+    "objectID": "clases/clase-12.html#libre-offie-writer",
+    "href": "clases/clase-12.html#libre-offie-writer",
+    "title": "Primer Parcial",
+    "section": "Libre Offie Writer",
+    "text": "Libre Offie Writer\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Período de un péndulo simple”\nAgregue a continuación el contenido del apartado de Período de un péndulo simple de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\nIncluya los resultados para \\(a\\) y \\(b\\) y el valor de \\(g\\) obtenido previamente.\nJustifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.",
+    "crumbs": [
+      "Clases",
+      "Primer Parcial"
+    ]
+  },
+  {
+    "objectID": "clases/clase-12.html#modalidad-de-entrega",
+    "href": "clases/clase-12.html#modalidad-de-entrega",
+    "title": "Primer Parcial",
+    "section": "Modalidad de entrega",
+    "text": "Modalidad de entrega\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "crumbs": [
+      "Clases",
+      "Primer Parcial"
     ]
   },
   {
@@ -876,69 +865,234 @@
     ]
   },
   {
-    "objectID": "clases/clase-12.html",
-    "href": "clases/clase-12.html",
-    "title": "Primer Parcial",
+    "objectID": "clases/clase-15.html",
+    "href": "clases/clase-15.html",
+    "title": "Tracker 01",
     "section": "",
-    "text": "Seccion\nTarea\nDescripción\nvalor\n\n\n\n\n0\nLibre Office Calc\nImportar archivo csv\nImporta el archivo un documento de calc\n2,5\n\n\n1\nLibre Office Calc\nImportar archivo csv\nLos formatos de número y texto son los correct...\n2,5\n\n\n2\nLibre Office Calc\nFórmulas y Números\nUsa las fórmulas requeridas (referencias, sint...\n12\n\n\n3\nLibre Office Calc\nFórmulas y Números\nUsa los formatos numéricos adecuados (not. cie...\n2,5\n\n\n4\nLibre Office Calc\nGráficas\nCrea gráficas acorde a los datos e instruccion...\n15\n\n\n5\nLibre Office Calc\nGráficas\nIncluye los elementos necesarios/pedidos (leye...\n5\n\n\n6\nLibre Office Calc\nAjuste de datos\nAplica la linealización a series de datos y ob...\n45\n\n\n7\nLibre Office Calc\nAjuste de datos\nUsa la herramienta solver a series de datos y ...\n45\n\n\n8\nLibre Office Writer\nFormato y estructura\nUsa títulos y tipografía de acuerdo a lo que p...\n5\n\n\n9\nLibre Office Writer\nEcuaciones\nUsa el editor de ecuaciones cuando es requerido\n8\n\n\n10\nLibre Office Writer\nTablas\nCrea tabalas de acuerdo a lo pedido\n5\n\n\n11\nLibre Office Writer\nLeyendas\nIncluye las leyendas y elementos de referencia...\n5\n\n\n12\nLibre Office Writer\nExportación\nExporta a pdf el documento de writer\n2,5",
+    "text": "Tracker es un software de análisis de video de código abierto desarrollado específicamente para la investigación y enseñanza de la física. Su potencia radica en transformar videos de fenómenos físicos en laboratorios, permitiendo explorar conceptos mediante datos obtenidos de los videos.\n\n\n\nSeguimiento de objetos:\nIdentifica automáticamente movimientos en 2D usando algoritmos de luminancia o color. Permite rastrear desde una partícula simple hasta sistemas complejos con múltiples cuerpos.\n\nCalibración y Sistema de referencia:\nCon herramientas como la vara de calibración y ejes rotativos, convierte píxeles en unidades físicas (metros, segundos), incluso en planos inclinados. Por ejemplo, una regla filmada puede ser usada como referencia métrica.\n\nModelado matemático:\nPermite poner en correspondencia ecuaciones teóricas con los datos experimentales.\nAnálisis vectorial:\nVisualiza vectores de posición, velocidad y aceleración directamente sobre el video.\n\n\n\n\n\nPuente teoría-práctica:\nValidar leyes físicas (como \\(F = m a\\) o conservación de energía) mediante videos.\n\nDesarrollo de habilidades científicas:\n\nDiseño experimental: Controlar variables (ángulos de cámara, iluminación).\n\nAnálisis cuantitativo: Extraer datos para calcular coeficientes (e.g., restitución, viscosidad).\n\nPensamiento crítico: Contrastar modelos ideales con comportamientos reales (rozamiento, turbulencias).\n\n\nPreparación para investigación:\nPermite trabajar con ajuste de curvas y análisis de incertidumbre que son la base de metodologías usadas en cualquier laboratorio\n\nDescripción de tracker",
     "crumbs": [
       "Clases",
-      "Primer Parcial"
+      "Tracker 01"
     ]
   },
   {
-    "objectID": "clases/clase-12.html#libre-office-calc",
-    "href": "clases/clase-12.html#libre-office-calc",
-    "title": "Primer Parcial",
-    "section": "Libre Office Calc",
-    "text": "Libre Office Calc\n\nImportar a calc los datos\nLinealizar el modelo o usar Solver para encontrar los valores para la constante \\(a\\) y para el exponente \\(b\\) y luego encuentre ecuación que mejor se ajusta a los datos.\nSabiendo \\(a\\) calcule el valor de \\(g\\).\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación del ajuste en la gráfica.",
-    "crumbs": [
-      "Clases",
-      "Primer Parcial"
-    ]
-  },
-  {
-    "objectID": "clases/clase-12.html#libre-offie-writer",
-    "href": "clases/clase-12.html#libre-offie-writer",
-    "title": "Primer Parcial",
-    "section": "Libre Offie Writer",
-    "text": "Libre Offie Writer\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Período de un péndulo simple”\nAgregue a continuación el contenido del apartado de Período de un péndulo simple de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\nIncluya los resultados para \\(a\\) y \\(b\\) y el valor de \\(g\\) obtenido previamente.\nJustifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.",
-    "crumbs": [
-      "Clases",
-      "Primer Parcial"
-    ]
-  },
-  {
-    "objectID": "clases/clase-12.html#modalidad-de-entrega",
-    "href": "clases/clase-12.html#modalidad-de-entrega",
-    "title": "Primer Parcial",
-    "section": "Modalidad de entrega",
-    "text": "Modalidad de entrega\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
-    "crumbs": [
-      "Clases",
-      "Primer Parcial"
-    ]
-  },
-  {
-    "objectID": "clases/clase-11.html",
-    "href": "clases/clase-11.html",
-    "title": "Práctica Parcial",
+    "objectID": "clases/clase-15.html#carcterísticas-principales",
+    "href": "clases/clase-15.html#carcterísticas-principales",
+    "title": "Tracker 01",
     "section": "",
-    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "text": "Seguimiento de objetos:\nIdentifica automáticamente movimientos en 2D usando algoritmos de luminancia o color. Permite rastrear desde una partícula simple hasta sistemas complejos con múltiples cuerpos.\n\nCalibración y Sistema de referencia:\nCon herramientas como la vara de calibración y ejes rotativos, convierte píxeles en unidades físicas (metros, segundos), incluso en planos inclinados. Por ejemplo, una regla filmada puede ser usada como referencia métrica.\n\nModelado matemático:\nPermite poner en correspondencia ecuaciones teóricas con los datos experimentales.\nAnálisis vectorial:\nVisualiza vectores de posición, velocidad y aceleración directamente sobre el video.",
     "crumbs": [
       "Clases",
-      "Práctica Parcial"
+      "Tracker 01"
     ]
   },
   {
-    "objectID": "clases/clase-11.html#difusión-térmica-en-un-sólido",
-    "href": "clases/clase-11.html#difusión-térmica-en-un-sólido",
-    "title": "Práctica Parcial",
+    "objectID": "clases/clase-15.html#uso-en-entornos-educativos",
+    "href": "clases/clase-15.html#uso-en-entornos-educativos",
+    "title": "Tracker 01",
     "section": "",
-    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "text": "Puente teoría-práctica:\nValidar leyes físicas (como \\(F = m a\\) o conservación de energía) mediante videos.\n\nDesarrollo de habilidades científicas:\n\nDiseño experimental: Controlar variables (ángulos de cámara, iluminación).\n\nAnálisis cuantitativo: Extraer datos para calcular coeficientes (e.g., restitución, viscosidad).\n\nPensamiento crítico: Contrastar modelos ideales con comportamientos reales (rozamiento, turbulencias).\n\n\nPreparación para investigación:\nPermite trabajar con ajuste de curvas y análisis de incertidumbre que son la base de metodologías usadas en cualquier laboratorio\n\nDescripción de tracker",
     "crumbs": [
       "Clases",
-      "Práctica Parcial"
+      "Tracker 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-15.html#ejes-de-coordenadas-y-calibración",
+    "href": "clases/clase-15.html#ejes-de-coordenadas-y-calibración",
+    "title": "Tracker 01",
+    "section": "Ejes de coordenadas y calibración",
+    "text": "Ejes de coordenadas y calibración\nCuando cargamos un video para su análisis debemos establecer tanto un sistema de coordenadas como una relación métrica con el video, es decir, debemos decirle a tracker cuanto mide un pixel. Para eso, cada vez que filmemos un video o usemos uno, debemos poder establecer una longitud patrón para calibrar las longitudes mostradas en tracker. Caso contrario, nuestros resultados no tendrán unidades ajustadas a la realidad.\n\n\n\nBarra de herramientas\n\n\n\nSistema de coordenadas:\nSi hacemos click en el ícono de los ejes cartesianos se activa el menú correspondiente. Los ejes pueden rotarse como se ve en las siguientes imágenes\n\n\n\nBarra de ejes\n\n\n\n\n\n\n\nejes1\n\n\n\n\n\n\ninclinar ejes\n\n\n\n\n\n\nVara de calibración:\nLa vara de calibración establece la siguiente relación: \\[\n\\text{Relación de escala} = \\frac{\\text{Longitud real (m)}}{\\text{Longitud en píxeles}}\n\\]\nEjemplo: Si una regla de 1 m ocupa 200 píxeles → Escala = 0.005 m/píxel.\nPara agregar una vara de calibración hacemos click en el ícono que muestra la barra de herramientas correspondiente.\n\n\n\nvara de calibración\n\n\nSe puede también girar e ingresar tanto valores como unidades en la misma\n\n\n\ndetalles vara de calibración",
+    "crumbs": [
+      "Clases",
+      "Tracker 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-15.html#detalles-de-video",
+    "href": "clases/clase-15.html#detalles-de-video",
+    "title": "Tracker 01",
+    "section": "Detalles de video",
+    "text": "Detalles de video\nEs necesario conocer cuántos cuadros por segundo tiene nuestro video para que el tiempo esté correctamente contabilizado en tracker. La información del video se puede obtener de su origen (cámara, teléfono, propiedades del archivo, etc.). Esto se ajusta haciendo click sobre la imagen de video en la barra de herramientas. En este menú también puede restringirse la parte útil del clip definiendo los frames de inicio y fin.\n\n\n\nopciones de video",
+    "crumbs": [
+      "Clases",
+      "Tracker 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-15.html#tracking",
+    "href": "clases/clase-15.html#tracking",
+    "title": "Tracker 01",
+    "section": "Tracking",
+    "text": "Tracking\nPara obtener los datos de posición en función del tiempo, y a partir de ellos el resto de las propiedades del sistema que estemos analizado debemos rastrear nuestro objetivo. Esto puede hacerse manualmente cuadro a cuadro de la siguiente manera.\nSeguimiento de partículas:\nHaciendo: Trayectoria &gt; nuevo &gt; masa puntual o Rastreo &gt; nuevo &gt; masa puntual\nUna vez que tenemos masa creada haciendo shift + click se marca un frame de interés, el programa avanza hacia el siguiente y podemos ir marcando así todas las posiciones de nuestro objetivo.",
+    "crumbs": [
+      "Clases",
+      "Tracker 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-15.html#exportar-datos-registrados",
+    "href": "clases/clase-15.html#exportar-datos-registrados",
+    "title": "Tracker 01",
+    "section": "Exportar datos registrados",
+    "text": "Exportar datos registrados\nCuando trackeamos los resultados aparecen en forma de gráficas y tablas en la parte de derecha de la pantalla. Ya veremos como ejecutar análisis con estos datos tanto en tracker, ahora veremos que para poder “llevarnos” esos datos a otro software, primero debemos elegir que magnitudes queremos ver, haciendo click en Datos seleccionamos los parámetros o variables de nuestro interés. Luego, haciendo doble click sobre la tabla se selecciona todo y con ello podemos hacer o bien click derecho copiar datos seleccionados &gt; precisión total o como formateado, o desde el menú Editar accedemos a las mismas opciones. Otra opción es hacer Archivo &gt; Exportar &gt; Archivo de datos y seleccionar allí las variables de nuestro interés.",
+    "crumbs": [
+      "Clases",
+      "Tracker 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html",
+    "href": "clases/clase-01.html",
+    "title": "Libre Office",
+    "section": "",
+    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#formulario-de-bienvenida",
+    "href": "clases/clase-01.html#formulario-de-bienvenida",
+    "title": "Libre Office",
+    "section": "",
+    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#linux-y-el-software-libre",
+    "href": "clases/clase-01.html#linux-y-el-software-libre",
+    "title": "Libre Office",
+    "section": "Linux y el software libre",
+    "text": "Linux y el software libre\nNos nos vamos a adentrar demasiado en este tema, pero vale la pena hacer una breve descripción ya que estaremos usando en las computadoras del instituto tanto software libre como privativo y es necesario conocer las diferencias entre ambos modelos de gestión de software.\n\nLibre no significa gratis\nLa diferencia más notoria es respecto de acceso y permisos sobre el código, valga decir, la posibilidad de ver, modificar y/o redistribuirlo.\nEl software de código abierto es aquel que es público. Casi todo el software nació de esa manera. En los inicios el producto por excelencia era el hardware, y el software, era comúnmente compartido entre emrpesas, universidades, entidades de gobierno etc. que podían modificar, adaptar, encontrar errores y mejorar así el funcionamiento de sus instalaciones.\nLa historia oficial involucra a IBM, creador del sistema UNIX que de un momento a otro dejó de compartir su software con terceros, y de esa manera dió lugar a la aparición de sistemas que basándose en lo que ya era público fueron ofreciendo variantes. En estas categorías podemos incluir (simplificando un poco) tanto a Windows como a GNU-LINUX.\nWindows se limitó a constuir sobre lo que ya se tenía, pero adoptó el nuevo modelo de código cerrado. Tanto usuarios como programadores no pueden acceder a concoer cómo está hecho aquello que están usando, y por supuesto, tampoco modificarlo ni auditarlo. GNU-LINUX nace con la visión de que hacer el software de libre acceso produciría avances tecnológicos más rápidos, mejor control de los errores y una comunidad científica mejor comunicada entre si.\nComo dice el título de la sección, que el código sea libre de copiar, modificar o distribuir no significa que no haya modelos de negocio que puedan usarlo para ofrecer un sevicio que sí se cobra: desde el soporte técnico hasta modificaciones ad-hoc para clientes particulares.\nLa confusión respecto de libre vs gratis surge de que muchas organizaciones que trabajan con software libre ofrecen también versiones gratuitas de esos mismos productos, que conviven con versiones pagas que incluyen soporte extendido para el ámbito empresarial, personalizaciones, etc.\nEn resumen, el software libre tiene como principios la transparencia, y la auditabilidad como rectores éticos ligados al conocimiento científico. Si un proceso no puede ser puesto a prueba por otros expertos en el tema, su jerarquía, virtudes o prestaciones pueden ser cuestionadas. El ejemplo más claro en donde este paradigma entra en tensión es en la elaboración de medicamentos y alimentos. Si no es posible acceder a los detalles químicos y de fabricación de los alimentos y medicamentos ¿Cómo podemos saber que son seguros? De la misma manera ocurre con el software: El software cerrado no es auditable y la seguridad de los datos y equipos de los usuarios queda sólo en la confianza que éstos tengan en las virtudes técnicas y éticas de la entidad que los ofrece.",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#libre-office",
+    "href": "clases/clase-01.html#libre-office",
+    "title": "Libre Office",
+    "section": "Libre office",
+    "text": "Libre office\n\n¿Qué es libre office?\nLibre office es una suite de ofimática (herramientas de software para producción en entornos de trabajo) libre y de código abierto mantenida por sus propios usuarios. Es gratuita y en casi todos los casos igual o mejor que sus contrapartes no gratuitas.\n\n\n¿Para qué libre office?\nTodo trabajo, incluso aquellos que son la manufactura de algún producto requieren piezas de comunicación visual y escrita: manuales, tutoriales, folletos, informes, etc. La comunicación del quehacer de la ciencia no es la excepción: bitácoras e informes de laboratorio, artículos para revistas e instituciones científicas, libros de texto, de divulgación o material de estudio de caracter académico. Estos textos tienen cada uno su propio estilo de escritura y estructura según su función y algunos soportes preferidos por conveniencia, uso, costumbre en algunos casos y millones bien invertidos en otros.\nExisten formatos que son preferidos en ciertos ámbitos, como Latex para publicaciones científicas y parte del mundo editorial o softwares como in-design o illustrator para los mismos fines para otras publicaciones.\n\nNostoros usaremos libre office como soporte por su unviersalidad (todos podemos conseguirlo) y sabemos que siempre contaremos con el sofware: no dejaremos de tener acceso a lo que hicimos porque la nueva versión no es compatible (y la vieja ya no está disponible) y al tener una gran red de usuarios que pueden extender la funcionalidad del paquete: es posible encontrar extensiones que se vayan adaptando a nuestras necesidades.\nPor último pero no menos importante, siendo que Latex es el formato de-facto para publicaciones académicas o científicas ¿por qué no lo usamos? Sencillamente porque latex no es un procesador de texto. Es un lenguaje de programación completo y aprenderlo nos llevaría mucho mas tiempo del que tenemos en este curso, además de que para los fines de escribir informes de laboratorio el costo inversión de tiempo vs resultados obtenidos está bastante corrido a favor de lo primero: se requiere poner mucho en latex para obtener algo decente. Sin embargo como el tratamiento de las expresiones matemáticas que latex ofrece es superior a lo que cualquier procesador de texto traiga por defecto, lo incluiiremos en nuestro flujo de trabajo a través de la extensión tex maths\n\n\nInstalando libre office\nEn su web oficial podemos acceder a la sección descarga y desde allí bajar la versión que necesitemos. La útima disponible en general funciona con casi todos los dispositivos pero si tenemos probelmas en la instalación podemos buscar en la página alguna versión anterior.\n\nInstalando tex-maths\nEn este enlace se puede descargar la última versión. Una vez descargado se ejecuta e instala siguiendo los pasos que el instalador ofrece.\n\n\n\nAyuda en línea y manuales\nLa ayuda de libre office está en casi todos los idiomas, aunque a veces la traducción automática falla un poco (se “olvida” de traducir algún que otro párrafo) es bastante completa. Además podemos descargar manuales (los más actualizados están en inglés) en pdf para quienes prefieran buscar en un documento y no en la web o para cuando no se tenga acceso a internet.",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#libre-office-writer",
+    "href": "clases/clase-01.html#libre-office-writer",
+    "title": "Libre Office",
+    "section": "Libre Office-Writer",
+    "text": "Libre Office-Writer\n\nLista de videos \nEn esta lista de reproducción podrán ver una serie de videos que cubren bastatante de la funcionalidad de libre office Writer.\n\n\nEstilos en Writer\nHemos visto que desde el menú ver -&gt; barra de estilos accedemos a los estilos que vienen predefinidos para las diferentes secciones de writer: párrafo, página, listas, etc.\nA continuación les comparto algunos videos que resumen un poco lo que vimos en esta clase:\n\n\nEn versiones anteriores de libre office si bien los menús se ven diferentes, la dinámica es idéntica\n\n\n\n\nNiveles de jearquía numerados\nPor ejemplo, los niveles de titulo se pueden auto numerar yendo a herramientas -&gt; numeración de títulos\nEsta configuración no está disponible como un estilo predeterminado sino que se aplica a los estilos existentes o a aquellos creados que sean niveles de jerárquicos.\nEn la ayuda de libre office podemos ver una explicación un poco más detallada.",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#actividad-inicial",
+    "href": "clases/clase-01.html#actividad-inicial",
+    "title": "Libre Office",
+    "section": "Actividad inicial",
+    "text": "Actividad inicial\n\nArqueología de publicaciones\nInstrucciones inciales Los detalles de presentación los verán en las próximas clases en el apartado de trabajos prácticos y su entrega será vía el campus virtual.\nDe momento, alcanza conque sepan que deberán armar una versión del trabajo de Rutherord tomando como origen la traducción, junto a la versión web y como guía para el estilo visual la publicación original. Los elementos a tener en cuenta para este documento incial serán\n\nTipografía: tamaño y tipo de letra (encontrar alguna o algunas tipografías que puedan servir)\nEncabezados y pies de página\nTexto: interlineado, orientación, sangría\nTablas\nTamaño de página\nEcuaciones\n\nIremos trabajando los detalles de cada elemento en las primeras clases mientras exploramos las funciones elementales de Writer",
+    "crumbs": [
+      "Clases",
+      "Libre Office"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html",
+    "href": "clases/clase-08.html",
+    "title": "Calc 02",
+    "section": "",
+    "text": "Los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.\nPara representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.\nPara representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.\nPara insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente:\ninsertar &gt; gráfico&gt; tipo de gráfico &gt; xy dispersión",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#series-de-datos",
+    "href": "clases/clase-08.html#series-de-datos",
+    "title": "Calc 02",
+    "section": "Series de datos",
+    "text": "Series de datos\nPara hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.\nEsto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.\n\n\n\nElementos del gráfico",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#formato-del-gráfico",
+    "href": "clases/clase-08.html#formato-del-gráfico",
+    "title": "Calc 02",
+    "section": "Formato del gráfico",
+    "text": "Formato del gráfico\nLa correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.\nSe deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.\nPara los títulos y subtitlos de figuras, es preferible usar tipografías sin serif ya que su legibilidad es mejor en tamaños pequeños.\n\n\n\nEjemplo de gráfico de dispersión\n\n\nMás allá de los estilos preferibles a nivel estético existen algunos principios generales que escapan a los alcances de este apunte pero el ejemplo de arriba vale como muestra de como una misma información se puede disponer de forma distinta y ayudar o entorpecer el entendimiento de aquello que se está queriendo comunicar.\n\n\n\nDos visualizaciones diferentes\n\n\n\nLíneas de cuadrícula\nSi se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de\n\n\n\nEjes y cuadrículas\n\n\nTambién con el gráfico seleccionado a través del menú insertar &gt; cuadrículas\n\n\nEjes, leyendas y rótulos\nLa información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú insertar\n\n\n\nSeries de datos\n\n\n\n\nBarras de error\nCon el gráfico seleccionado hacemos insertar &gt; barras de error ahi podremos elegir las diferentes variantes que contamos para las barras de error\n\n\n\nBarras de error",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#histogramas",
+    "href": "clases/clase-08.html#histogramas",
+    "title": "Calc 02",
+    "section": "Histogramas",
+    "text": "Histogramas\nUsualmente cuando se tienen datos a tratarse de forma estadística, resulta útil usar hitogramas para representarlos. Por ejemplo, si se efectúan n mediciones para obtener un valor para la constante gravitatoria en la tierra (\\(9,8 \\dfrac{m}{s^2}\\)) y si se han tomando los recaudos necesarios para llevar adelante el experimento es de esperar que la gran mayoría de los valores obtenidos se agrupen cerca del valor más probable, que dependiendo de la incerteza del método o los experimentadores, podrá ser más o menos cercano al “verdadero”, que es aquél contra el cual comparamos nuestros resultados.\nEn este caso, si graficamos “cuantas veces obutvimos” valores para cierto intervalo o clase, obtendremos algo similar a esto:\n\n\n\n\n\n\n\n\n\nDonde se observa una distribución de datos normal como se ve en la siguiente figura:\n\n\n\nDistribución normal y porcentaje del área bajo la curva\n\n\nSi por el contrario, tiramos un dado n veces (y lo hacemos muuuuchas veces) veremos que la distribución de “cuantas veces salió el uno”, “cuantas veces salió el dos”, etc. tiene esta pinta:\n\n\n\n\n\n\n\n\n\nEn ambos casos estamos viendo un gráfico de clase vs frecuencia, las clases pueden ser intervalos de alguna magnitud medida: lluvias de entre 3 y 5 mm, alturas entre 1.6 y 1.8 m, etc y la frecuencia la cantidad de elementos que pertenecen a esa clase o intervalo.\nUna regla útil para saber en cuantos intervalos debemos “seccionar” nuestros datos es usar \\(N=\\sqrt{n}\\) en donde \\(N\\) es la cantidad de intervalos y \\(n\\) la cantidad de datos. El ancho del intervalo, luego de reondear \\(N\\) a un entero sera \\(\\frac{\\text{rango}}{N}\\) en donde el rango es \\(\\text{valor máximo} - \\text{valor minimo}\\).\n\nFuncion FRECUENCIA() y funciones matriciales\nLas funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector sobre la planilla dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas ctrl + shift + enter al momento de ejecutar la función.\nLa función FRECUENCIA(DATOS,CLASES) es una función matricial y como indica su sintaxis tiene dos argumentos, los datos que usará y los intervalos en los que ubicará a los datos. Freuencia devuelve una matriz donde indica cuántos elementos hay en cada intervalo indicado.\n\n\nCrear un histograma\n\nUna vez que tenemos nuestro datos en la planilla debemos decidicir cuántos intervalos o clases construiremos a partir de ellos, una vez hecho eso, creamos una celda qe contenga como valor el extremo superior del intervalo (podemos desplegarlos en columnas o en filas).\nEn Otra celda, llamamos a la función FRECUENCIA y seleccionamos los datos y nuestras clases. No olvidar de apretar ctrl + shift + enter al finalizar.\nCon los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#funciones-estadísticas-promedio-moda-y-mediana",
+    "href": "clases/clase-08.html#funciones-estadísticas-promedio-moda-y-mediana",
+    "title": "Calc 02",
+    "section": "Funciones estadísticas: Promedio, moda y mediana",
+    "text": "Funciones estadísticas: Promedio, moda y mediana\nDentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.\nEl cálculo matemático para cada uno de ellos es;\n\nPromedioModaMediana\n\n\nEl promedio representa la media aritmética de los valores de un conjunto \\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\nEn calc la función PROMEDIO(datos) devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).\nPromedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.\nEl ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.\n\n\nLa moda representa el valor que más se repite en un conjunto de datos\n\\[\n\\text{Moda} = \\{x_i \\mid \\max \\text{frecuencia}(x_i)\\}\n\\]\nEn calc, las funciones MODA.UNO() y MODA.VARIOS() nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando ctrl+shift+enter al finalizar la escritura en la celda.\nPara más información acerca de las funciones matriciales podés ver la ayuda oficial sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.\nLa moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.\n\n\nLa mediana representa el valor central de un conjunto de datos ordenado. \\[\n\\tilde{x} =\n\\begin{cases}\nx_{\\frac{n+1}{2}}, & \\text{si } n \\text{ es impar} \\\\\n\\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2}, & \\text{si } n \\text{ es par}\n\\end{cases}\n\\]\nEn LO la mediana se calcula con la función MEDIANA(datos). La mediana suele ser un dato representativo de un cojunto incluso cuando existen datos que ocupan los extremos por un margen considerable. Consideremos el conjunto: \\[\n\\left( -1000,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1000 \\right)\n\\]\nAquí la mediana da una información más representativa de los datos.",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#varianza-y-desviación-estándar",
+    "href": "clases/clase-08.html#varianza-y-desviación-estándar",
+    "title": "Calc 02",
+    "section": "Varianza y Desviación Estándar",
+    "text": "Varianza y Desviación Estándar\nLa varianza y la desviación estándar son medidas de dispersión que nos indican cuán dispersos están los datos respecto a la media.\nLa varianza (\\(\\sigma^2\\)) se define como el promedio de los cuadrados de las diferencias entre cada dato y la media:\n\\[\\sigma^2 = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}\\]\nLa desviación estándar (\\(\\sigma\\)) es simplemente la raíz cuadrada de la varianza:\n\\[\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\\]\n\nDeducción\nLa varianza surge al considerar cómo se dispersan los datos alrededor de la media. Primero, calculamos la distancia de cada dato respecto a la media \\(\\bar{x}\\):\n\\[\nd_i = x_i - \\bar{x}\n\\]\nSi sumamos estas distancias, obtenemos cero (ya que la media balancea los datos). Para evitar esto, usamos los cuadrados de las diferencias:\n\\[\n\\sum_{i=1}^{n} (x_i - \\bar{x})^2\n\\]\nDividiendo por \\(n\\), obtenemos la varianza, que mide la dispersión promedio de los datos. La desviación estándar es su raíz cuadrada, proporcionando una medida en las mismas unidades que los datos originales.\n\n\nInterpretación\n\nValores pequeños de \\(\\sigma\\) indican poca variabilidad en los datos.\nValores grandes de \\(\\sigma\\) muestran que los datos están más dispersos respecto a la media.\n\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\n\\]\n\n\nDesviación para una muestra o una población\nCuando consideramos el promedio \\(\\bar{x}\\) para una muestra, no estamos accediendo a los posibles infinitos valores que pudiera tener la población en estudio, por ejemplo, no podemos medir la carga de todos los electrones del universo para luego promediarlas, por lo que nuestras medidas están restringidas no a la población, sino a una muestra de ella.\nPara calcular la desviación estándar para una muestra (y no para una población) debemos primero usar los datos de la muestra para obtener \\(\\bar{x}\\), al hacer esto, por la definición de media, existen sólo \\(n-1\\) valores realimente “libres” en cuanto a la diferencia que pueden tener con la media, el último valor que intentemos calcular necesariamente deberá ser tal que la suma nos de cero.\nPor eso se dice que el sistema tiene “un grado menos de libertad” y siempre que calculemos la varianza o la desviación estándar para una muestra, la fórmula se ajusta de la siguiente forma:\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n-1}}\n\\]\nSi el número de muestras \\(n\\) es suficientemente grande, \\(\\bar{x} \\to \\mu\\) (la media de la muestra tiene a la media de la población) y por lo tanto, el ajuste no representa una gran cambio en resultado.\n\n\nResumen estadístico\nSi hacemos datos&gt; estadísticas &gt; estadíticas descriptivas podremos obtener los parámetros estadísticos mencionados arriba (junto a otros que no trabajaremos) para un intervalo de celdas de la planilla.",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#ejercitación",
+    "href": "clases/clase-08.html#ejercitación",
+    "title": "Calc 02",
+    "section": "Ejercitación",
+    "text": "Ejercitación\nLos contenidos vistos en esta clase se aplican tanto al TP 4 (que ya están en condiciones de encarar) como al TP 5, para el que necesitarán elementos de próximas clases.\n\nGraficar una función\nGrafique las funciones que se mencionan en el punto 2 del TP3. Agrupe las funciones de la siguiente forma\n\nFunciones trigonométrias\nFunciones trigonométricas inversas\nCatenaria\nFunciones exponenciales\nFunciones logarítmicas\n\nCada grupo de funciones deberá estar en una sola gráfica y contener:\n\nNombres en los ejes (x,y)\nTítulo y subtítulo\nLeyenda\n\nPruebe utilizar:\n\nGáficos de dispersión\nGráficos de barras (use primera columna como etiquetas)\n\nComo ejemplo de usar un gráfico de barras, debería ver algo como esto:\n\n\n\ngráficas trigonométricas\n\n\n\n\nHistogramas\nUsando este archivo como base, crear un histograma para la la hoja masas.",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#referencias",
+    "href": "clases/clase-08.html#referencias",
+    "title": "Calc 02",
+    "section": "Referencias",
+    "text": "Referencias\n\n🔗 Ayuda oficial de Libre Office\n🎥 Gráficas de dispersión\n🔗 Barras de error en Libre Office\n🔗 Diseño de gráficos basados en el estilo de Edward Tufte\n🔗 Sitio de Edward Tufte\n🔗 Guía de Nature para figuras\n🔗 Guía de principios para visualización\n🔗 Apunte de la materia laboratorio 1 Sobre Gráficas en Excel\n🔗 Histogramas en LO\n🔗 Datasets CERN\n🔗 Distribución normal en matplotlib\n🔗 Histogramas en matplotlib",
+    "crumbs": [
+      "Clases",
+      "Calc 02"
     ]
   },
   {
